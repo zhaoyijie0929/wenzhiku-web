@@ -1,0 +1,547 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "description": "考试科目统一索引。旧页面仍读取 data/exam-outline.json 与 data/exam-subject-introductions.json，本文件供后续迁移使用。",
+  "items": [
+    {
+      "id": "public",
+      "title": "公共科目",
+      "category": "公共科目",
+      "content": "docs/exam/public.md",
+      "outline": "data/v2/exam-outline/public.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题（单选+多选+判断）",
+        "hasSubjective": false,
+        "applicableJobs": "全部报考人员",
+        "majorCategory": "公共科目"
+      }
+    },
+    {
+      "id": "management",
+      "title": "管理学",
+      "category": "管理类",
+      "content": "docs/exam/management.md",
+      "outline": "data/v2/exam-outline/management.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队管理类文职人员岗位",
+        "majorCategory": "管理类"
+      }
+    },
+    {
+      "id": "social_science",
+      "title": "社会科学基础理论",
+      "category": "人文社科类",
+      "content": "docs/exam/social_science.md",
+      "outline": "data/v2/exam-outline/social_science.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "机关管理类文职人员岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "law",
+      "title": "法学",
+      "category": "人文社科类",
+      "content": "docs/exam/law.md",
+      "outline": "data/v2/exam-outline/law.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军事法院、军事检察院、政法机关",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "education",
+      "title": "教育学",
+      "category": "人文社科类",
+      "content": "docs/exam/education.md",
+      "outline": "data/v2/exam-outline/education.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研单位和训练机构",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "sports",
+      "title": "体育学",
+      "category": "人文社科类",
+      "content": "docs/exam/sports.md",
+      "outline": "data/v2/exam-outline/sports.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、训练机构",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "journalism",
+      "title": "新闻传播学",
+      "category": "人文社科类",
+      "content": "docs/exam/journalism.md",
+      "outline": "data/v2/exam-outline/journalism.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队宣传文化机构、新闻宣传岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "publishing",
+      "title": "出版学",
+      "category": "人文社科类",
+      "content": "docs/exam/publishing.md",
+      "outline": "data/v2/exam-outline/publishing.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "宣传文化机构、院校",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "english",
+      "title": "英语",
+      "category": "人文社科类",
+      "content": "docs/exam/english.md",
+      "outline": "data/v2/exam-outline/english.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "教学科研、军事翻译和外事岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "art",
+      "title": "艺术基础综合",
+      "category": "人文社科类",
+      "content": "docs/exam/art.md",
+      "outline": "data/v2/exam-outline/art.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队文化艺术类岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "accounting",
+      "title": "会计学",
+      "category": "经济类",
+      "content": "docs/exam/accounting.md",
+      "outline": "data/v2/exam-outline/accounting.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队机关财务保障岗位",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "audit",
+      "title": "审计学",
+      "category": "经济类",
+      "content": "docs/exam/audit.md",
+      "outline": "data/v2/exam-outline/audit.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队审计监督机构",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "economics",
+      "title": "经济学",
+      "category": "经济类",
+      "content": "docs/exam/economics.md",
+      "outline": "data/v2/exam-outline/economics.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "经济管理和勤务保障岗位",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "clinical_medicine",
+      "title": "临床医学",
+      "category": "医学类",
+      "content": "docs/exam/clinical_medicine.md",
+      "outline": "data/v2/exam-outline/clinical_medicine.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "nursing",
+      "title": "护理学",
+      "category": "医学类",
+      "content": "docs/exam/nursing.md",
+      "outline": "data/v2/exam-outline/nursing.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构护理岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "tcm",
+      "title": "中医学",
+      "category": "医学类",
+      "content": "docs/exam/tcm.md",
+      "outline": "data/v2/exam-outline/tcm.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构中医药岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "pharmacy",
+      "title": "药学",
+      "category": "医学类",
+      "content": "docs/exam/pharmacy.md",
+      "outline": "data/v2/exam-outline/pharmacy.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构药学岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "tcm_pharmacy",
+      "title": "中药学",
+      "category": "医学类",
+      "content": "docs/exam/tcm_pharmacy.md",
+      "outline": "data/v2/exam-outline/tcm_pharmacy.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构中药学岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "medical_lab",
+      "title": "医学检验技术",
+      "category": "医学类",
+      "content": "docs/exam/medical_lab.md",
+      "outline": "data/v2/exam-outline/medical_lab.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构检验岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "medical_imaging",
+      "title": "医学影像技术",
+      "category": "医学类",
+      "content": "docs/exam/medical_imaging.md",
+      "outline": "data/v2/exam-outline/medical_imaging.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构影像岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "math1",
+      "title": "数学1",
+      "category": "理工类",
+      "content": "docs/exam/math1.md",
+      "outline": "data/v2/exam-outline/math1.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "武器工程、装备研发、通信工程、科研技术岗",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "math2_physics",
+      "title": "数学2+物理",
+      "category": "理工类",
+      "content": "docs/exam/math2_physics.md",
+      "outline": "data/v2/exam-outline/math2_physics.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "工程技术、装备运维、实验岗位",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "math3_chemistry",
+      "title": "数学3+化学",
+      "category": "理工类",
+      "content": "docs/exam/math3_chemistry.md",
+      "outline": "data/v2/exam-outline/math3_chemistry.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "化工、弹药、材料、环境检测、军队化验岗",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "biochemistry_plant_physiology",
+      "title": "生物化学+植物生理学",
+      "category": "农学/生命科学类",
+      "content": "docs/exam/biochemistry_plant_physiology.md",
+      "outline": "data/v2/exam-outline/biochemistry_plant_physiology.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研机构、军兵种机关和部队等单位，从事农业科技、科研等专业技术工作的文职人员岗位",
+        "majorCategory": "农学/生命科学类"
+      }
+    },
+    {
+      "id": "biochemistry_animal_physiology",
+      "title": "生物化学+动物生理学",
+      "category": "畜牧/生命科学类",
+      "content": "docs/exam/biochemistry_animal_physiology.md",
+      "outline": "data/v2/exam-outline/biochemistry_animal_physiology.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研机构、医疗卫生、军兵种机关和部队等单位，从事畜禽养殖、卫生防疫、科研等专业技术工作的文职人员岗位",
+        "majorCategory": "畜牧/生命科学类"
+      }
+    },
+    {
+      "id": "library",
+      "title": "图书",
+      "category": "图书档案类",
+      "content": "docs/exam/library.md",
+      "outline": "data/v2/exam-outline/library.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、训练机构教员和图书馆文职人员岗位，从事教学、教学辅助等专业技术工作",
+        "majorCategory": "图书档案类"
+      }
+    },
+    {
+      "id": "archives",
+      "title": "档案",
+      "category": "图书档案类",
+      "content": "docs/exam/archives.md",
+      "outline": "data/v2/exam-outline/archives.json",
+      "pdf": null,
+      "legacy": {
+        "outline": "data/exam-outline.json",
+        "introduction": "data/exam-subject-introductions.json"
+      },
+      "meta": {
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校教员和档案管理机构文职人员岗位，从事教学、档案管理等专业技术工作",
+        "majorCategory": "图书档案类"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "math1",
+  "name": "数学1",
+  "file": "16244568_f79e197661bf2be286e08f2cb037c7eb",
+  "category": "理工类",
+  "target": "武器工程、装备研发、通信工程、科研技术岗",
+  "parts": [
+    {
+      "name": "高等数学",
+      "topics": "函数极限连续、一元微积分、向量代数与空间解析几何、多元微积分、无穷级数、常微分方程"
+    },
+    {
+      "name": "线性代数",
+      "topics": "行列式、矩阵、向量、线性方程组、矩阵相似化简、二次型"
+    },
+    {
+      "name": "概率论与数理统计",
+      "topics": "随机事件与概率、随机变量及分布、多维随机变量、数字特征、大数定律与中心极限定理、样本抽样分布、参数估计、假设检验"
+    }
+  ],
+  "overview": {
+    "summary": "适用于武器工程、装备研发、通信工程、科研技术岗。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "武器工程、装备研发、通信工程、科研技术岗",
+    "majorCategory": "理工类"
+  }
+}

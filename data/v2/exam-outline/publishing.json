@@ -1,0 +1,36 @@
+{
+  "id": "publishing",
+  "name": "出版学",
+  "file": "16244568_148cc41a1579d7500219fa57763e0fac",
+  "category": "人文社科类",
+  "target": "宣传文化机构、院校",
+  "parts": [
+    {
+      "name": "出版专业基础",
+      "topics": "出版与出版工作、出版物、我国出版业、文字规范、现代汉语、修辞、古汉语及古代文化"
+    },
+    {
+      "name": "出版实务",
+      "topics": "选题策划、图书编辑、期刊出版、书刊整体设计、校对业务、书刊印制、音像制品/电子出版物/数字出版"
+    },
+    {
+      "name": "编辑出版史",
+      "topics": "中国古代/近代/社会主义编辑出版事业、国外编辑出版事业"
+    },
+    {
+      "name": "出版政策法规",
+      "topics": "出版法律规范、出版主体法律、出版合同法律、著作权法律"
+    }
+  ],
+  "key_features": "军队出版物审核、国防出版规范占比30%",
+  "overview": {
+    "summary": "适用于宣传文化机构、院校。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "宣传文化机构、院校",
+    "majorCategory": "人文社科类"
+  }
+}

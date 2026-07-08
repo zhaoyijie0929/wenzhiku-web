@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>岗位推荐报告 — 军队文职智能报考平台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/design-system.css?v=20260703">
+  <link rel="stylesheet" href="css/style.css?v=20260703">
+  <style>
+    :root {
+      --report-bg: #F7F9FC;
+      --report-card: #FFFFFF;
+      --report-primary: #2563EB;
+      --report-text: #111827;
+      --report-muted: #6B7280;
+      --report-border: #E5E7EB;
+      --report-shadow: 0 8px 30px rgba(15,23,42,.06);
+      --report-green: #10B981;
+      --report-yellow: #F59E0B;
+      --report-red: #EF4444;
+    }
+    body { background: var(--report-bg); }
+    .report-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px 24px 56px;
+    }
+    .report-toolbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .report-card,
+    .report-section,
+    .report-hero,
+    .stat-card,
+    .year-card,
+    .group-card,
+    .top10-card,
+    .subject-card,
+    .chart-panel,
+    .table-wrapper,
+    .advice-card,
+    .filter-panel {
+      background: var(--report-card);
+      border: 1px solid var(--report-border);
+      border-radius: 16px;
+      box-shadow: var(--report-shadow);
+    }
+    .report-section {
+      margin-bottom: 24px;
+      padding: 22px;
+    }
+    .report-section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      color: var(--report-text);
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .report-section-title .section-num {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      border-radius: 9px;
+      background: #EFF6FF;
+      color: var(--report-primary);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .section-note {
+      color: var(--report-muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .report-hero {
+      min-height: 260px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(360px, .8fr);
+      gap: 32px;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 36px;
+      background:
+        radial-gradient(circle at 70% 20%, rgba(37,99,235,.12), transparent 34%),
+        linear-gradient(135deg, #FFFFFF 0%, #F8FBFF 100%);
+    }
+    .report-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #EFF6FF;
+      color: var(--report-primary);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .report-hero h1 {
+      margin: 0 0 14px;
+      color: var(--report-text);
+      font-size: 44px;
+      line-height: 1.12;
+      font-weight: 900;
+    }
+    .report-hero .report-subtitle {
+      max-width: 520px;
+      margin: 0 0 18px;
+      color: #374151;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+    .report-hero .report-date {
+      color: var(--report-muted);
+      font-size: 13px;
+    }
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .star-rating,
+    .subject-stars {
+      color: #F59E0B;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+    .hero-rating strong {
+      color: var(--report-text);
+      font-size: 15px;
+    }
+    .hero-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .hero-stat-card {
+      min-height: 104px;
+      padding: 20px;
+      border: 1px solid var(--report-border);
+      border-radius: 16px;
+      background: rgba(255,255,255,.88);
+      box-shadow: var(--report-shadow);
+      transition: transform .2s, border-color .2s;
+    }
+    .hero-stat-card:hover {
+      transform: translateY(-2px);
+      border-color: #BFDBFE;
+    }
+    .hero-stat-card span,
+    .stat-card .stat-label,
+    .metric-label {
+      display: block;
+      color: var(--report-muted);
+      font-size: 13px;
+    }
+    .hero-stat-card strong {
+      display: block;
+      margin-top: 8px;
+      color: var(--report-text);
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .year-current-note {
+      margin-bottom: 16px;
+      color: var(--report-muted);
+      font-size: 13px;
+    }
+    .year-switcher {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .year-card,
+    .group-card {
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform .2s, border-color .2s, background .2s;
+    }
+    .year-card {
+      padding: 16px;
+      text-align: left;
+    }
+    .year-card:hover,
+    .group-card:hover,
+    .top10-card:hover,
+    .subject-card:hover {
+      transform: translateY(-2px);
+      border-color: #BFDBFE;
+    }
+    .year-card.active,
+    .group-card.active {
+      border-color: var(--report-primary);
+      background: #EFF6FF;
+    }
+    .year-label { color: var(--report-muted); font-size: 13px; }
+    .year-count {
+      margin-top: 6px;
+      color: var(--report-text);
+      font-size: 26px;
+      font-weight: 900;
+    }
+    .group-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .group-card {
+      min-height: 40px;
+      padding: 0 16px;
+      color: var(--report-text);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .stats-hero {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .stat-card {
+      padding: 18px;
+      box-shadow: none;
+    }
+    .stat-card.primary {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+    }
+    .stat-number {
+      margin-bottom: 6px;
+      color: var(--report-primary);
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .stats-detail {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .stat-detail-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      border: 1px solid var(--report-border);
+      border-radius: 14px;
+      background: #F8FAFC;
+    }
+    .sdi-label { color: var(--report-muted); font-size: 13px; }
+    .sdi-value { color: var(--report-primary); font-size: 22px; font-weight: 900; }
+    .ai-reason-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .reason-card {
+      padding: 18px;
+      border-radius: 16px;
+      border: 1px solid var(--report-border);
+      background: #F8FAFC;
+    }
+    .reason-card strong {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--report-text);
+      font-size: 17px;
+    }
+    .reason-card p,
+    .advice-card p {
+      margin: 0;
+      color: #374151;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .top10-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .top10-card {
+      position: relative;
+      padding: 16px;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s;
+    }
+    .top10-card.top-one {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 172px;
+      gap: 18px;
+      min-height: 236px;
+      padding: 18px 20px;
+      background: #FFFFFF;
+    }
+    .top10-card.compact {
+      grid-column: span 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      height: 182px;
+      padding: 14px 16px 22px;
+      overflow: hidden;
+    }
+    .top10-card.list-item {
+      grid-column: span 2;
+      height: 178px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 12px 14px;
+      overflow: hidden;
+    }
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      min-height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #EFF6FF;
+      color: var(--report-primary);
+      font-size: 13px;
+      font-weight: 900;
+    }
+    .job-title {
+      margin: 10px 0 6px;
+      color: var(--report-text);
+      font-size: 20px;
+      line-height: 1.35;
+      font-weight: 900;
+    }
+    .compact .job-title { font-size: 17px; }
+    .compact .job-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px 10px;
+      font-size: 12px;
+      line-height: 1.45;
+      overflow: hidden;
+    }
+    .compact .job-meta span {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .compact .job-unit-line {
+      margin-top: 5px;
+      color: var(--report-muted);
+      font-size: 12px;
+      line-height: 1.4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .compact .job-unit-line strong {
+      color: var(--report-text);
+    }
+    .compact .mini-reason {
+      display: none;
+    }
+    .list-item .job-title {
+      margin: 6px 0 0;
+      font-size: 16px;
+      line-height: 1.3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .list-item .rank-badge {
+      min-height: 24px;
+      padding: 0 10px;
+      font-size: 12px;
+    }
+    .list-item .job-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3px;
+      min-height: 54px;
+      overflow: hidden;
+    }
+    .list-item .job-meta span {
+      min-width: 0;
+      font-size: 12px;
+      line-height: 1.35;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .job-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      color: var(--report-muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .job-meta strong { color: var(--report-text); }
+    .recommend-reason {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: #F8FAFC;
+      color: #374151;
+      font-size: 13px;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .reason-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .reason-tags span,
+    .key-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #ECFDF5;
+      color: #047857;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .top-actions .btn { min-height: 34px; border-radius: 10px; padding: 0 10px; }
+    .compact .top-actions {
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .compact .top-actions .btn {
+      min-height: 30px;
+      padding: 0 8px;
+      font-size: 12px;
+    }
+    .score-box {
+      align-self: stretch;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      text-align: center;
+      padding: 14px;
+    }
+    .score-box span {
+      color: var(--report-muted);
+      font-size: 13px;
+    }
+    .score-box strong {
+      display: block;
+      margin: 6px 0;
+      color: var(--report-primary);
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 900;
+    }
+    .list-score {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 32px;
+    }
+    .list-score strong {
+      color: var(--report-primary);
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .list-score span {
+      color: var(--report-muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .list-score .top-actions {
+      flex-shrink: 0;
+      margin-top: 0;
+    }
+    .list-score .top-actions .btn {
+      min-height: 30px;
+      padding: 0 9px;
+      font-size: 12px;
+    }
+    .list-score .score-inline {
+      min-width: 72px;
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .mini-reason {
+      margin-top: 8px;
+      color: #374151;
+      font-size: 13px;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .subject-summary,
+    .advice-card {
+      margin-bottom: 16px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      color: #1F2937;
+      line-height: 1.8;
+    }
+    .subject-grid {
+      display: grid;
+      gap: 8px;
+    }
+    .subject-card {
+      display: grid;
+      grid-template-columns: minmax(180px, 1.1fr) 2fr;
+      gap: 12px;
+      align-items: center;
+      min-height: 48px;
+      padding: 10px 14px;
+      transition: transform .2s, border-color .2s;
+    }
+    .subject-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .subject-rank {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: #EFF6FF;
+      color: var(--report-primary);
+      font-weight: 900;
+    }
+    .subject-name {
+      color: var(--report-text);
+      font-size: 15px;
+      font-weight: 900;
+    }
+    .subject-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .subject-metric {
+      padding: 8px 10px;
+      border-radius: 12px;
+      background: #F8FAFC;
+      border: 1px solid var(--report-border);
+    }
+    .subject-metric span {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--report-muted);
+      font-size: 12px;
+    }
+    .subject-metric strong { color: var(--report-text); font-size: 15px; }
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .chart-panel {
+      padding: 20px;
+      box-shadow: none;
+    }
+    .chart-title {
+      margin-bottom: 16px;
+      color: var(--report-text);
+      font-size: 16px;
+      font-weight: 900;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 68px minmax(0, 1fr) 54px;
+      gap: 12px;
+      align-items: center;
+      margin: 12px 0;
+      color: #374151;
+      font-size: 13px;
+    }
+    .bar-track {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #EEF2F7;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: inherit;
+      background: var(--report-primary);
+    }
+    .table-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .table-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    .table-tools input,
+    .table-tools select {
+      min-height: 40px;
+      border-radius: 12px;
+      border: 1px solid var(--report-border);
+      background: #FFFFFF;
+      padding: 0 12px;
+      color: var(--report-text);
+      font-size: 14px;
+    }
+    .table-wrapper {
+      overflow: hidden;
+    }
+    .table-more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 56px;
+      color: var(--report-muted);
+      font-size: 14px;
+    }
+    .table-more a {
+      margin-left: 6px;
+      color: var(--report-primary);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    table.report-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    table.report-table th {
+      padding: 14px 16px;
+      text-align: left;
+      color: var(--report-muted);
+      background: #F8FAFC;
+      border-bottom: 1px solid var(--report-border);
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    table.report-table td {
+      padding: 16px;
+      border-bottom: 1px solid #EEF2F7;
+      color: var(--report-text);
+      vertical-align: top;
+    }
+    table.report-table tr:hover td { background: #F8FAFC; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 26px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .badge-civil { background: #EFF6FF; color: var(--report-primary); }
+    .badge-public { background: #ECFDF5; color: #047857; }
+    .badge-military { background: #FFF7ED; color: #C2410C; }
+    .key-requirements {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      min-width: 150px;
+      max-width: 260px;
+    }
+    .key-tag.muted {
+      background: #F3F4F6;
+      color: var(--report-muted);
+    }
+    .filter-panel {
+      overflow: hidden;
+    }
+    .filter-toggle {
+      width: 100%;
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      border: 0;
+      background: #FFFFFF;
+      color: var(--report-text);
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .filter-panel[open] .filter-toggle {
+      border-bottom: 1px solid var(--report-border);
+    }
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 12px;
+      padding: 20px;
+    }
+    .filter-item {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #F8FAFC;
+      border: 1px solid var(--report-border);
+    }
+    .filter-label {
+      margin-bottom: 5px;
+      color: var(--report-muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .filter-value {
+      color: var(--report-text);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    /* 岗位详情弹窗 */
+    .job-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(17, 24, 39, 0.56);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .job-modal-overlay.show { display: flex; }
+    .job-modal {
+      width: min(960px, 100%);
+      max-height: 90vh;
+      background: var(--bg-card);
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(15,23,42,.22);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .job-modal-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border-default);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      background: #FFFFFF;
+    }
+    .job-modal-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.35;
+    }
+    .job-modal-close {
+      border: none;
+      background: var(--bg-hover);
+      color: var(--text-secondary);
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .job-modal-close:hover {
+      color: var(--brand-primary);
+      background: var(--brand-primary-light);
+    }
+    .job-modal-body {
+      padding: 20px 24px;
+      overflow-y: auto;
+      background: #F8FAFC;
+    }
+    .job-modal-section {
+      background: #FFFFFF;
+      border: 1px solid var(--border-default);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    .job-modal-section:last-child { margin-bottom: 0; }
+    .job-modal-section-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 14px;
+    }
+    .job-modal-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .job-modal-hero h1 {
+      margin: 8px 0 12px;
+      color: #111827;
+      font-size: 28px;
+      line-height: 1.25;
+      font-weight: 900;
+    }
+    .job-modal-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .job-modal-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #EFF6FF;
+      color: var(--report-primary);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .job-modal-hero-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 16px;
+      margin-top: 12px;
+    }
+    .job-modal-summary {
+      display: grid;
+      gap: 10px;
+      padding: 16px;
+      border: 1px solid #BFDBFE;
+      border-radius: 16px;
+      background: #EFF6FF;
+    }
+    .job-modal-summary-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(37,99,235,.14);
+    }
+    .job-modal-summary-item:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .job-modal-summary-item span,
+    .job-modal-label {
+      font-size: 12px;
+      color: #6B7280;
+      font-weight: 700;
+    }
+    .job-modal-summary-item strong {
+      color: #111827;
+      font-size: 14px;
+      text-align: right;
+    }
+    .job-modal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .job-modal-grid.quick {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .job-modal-item {
+      background: #F8FAFC;
+      border: 1px solid var(--border-default);
+      border-radius: 12px;
+      padding: 11px 12px;
+    }
+    .job-modal-item.full { grid-column: 1 / -1; }
+    .job-modal-value {
+      font-size: 14px;
+      color: #111827;
+      font-weight: 700;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .job-modal-copy {
+      color: #374151;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .job-modal-ai-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .job-modal-ai-list span {
+      display: flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border-radius: 12px;
+      background: #ECFDF5;
+      color: #047857;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .job-modal-related {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .job-modal-footer {
+      position: sticky;
+      bottom: 0;
+      padding: 14px 24px;
+      border-top: 1px solid var(--border-default);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      background: #FFFFFF;
+    }
+    .job-modal-footer-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 1024px) {
+      .report-hero,
+      .top10-card.top-one,
+      .top10-card.list-item {
+        grid-template-columns: 1fr;
+      }
+      .hero-stat-grid,
+      .stats-hero,
+      .chart-grid,
+      .ai-reason-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .subject-card {
+        grid-template-columns: 1fr;
+      }
+      .subject-metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .table-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .table-tools {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .job-modal-hero {
+        grid-template-columns: 1fr;
+      }
+      .job-modal-grid.quick,
+      .job-modal-ai-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 768px) {
+      .report-container {
+        padding: 20px 16px 48px;
+      }
+      .report-hero,
+      .report-section {
+        padding: 20px;
+      }
+      .report-hero h1 {
+        font-size: 34px;
+      }
+      .hero-stat-grid,
+      .stats-hero,
+      .stats-detail,
+      .chart-grid,
+      .ai-reason-grid,
+      .year-switcher {
+        grid-template-columns: 1fr;
+      }
+      .table-tools input,
+      .table-tools select {
+        width: 100%;
+      }
+      .job-modal-overlay {
+        padding: 12px;
+      }
+      .job-modal-body {
+        padding: 16px;
+      }
+      .job-modal-hero h1 {
+        font-size: 24px;
+      }
+      .job-modal-hero-meta,
+      .job-modal-grid,
+      .job-modal-grid.quick,
+      .job-modal-ai-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 打印样式 */
+    @media print {
+      body { background: white; }
+      .header, .footer, .report-toolbar { display: none !important; }
+      .report-container { max-width: 100%; padding: 20px; }
+      .report-hero { padding: 20px 0 24px; }
+      .report-card, .top10-card, .stat-card, .chart-panel {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .report-section { break-inside: avoid; }
+      table.report-table { font-size: 11px; }
+      .btn { border: 1px solid #ccc !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header (loaded from components/header.html) -->
+  <div id="site-header"></div>
+  <script src="js/header-v2.js?v=20260707"></script>
+
+  <!-- Report Content -->
+  <div class="report-container" id="report-content">
+
+    <div class="report-toolbar">
+      <button class="btn btn-outline btn-sm" onclick="generateAiPrintReport()">打印报告</button>
+      <a href="recommend.html" class="btn btn-primary btn-sm">重新智能推荐</a>
+    </div>
+
+    <section class="report-hero">
+      <div>
+        <div class="report-kicker">AI 智能分析报告</div>
+        <h1>AI 岗位推荐报告</h1>
+        <p class="report-subtitle">系统已根据您的条件，完成 80321 个岗位分析，并生成可执行的岗位优先级建议。</p>
+        <div class="hero-rating">
+          <span class="star-rating" id="hero-stars">★★★★★</span>
+          <strong>推荐指数</strong>
+        </div>
+        <p class="report-date" id="report-date">生成时间：2026-06-30</p>
+      </div>
+      <div class="hero-stat-grid" id="report-hero-stats">
+        <div class="hero-stat-card"><span>推荐岗位</span><strong>--</strong></div>
+        <div class="hero-stat-card"><span>涉及单位</span><strong>--</strong></div>
+        <div class="hero-stat-card"><span>覆盖地区</span><strong>--</strong></div>
+        <div class="hero-stat-card"><span>平均入围</span><strong>--</strong></div>
+      </div>
+    </section>
+
+    <section class="report-section">
+      <div class="report-section-title">
+        <div><span class="section-num">1</span>核心数据</div>
+        <span class="section-note">年份与岗位类型可切换</span>
+      </div>
+      <div id="year-current-note" class="year-current-note"></div>
+      <div class="year-switcher" id="year-switcher"></div>
+      <div class="group-switcher" id="group-switcher"></div>
+      <div class="stats-hero" id="stats-hero"></div>
+      <div class="stats-detail" id="stats-detail"></div>
+    </section>
+
+    <section class="report-section">
+      <div class="report-section-title">
+        <div><span class="section-num">2</span>AI 推荐理由</div>
+        <span class="section-note">把岗位匹配拆成可理解的决策依据</span>
+      </div>
+      <div class="ai-reason-grid" id="ai-reason"></div>
+    </section>
+
+    <section class="report-section">
+      <div class="report-section-title">
+        <div><span class="section-num">3</span>推荐岗位</div>
+        <span class="section-note">TOP1 独立展示，TOP2-3 重点关注，TOP4-10 列表查看</span>
+      </div>
+      <div class="top10-grid" id="top10-grid"></div>
+    </section>
+
+    <section class="report-section">
+      <div class="report-section-title">
+        <div><span class="section-num">4</span>推荐专业科目分析</div>
+        <span class="section-note">按岗位数量与入围分分布排序</span>
+      </div>
+      <div id="subject-analysis"></div>
+    </section>
+
+    <section class="report-section">
+      <div class="report-section-title">
+        <div><span class="section-num">5</span>数据统计</div>
+        <span class="section-note">年度趋势、地区、学历与招聘规模</span>
+      </div>
+      <div class="chart-grid"></div>
+    </section>
+
+    <section class="report-section">
+      <div class="table-header">
+        <div class="report-section-title" style="margin-bottom:0;">
+          <div><span class="section-num">6</span>全部岗位列表</div>
+        </div>
+        <div class="table-tools">
+          <input id="report-job-search" type="search" placeholder="搜索岗位、单位、地区">
+          <select id="report-job-sort">
+            <option value="recommend">推荐指数</option>
+            <option value="num">招聘人数</option>
+            <option value="region">地区</option>
+            <option value="unit">单位</option>
+          </select>
+          <select id="report-job-group">
+            <option value="全部">全部岗位</option>
+            <option value="管理岗">管理岗</option>
+            <option value="技术岗">技术岗</option>
+            <option value="技能岗">技能岗</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table class="report-table" id="all-jobs-table">
+          <thead>
+            <tr>
+              <th>岗位名称</th>
+              <th>考试类型</th>
+              <th>地区</th>
+              <th>招聘人数</th>
+              <th>学历</th>
+              <th>专业</th>
+              <th>单位</th>
+              <th>关键条件</th>
+              <th>年份</th>
+            </tr>
+          </thead>
+          <tbody id="all-jobs-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <details class="filter-panel">
+      <summary class="filter-toggle">
+        <span>查看我的筛选条件</span>
+        <span>展开</span>
+      </summary>
+      <div class="filter-grid" id="filter-grid"></div>
+    </details>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    军队文职智能报考平台 V2.0 · 岗位推荐报告
+  </footer>
+
+  <script src="js/job-classifier.js?v=20260703"></script>
+  <script>
+    /* ========================
+       状态与配置
+    ======================== */
+    let allPositions = [];
+    let filteredPositions = [];
+    let schoolsData = [];
+    let majorsData = [];
+    let certificatesData = [];
+    let titlesData = [];
+    let selectedYear = "2026";
+    let selectedGroup = "全部";
+    let currentTopJobs = [];
+    let currentListJobs = [];
+    let currentReportFormData = null;
+    let currentRenderedJobs = [];
+    let reportListSearch = "";
+    let reportListSort = "recommend";
+    let reportListGroup = "全部";
+    const DEBUG_HARD_FILTERS = false;
+
+    /* ========================
+       工具函数
+    ======================== */
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str || '';
+      return div.innerHTML;
+    }
+    const escHtml = escapeHtml;
+
+    function displayValue(value) {
+      if (value === undefined || value === null) return "暂无要求";
+      const text = String(value).trim();
+      if (!text || text === "undefined" || text === "null" || text === "NaN") return "暂无要求";
+      return text;
+    }
+
+    function compactText(value) {
+      return String(value || "").replace(/\s+/g, "");
+    }
+
+    function compactLowerText(value) {
+      return compactText(value).toLowerCase();
+    }
+
+    function getJobOtherText(jobOrText) {
+      return compactText(typeof jobOrText === "object" ? jobOrText?.other : jobOrText);
+    }
+
+    function addUnique(list, value) {
+      if (value && !list.includes(value)) list.push(value);
+    }
+
+    function createStars(job) {
+      const score = job?._recommendScore || 0;
+      const numStars = score >= 90 ? 5 : score >= 80 ? 4 : score >= 70 ? 3 : score >= 60 ? 2 : 1;
+      return '★'.repeat(numStars) + '☆'.repeat(5 - numStars);
+    }
+    const getStarRating = createStars;
+
+    function filterFail(step, reason) {
+      return { pass: false, step, reason };
+    }
+
+    function filterPass() {
+      return { pass: true };
+    }
+
+    function logFilterDrop(job, result) {
+      if (!DEBUG_HARD_FILTERS) return;
+    }
+
+    function schoolNameOf(schoolInfo) {
+      return schoolInfo?.name || schoolInfo?.school_name || "";
+    }
+
+    function schoolTypeText(schoolInfo) {
+      return String(schoolInfo?.school_type || schoolInfo?.type || "");
+    }
+
+    function schoolLevelText(schoolInfo) {
+      if (!schoolInfo) return "未填写学校";
+      const tags = [];
+      if (schoolInfo.is_985) tags.push("985");
+      if (schoolInfo.is_211) tags.push("211");
+      if (schoolInfo.is_double_first_class) tags.push("双一流");
+      if (schoolInfo.school_type) tags.push(schoolInfo.school_type);
+      return `${schoolNameOf(schoolInfo) || "未知学校"}（${tags.join("、") || "普通本科/未标记重点层次"}）`;
+    }
+
+    function hasTopSchoolLevel(schoolInfo) {
+      return !!(schoolInfo && (schoolInfo.is_985 || schoolInfo.is_211 || schoolInfo.is_double_first_class));
+    }
+
+    function isArtSchool(schoolInfo) {
+      const text = `${schoolNameOf(schoolInfo)} ${schoolTypeText(schoolInfo)}`;
+      return /美术|艺术|传媒|戏剧|电影|音乐|舞蹈/.test(text);
+    }
+
+    function isVocationalHighLevelSchool(schoolInfo) {
+      const text = `${schoolNameOf(schoolInfo)} ${schoolTypeText(schoolInfo)}`;
+      return /双高|国家示范|国家骨干/.test(text);
+    }
+
+    /* ========================
+       Modal
+    ======================== */
+    function createJobModal() {
+      if (document.getElementById("job-modal-overlay")) return;
+      const overlay = document.createElement("div");
+      overlay.id = "job-modal-overlay";
+      overlay.className = "job-modal-overlay";
+      overlay.innerHTML = `
+        <div class="job-modal" role="dialog" aria-modal="true" aria-labelledby="job-modal-title">
+          <div class="job-modal-header">
+            <div class="job-modal-title" id="job-modal-title">岗位详情</div>
+            <button type="button" class="job-modal-close" aria-label="关闭" onclick="closeJobModal()">&times;</button>
+          </div>
+          <div class="job-modal-body" id="job-modal-body"></div>
+          <div class="job-modal-footer">
+            <button type="button" class="btn btn-outline btn-sm" onclick="closeJobModal()">关闭</button>
+            <div class="job-modal-footer-actions">
+              <button type="button" class="btn btn-outline btn-sm" disabled>查看单位</button>
+              <button type="button" class="btn btn-primary btn-sm" disabled title="收藏功能即将上线">收藏岗位</button>
+            </div>
+          </div>
+        </div>`;
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) closeJobModal();
+      });
+      document.body.appendChild(overlay);
+    }
+
+    function openJobModal(job) {
+      if (!job) return;
+      createJobModal();
+      const overlay = document.getElementById("job-modal-overlay");
+      document.getElementById("job-modal-title").textContent = displayValue(job.title);
+      const locText = [job.prov, job.city].filter(Boolean).join(" ") || job.loc;
+      const scoreText = job._recommendScore ? `${Math.round(job._recommendScore)}分` : getStarRating(job);
+      const simpleValue = value => {
+        const text = displayValue(value);
+        return text === "暂无要求" ? "不限" : text;
+      };
+      const textHas = (value, pattern) => pattern.test(String(value || ""));
+      const workExpText = textHas(job.other, /工作经历|经验|\d+年/) ? "有要求" : "不限";
+      const partyText = textHas(job.other, /党员|中共党员|正式党员|预备党员/) ? "有要求" : "不限";
+      const militaryText = textHas(job.other, /服役|退役|军队工作经历/) ? "有要求" : "不限";
+      const otherText = displayValue(job.other);
+      const otherValue = otherText === "暂无要求" ? "暂无特殊要求" : otherText;
+      const aiReasons = (getRecommendationReasons(job) || []).slice(0, 4);
+      if (job.major && job.major !== "不限") addUnique(aiReasons, "专业要求明确");
+      if (job.edu) addUnique(aiReasons, "学历门槛清晰");
+      if (job.num && Number(job.num) <= 1) addUnique(aiReasons, "招聘人数较少，建议结合竞争情况判断");
+      if (locText) addUnique(aiReasons, "地区明确");
+      const modalItem = (label, value, full = false) => `
+        <div class="job-modal-item${full ? ' full' : ''}">
+          <div class="job-modal-label">${label}</div>
+          <div class="job-modal-value">${escHtml(displayValue(value))}</div>
+        </div>`;
+      const examSubject = normalizeExamSubject(job.exam);
+      const relatedLinks = `
+        <div class="job-modal-related">
+          <a class="btn btn-primary btn-sm" href="job-list.html?q=${encodeURIComponent(displayValue(job.title))}">查看岗位百科</a>
+          ${examSubject ? `<a class="btn btn-outline btn-sm" href="guide-exam.html?subject=${encodeURIComponent(examSubject)}">查看考试科目</a>` : ""}
+          ${examSubject ? `<a class="btn btn-outline btn-sm" href="papers.html?subject=${encodeURIComponent(examSubject)}">查看相关真题</a>` : ""}
+        </div>`;
+      document.getElementById("job-modal-body").innerHTML = `
+        <div class="job-modal-section job-modal-hero">
+          <div>
+            <div class="job-modal-badge-row">
+              <span class="job-modal-pill">${escHtml(classifyJob(job))}</span>
+              <span class="job-modal-pill">推荐指数 ${escHtml(scoreText)}</span>
+            </div>
+            <h1>${escHtml(displayValue(job.title))}</h1>
+            <div class="job-modal-hero-meta">
+              ${modalItem("单位", job.unit)}
+              ${modalItem("地区", locText)}
+              ${modalItem("学历", job.edu)}
+              ${modalItem("招聘人数", job.num ? `${job.num}人` : "")}
+            </div>
+          </div>
+          <div class="job-modal-summary">
+            <div class="job-modal-summary-item"><span>岗位类别</span><strong>${escHtml(classifyJob(job))}</strong></div>
+            <div class="job-modal-summary-item"><span>推荐指数</span><strong>${escHtml(scoreText)}</strong></div>
+            <div class="job-modal-summary-item"><span>招聘人数</span><strong>${escHtml(job.num ? `${job.num}人` : "暂无")}</strong></div>
+            <div class="job-modal-summary-item"><span>地区</span><strong>${escHtml(displayValue(locText))}</strong></div>
+          </div>
+        </div>
+        <div class="job-modal-section">
+          <div class="job-modal-section-title">快速判断</div>
+          <div class="job-modal-grid quick">
+            ${modalItem("学历要求", simpleValue(job.edu))}
+            ${modalItem("专业要求", simpleValue(job.major))}
+            ${modalItem("工作经验", workExpText)}
+            ${modalItem("政治面貌", partyText)}
+          </div>
+        </div>
+        <div class="job-modal-section">
+          <div class="job-modal-section-title">工作内容</div>
+          <div class="job-modal-copy">${escHtml(displayValue(job.work))}</div>
+        </div>
+        <div class="job-modal-section">
+          <div class="job-modal-section-title">报考要求</div>
+          <div class="job-modal-grid">
+            ${modalItem("学历要求", job.edu)}
+            ${modalItem("学位要求", job.degree)}
+            ${modalItem("考试专业科目", job.exam)}
+            ${modalItem("来源类别", job.src)}
+            ${modalItem("年龄要求", job.age || job.age_req || "")}
+            ${modalItem("性别要求", job.gender)}
+            ${modalItem("岗位等级", job.grade)}
+            ${modalItem("专业要求", job.major, true)}
+          </div>
+        </div>
+        <div class="job-modal-section">
+          <div class="job-modal-section-title">其它要求</div>
+          <div class="job-modal-grid">
+            ${modalItem("党员要求", partyText)}
+            ${modalItem("工作经历", workExpText)}
+            ${modalItem("服役经历", militaryText)}
+            ${modalItem("其它要求", otherValue, true)}
+          </div>
+        </div>
+        <div class="job-modal-section">
+          <div class="job-modal-section-title">AI分析</div>
+          <div class="job-modal-ai-list">
+            ${aiReasons.slice(0, 6).map(reason => `<span>${escHtml(reason)}</span>`).join("")}
+          </div>
+          ${relatedLinks}
+        </div>`;
+      overlay.classList.add("show");
+    }
+
+    function closeJobModal() {
+      const overlay = document.getElementById("job-modal-overlay");
+      if (!overlay) return;
+      overlay.classList.remove("show");
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeJobModal();
+    });
+
+    /* ========================
+       列表标签解析
+    ======================== */
+    function extractKeyRequirements(job) {
+      const text = getJobOtherText(job);
+      const tags = [];
+      const add = tag => addUnique(tags, tag);
+
+      if (!text) return ["无特殊要求"];
+
+      if (/中共党员|党员|中共正式党员|中共预备党员|正式党员|预备党员/.test(text) && !/党员优先/.test(text)) add("党员");
+      if (/非党员|群众|无党派/.test(text) && !/中共党员/.test(text)) add("非党员");
+
+      if (/985|985工程/.test(text)) add("985");
+      if (/211|211工程/.test(text)) add("211");
+      if (/双一流/.test(text)) add("双一流");
+      if (/中国大学排名前300|中国大学前300|软科.{0,8}前300|前300名高校|排名前300/.test(text)) add("Top300");
+      if (/QS|泰晤士|THE|ARWU|世界大学排名|世界排名/.test(text)) add("世界排名");
+      if (/双高院校|国家示范高职|国家骨干高职/.test(text)) add("双高/示范高职");
+
+      const hukouMatch = text.match(/([\u4e00-\u9fa5]{2,8})(市|省|自治区|特别行政区)?户口/);
+      if (hukouMatch) add(`${hukouMatch[1].replace(/省|市|自治区|特别行政区/g, "")}户口`);
+
+      const workYearMatch = text.match(/(\d+)年(以上|及以上)?[^，,；;。]*工作经历/);
+      if (workYearMatch) add(`${workYearMatch[1]}年工作经历`);
+
+      const certRules = [
+        [/教师资格证|教师资格/, "教师资格证"],
+        [/一级建造师/, "一级建造师"],
+        [/二级建造师/, "二级建造师"],
+        [/执业医师|医师资格/, "执业医师"],
+        [/护士执业|护士资格/, "护士资格"],
+        [/法律职业资格|司法考试|律师资格/, "法律资格"],
+        [/注册会计师|CPA/i, "注册会计师"],
+        [/会计.*资格|初级会计|中级会计/, "会计资格"],
+        [/普通话水平|普通话.*证书/, "普通话证书"],
+        [/英语.*六级|CET-6/i, "英语六级"],
+        [/英语.*四级|CET-4/i, "英语四级"],
+        [/驾驶证|驾照/, "驾驶证"],
+        [/职业资格证书|职业技能等级证书|技能等级证书/, "资格证书"]
+      ];
+      certRules.forEach(([pattern, label]) => {
+        if (pattern.test(text)) add(label);
+      });
+
+      const skillRules = [
+        [/Photoshop|PS/i, "PS"],
+        [/Office|办公软件|WPS/i, "Office"],
+        [/AutoCAD|CAD/i, "AutoCAD"],
+        [/Python/i, "Python"],
+        [/Java(?!Script)|JAVA/, "Java"],
+        [/JavaScript|JS/i, "JavaScript"],
+        [/C\+\+/, "C++"],
+        [/C#/, "C#"],
+        [/SpringBoot|Spring/, "Spring"],
+        [/Mybatis/i, "MyBatis"],
+        [/Redis/i, "Redis"],
+        [/Linux/i, "Linux"],
+        [/Premiere|Pr/i, "Pr"],
+        [/AfterEffects|AE/i, "AE"],
+        [/Illustrator|AI/i, "AI"]
+      ];
+      skillRules.forEach(([pattern, label]) => {
+        if (pattern.test(text)) add(label);
+      });
+
+      if (/现役军人配偶|军人配偶/.test(text)) add("军人配偶");
+      if (/退役|退伍|服役经历|军队工作经历/.test(text)) add("服役经历");
+      if (/应届毕业生|限应届|仅限应届/.test(text)) add("应届");
+      if (/全日制/.test(text)) add("全日制");
+
+      return tags.slice(0, 4).length ? tags.slice(0, 4) : ["无特殊要求"];
+    }
+
+    /* ========================
+       数据加载
+    ======================== */
+    async function loadJSON(path) {
+      try {
+        const resp = await fetch(path);
+        return await resp.json();
+      } catch(e) { console.warn(`[报告] 加载 ${path} 失败:`, e); return []; }
+    }
+
+    async function loadPositions() {
+      try {
+        const resp = await fetch('data/positions.json');
+        allPositions = await resp.json();
+      } catch (e) {
+        console.error('[岗位推荐报告] 加载 positions.json 失败:', e);
+        allPositions = [];
+      }
+    }
+
+    /* ========================
+       推荐算法：基础匹配
+    ======================== */
+    function matchEducation(formEdu, jobEdu) {
+      if (!formEdu || !jobEdu) return true;
+      const e = jobEdu.toLowerCase();
+
+      switch (formEdu) {
+        case '博士研究生':
+          // 博士可匹配任何包含"博士"的岗位
+          return e.includes('博士');
+        case '硕士研究生':
+          // 硕士匹配：包含"硕士"或"研究生"但不特指博士
+          if (e.includes('硕士')) return true;
+          if (e.includes('研究生') && !e.includes('博士')) return true;
+          // 如果同时有硕士和博士（如"硕士以上"），也匹配
+          if (e.includes('研究生') && e.includes('硕士')) return true;
+          return false;
+        case '本科':
+          // 本科匹配：包含"本科"或"学士"
+          return e.includes('本科') || e.includes('学士');
+        case '大专':
+          // 大专匹配：包含大专/专科/高中/中专
+          return e.includes('大专') || e.includes('专科') ||
+                 e.includes('高中') || e.includes('中专');
+        default:
+          return e.includes(formEdu.toLowerCase());
+      }
+    }
+
+    /* === 专业匹配：岗位要求决定可报范围，考生专业不反向扩散 === */
+    function matchMajor(formMajor, formMajorCategory, formMajorDiscipline, jobMajor) {
+      const hasMajor = formMajor && formMajor !== '不限';
+      const hasCategory = formMajorCategory && formMajorCategory !== '';
+      const hasDiscipline = formMajorDiscipline && formMajorDiscipline !== '';
+
+      if (!hasMajor && !hasCategory && !hasDiscipline) return true;
+      if (!jobMajor || jobMajor === '不限') return true;
+
+      const normalizeRequirement = value => String(value || '')
+        .toLowerCase()
+        .replace(/[a-z]\d+[a-z]?/g, '')
+        .replace(/专业学位|学术学位|本科|研究生|专科|大专|硕士|博士|相关专业|专业/g, '')
+        .replace(/[（）()【】\[\]：:，,、；;\s]/g, '');
+      const splitRequirement = value => String(value || '')
+        .split(/[\n，,、；;\/]/)
+        .map(normalizeRequirement)
+        .filter(Boolean);
+
+      const jobMajorTokens = splitRequirement(jobMajor);
+      const fullJobMajorText = normalizeRequirement(jobMajor);
+      const majorName = normalizeRequirement(formMajor);
+      const categoryName = normalizeRequirement(formMajorCategory);
+      const categoryShort = normalizeRequirement(String(formMajorCategory || '').replace(/类$/, ''));
+      const disciplineName = normalizeRequirement(formMajorDiscipline);
+      const knownMajorNames = new Set(majorsData.map(item => normalizeRequirement(item.major_name)).filter(Boolean));
+      const safeCategoryShort = categoryShort && categoryShort !== categoryName && !knownMajorNames.has(categoryShort);
+      const tokenMatches = target => target && jobMajorTokens.some(token => token === target || token.includes(target));
+      const tokenEquals = target => target && jobMajorTokens.some(token => token === target);
+
+      // 1) 岗位要求具体专业：只允许同名专业匹配
+      if (hasMajor && jobMajorTokens.some(token => token === majorName)) return true;
+
+      // 2) 岗位要求专业类：判断考生专业是否属于该专业类
+      if (hasCategory && (tokenMatches(categoryName) || (safeCategoryShort && tokenEquals(categoryShort)))) return true;
+
+      // 3) 岗位要求学科门类：判断考生专业是否属于该学科门类
+      if (hasDiscipline && (jobMajorTokens.some(token => token === disciplineName) || fullJobMajorText.includes(`${disciplineName}门类`))) return true;
+
+      return false;
+    }
+
+    /* === 学校硬条件匹配 === */
+    function checkSchoolRequirement(schoolInfo, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const schoolLabel = schoolLevelText(schoolInfo);
+      const namedSchool = schoolNameOf(schoolInfo);
+
+      const schoolRules = [
+        { pattern: /985|985工程/, label: "985高校", pass: () => !!schoolInfo?.is_985 },
+        { pattern: /211|211工程/, label: "211高校", pass: () => !!(schoolInfo?.is_211 || schoolInfo?.is_985) },
+        { pattern: /双一流/, label: "双一流高校", pass: () => !!(schoolInfo?.is_double_first_class || schoolInfo?.is_985 || schoolInfo?.is_211) },
+        { pattern: /一本院校|一本高校|一本大学|第一学历为一本|一本毕业/, label: "一本院校", pass: () => hasTopSchoolLevel(schoolInfo) },
+        { pattern: /中国大学排名前300|中国大学前300|软科.{0,8}前300|前300名高校|排名前300/, label: "中国/软科大学排名前300高校", pass: () => hasTopSchoolLevel(schoolInfo) },
+        { pattern: /QS|泰晤士|THE|ARWU|世界大学排名|世界排名|世界大学/, label: "世界大学排名认可高校", pass: () => hasTopSchoolLevel(schoolInfo) },
+        { pattern: /双高院校|国家示范高职|国家骨干高职/, label: "双高/国家示范/国家骨干高职", pass: () => isVocationalHighLevelSchool(schoolInfo) },
+        { pattern: /知名美术类院校|国内知名美术类院校/, label: "国内知名美术类院校", pass: () => hasTopSchoolLevel(schoolInfo) && isArtSchool(schoolInfo) },
+        { pattern: /知名高校|国内知名高校|重点高校/, label: "知名/重点高校", pass: () => hasTopSchoolLevel(schoolInfo) }
+      ];
+
+      for (const rule of schoolRules) {
+        if (rule.pattern.test(text) && !rule.pass()) {
+          return filterFail("学校过滤", `岗位要求：${rule.label}；考生学校：${schoolLabel}`);
+        }
+      }
+
+      const requiresSpecificSchool = /指定院校|指定高校|指定学校|指定学院|高校名单|院校名单/.test(text);
+      if (requiresSpecificSchool && (!namedSchool || !text.includes(namedSchool))) {
+        return filterFail("学校过滤", `岗位要求：指定院校/高校名单；考生学校：${schoolLabel}，岗位条件未明确包含该校`);
+      }
+
+      return filterPass();
+    }
+
+    /* === 性别匹配 === */
+    function matchGender(formGender, jobGender, jobOther) {
+      if (!formGender) return true;
+      const normalize = value => String(value || '').replace(/\\s+/g, '').toLowerCase();
+      const isUnlimited = text => !text || /^(不限|男女不限|性别不限|无限制)$/.test(text);
+      const fieldGender = normalize(jobGender);
+      const other = normalize(jobOther);
+
+      const fieldRequiresMale = /^(男|男性|仅限男|限男|仅男|限男性)$/.test(fieldGender);
+      const fieldRequiresFemale = /^(女|女性|仅限女|限女|仅女|限女性)$/.test(fieldGender);
+
+      const checkText = isUnlimited(other) ? '' : other;
+      const requiresMale = fieldRequiresMale ||
+        /限男性|仅限男|仅男|限男|男[性生]|适合男性|适宜男性|(^|[;；,，、。:：\\(（])男([;；,，、。:：\\)）]|$)/.test(checkText);
+      const requiresFemale = fieldRequiresFemale ||
+        /限女性|仅限女|仅女|限女|女[性生]|适合女性|适宜女性|(^|[;；,，、。:：\\(（])女([;；,，、。:：\\)）]|$)/.test(checkText);
+
+      if (formGender === '男') {
+        if (requiresFemale) return false;  // 男不能报限女岗位
+        return true; // 男 → 男性岗位 + 不限性别
+      }
+      if (formGender === '女') {
+        if (requiresMale) return false;  // 女不能报限男岗位
+        return true; // 女 → 女性岗位 + 不限性别
+      }
+      return true;
+    }
+
+    /* ========================
+       推荐算法：硬条件过滤
+    ======================== */
+    function checkPartyRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const partyValue = formData.isPartyMember || "不限";
+      const isParty = partyValue === "是";
+      const isNonParty = partyValue === "否";
+      const requiresNonParty = /非党员|群众|无党派/.test(text) && !/中共党员/.test(text);
+      const requiresParty = /中共党员|中共正式党员|中共预备党员|正式党员|预备党员|党员/.test(text) && !/党员优先|中共党员优先/.test(text);
+
+      if (requiresParty && isNonParty) {
+        return filterFail("党员过滤", `岗位要求：中共党员/正式党员/预备党员；考生：非党员`);
+      }
+      if (requiresNonParty && isParty) {
+        return filterFail("党员过滤", `岗位要求：非党员/群众/无党派；考生：党员`);
+      }
+      return filterPass();
+    }
+
+    function yearsFromWorkExperience(value) {
+      switch (value) {
+        case "无": return 0;
+        case "1年以下": return 0.5;
+        case "1-3年": return 1;
+        case "3-5年": return 3;
+        case "5-10年": return 5;
+        case "10年以上": return 10;
+        default: return null;
+      }
+    }
+
+    function checkWorkExperienceRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const matches = [...text.matchAll(/(\d+)年(以上|及以上|以上相关|以上相应)?[^，,；;。]*工作经历/g)];
+      if (matches.length === 0) return filterPass();
+      const requiredYears = Math.max(...matches.map(m => Number(m[1]) || 0));
+      const userYears = yearsFromWorkExperience(formData.workExperience);
+      if (userYears === null) return filterPass();
+      if (userYears < requiredYears) {
+        return filterFail("工作经历过滤", `岗位要求：${requiredYears}年以上工作经历；考生：${formData.workExperience || "未填写"}`);
+      }
+      return filterPass();
+    }
+
+    function checkFreshGraduateRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const freshValue = formData.freshGraduate || "不限";
+      if (/限应届|仅限应届|应届毕业生/.test(text) && freshValue === "否") {
+        return filterFail("应届身份过滤", `岗位要求：应届毕业生；考生：非应届`);
+      }
+      if (/限非应届|仅限非应届|社会人才/.test(text) && freshValue === "是") {
+        return filterFail("应届身份过滤", `岗位要求：非应届/社会人才；考生：应届`);
+      }
+      return filterPass();
+    }
+
+    function checkAgeRequirement(formData, jobOther) {
+      if (!jobOther || !formData.age || formData.age === "不限") return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const age = Number(formData.age);
+      if (!age) return filterPass();
+      const maxMatch = text.match(/(\d+)周?岁(以下|以内|及以下|以下人员)/);
+      if (maxMatch && age > Number(maxMatch[1])) {
+        return filterFail("年龄过滤", `岗位要求：${maxMatch[1]}岁以下/以内；考生：${age}岁`);
+      }
+      const minMatch = text.match(/(\d+)周?岁(以上|及以上)/);
+      if (minMatch && age < Number(minMatch[1])) {
+        return filterFail("年龄过滤", `岗位要求：${minMatch[1]}岁以上；考生：${age}岁`);
+      }
+      return filterPass();
+    }
+
+    /* === 证书/职称匹配 === */
+    function matchCertificates(formCerts, jobOther) {
+      if (!formCerts || formCerts.length === 0) return true;
+      if (!jobOther) return true;
+      const jother = (jobOther || '').toLowerCase();
+      return formCerts.some(cert => jother.includes(cert.toLowerCase()));
+    }
+
+    function matchTitles(formTitles, jobOther) {
+      if (!formTitles || formTitles.length === 0) return true;
+      if (!jobOther) return true;
+      const jother = jobOther.toLowerCase();
+      return formTitles.some(title => jother.includes(title.toLowerCase()));
+    }
+
+    function matchRegion(formRegions, jobProv, acceptTransfer) {
+      if (acceptTransfer === '是') return true;
+      if (!formRegions || formRegions.length === 0) return true;
+      if (formRegions.includes('全国')) return true;
+      return formRegions.some(r => jobProv && jobProv.includes(r));
+    }
+
+    /* 服役经历匹配 */
+    function matchMilitary(formMilitary, jobOther) {
+      if (!formMilitary || formMilitary === '不限') return true;
+      if (!jobOther) return true;
+      const jother = jobOther.toLowerCase();
+      if (formMilitary === '有') {
+        // 有服役经历，可匹配任何岗位（退役士兵在 other 中可能有优待）
+        return true;
+      }
+      // 无服役经历，排除明确要求退役军人的岗位
+      const requiresMilitary = /仅限退役|要求退役|退役士兵/.test(jother) || /退伍军人/.test(jother);
+      return !requiresMilitary;
+    }
+
+    function checkCertificateRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).toLowerCase();
+      const requiresCert = /证书|职业资格|资格证|执业资格|技能等级|普通话水平|英语.*四级|英语.*六级|驾驶证|驾照/.test(text);
+      if (!requiresCert) return filterPass();
+      const certs = formData.certificates || [];
+      if (certs.length === 0) {
+        return filterFail("证书过滤", `岗位要求：职业资格/证书；考生：未选择证书`);
+      }
+      if (!certs.some(cert => text.includes(String(cert).toLowerCase()))) {
+        return filterFail("证书过滤", `岗位要求：职业资格/证书；考生证书：${certs.join("、")}`);
+      }
+      return filterPass();
+    }
+
+    function checkTitleRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).toLowerCase();
+      const requiresTitle = /职称|初级专业技术|中级专业技术|副高级|正高级|助理级/.test(text);
+      if (!requiresTitle) return filterPass();
+      const titles = formData.titles || [];
+      if (titles.length === 0) {
+        return filterFail("职称过滤", `岗位要求：职称；考生：未选择职称`);
+      }
+      if (!titles.some(title => text.includes(String(title).toLowerCase()))) {
+        return filterFail("职称过滤", `岗位要求：职称；考生职称：${titles.join("、")}`);
+      }
+      return filterPass();
+    }
+
+    function checkMilitaryRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const requiresMilitary = /仅限退役|要求退役|退役士兵|退伍军人|有服役经历|军队工作经历/.test(text);
+      if (requiresMilitary && formData.militaryService === "无") {
+        return filterFail("服役经历过滤", `岗位要求：服役/退役/军队工作经历；考生：无服役经历`);
+      }
+      return filterPass();
+    }
+
+    function checkUnsupportedHardRequirement(formData, jobOther) {
+      if (!jobOther) return filterPass();
+      const text = String(jobOther).replace(/\s+/g, "");
+      const unsupportedRules = [
+        { pattern: /现役军人配偶|军人配偶/, step: "身份条件过滤", label: "现役军人配偶" },
+        { pattern: /户口|户籍|生源地/, step: "户籍条件过滤", label: "户口/户籍/生源地" },
+        { pattern: /全日制|第一学历/, step: "学历形式过滤", label: "全日制/第一学历" }
+      ];
+      for (const rule of unsupportedRules) {
+        if (rule.pattern.test(text)) {
+          return filterFail(rule.step, `岗位要求：${rule.label}；当前表单未采集该项，无法确认满足，按硬条件过滤`);
+        }
+      }
+      return filterPass();
+    }
+
+    function checkHardRequirements(formData, job) {
+      const checks = [
+        checkSchoolRequirement(formData.school, job.other),
+        checkPartyRequirement(formData, job.other),
+        checkCertificateRequirement(formData, job.other),
+        checkTitleRequirement(formData, job.other),
+        checkMilitaryRequirement(formData, job.other),
+        checkUnsupportedHardRequirement(formData, job.other),
+        checkWorkExperienceRequirement(formData, job.other),
+        checkFreshGraduateRequirement(formData, job.other),
+        checkAgeRequirement(formData, job.other)
+      ];
+      return checks.find(result => !result.pass) || filterPass();
+    }
+
+    /* ========================
+       推荐算法 V2.0：综合评分与动态理由
+    ======================== */
+    const provinceOpportunityCache = new Map();
+
+    function normalizeMajorText(value) {
+      return String(value || "")
+        .toLowerCase()
+        .replace(/[a-z]\d+[a-z]?/g, "")
+        .replace(/专业学位|学术学位|本科|研究生|专科|大专|硕士|博士/g, "")
+        .replace(/[（）()【】\[\]：:，,、；;\/\s]/g, "");
+    }
+
+    function analyzeMajorCompetition(formData, job) {
+      const jobMajor = String(job.major || "");
+      const normalizedJob = normalizeMajorText(jobMajor);
+      const normalizedMajor = normalizeMajorText(formData.major);
+      const category = String(formData.majorCategory || "");
+      const categoryClean = category.replace(/类$/, "");
+      const discipline = String(formData.majorDiscipline || "");
+
+      if (!jobMajor || jobMajor === "不限") {
+        return { score: 12, reasons: ["专业要求较宽，竞争范围较大"] };
+      }
+      if (normalizedMajor && normalizedJob.includes(normalizedMajor)) {
+        return { score: 35, reasons: ["专业完全匹配", "专业要求精准，竞争范围较小"] };
+      }
+      if (category && (jobMajor.includes(category) || (categoryClean && jobMajor.includes(categoryClean)))) {
+        return { score: 27, reasons: [`匹配${category}，专业范围适中`] };
+      }
+      if (discipline && jobMajor.includes(discipline)) {
+        return { score: 16, reasons: [`岗位面向${discipline}门类，竞争范围较大`] };
+      }
+      if (category) {
+        const catMajors = majorsData.filter(item => item.major_category === category);
+        const matchedRelatedMajor = catMajors.some(item => {
+          const name = normalizeMajorText(item.major_name);
+          return name && normalizedJob.includes(name);
+        });
+        if (matchedRelatedMajor) {
+          return { score: 23, reasons: [`专业类别相关，可报范围较同类岗位更宽`] };
+        }
+      }
+      return { score: 18, reasons: ["专业条件匹配，但专业竞争边界较宽"] };
+    }
+
+    function isGenderUnlimited(job) {
+      const text = compactText(job.gender || job.other || "");
+      return !text || /不限|男女不限|性别不限/.test(text);
+    }
+
+    function analyzeGenderAdvantage(formData, job) {
+      if (formData.gender !== "女") return { score: 0, reasons: [] };
+      const reasons = [];
+      let score = 0;
+      if (isGenderUnlimited(job)) {
+        score += 6;
+        reasons.push("不限性别，女生报考机会相对友好");
+      }
+      const text = compactText([job.title, job.type, job.work, job.other].join(""));
+      if (/行政|宣传|文化|新闻|干事|编辑|教育|教学|档案|图书/.test(text)) {
+        score += 3;
+        reasons.push("岗位方向偏行政宣传文化，女生适配度较好");
+      }
+      return { score, reasons };
+    }
+
+    function getProvinceOpportunity(year) {
+      const key = String(year || "");
+      if (provinceOpportunityCache.has(key)) return provinceOpportunityCache.get(key);
+      const counts = {};
+      allPositions
+        .filter(job => String(job.yr || "") === key)
+        .forEach(job => {
+          if (!job.prov) return;
+          counts[job.prov] = (counts[job.prov] || 0) + 1;
+        });
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      const max = sorted[0]?.[1] || 1;
+      const data = { counts, max, topSet: new Set(sorted.slice(0, 8).map(([province]) => province)) };
+      provinceOpportunityCache.set(key, data);
+      return data;
+    }
+
+    function analyzeRegionOpportunity(job) {
+      const opportunity = getProvinceOpportunity(job.yr);
+      const count = opportunity.counts[job.prov] || 0;
+      let score = Math.round((count / opportunity.max) * 6);
+      const reasons = [];
+      const priorityRegionMap = {
+        "北京": "北京岗位集中，机会密度高",
+        "江苏": "江苏岗位数量较多，可重点关注",
+        "浙江": "浙江岗位数量较多，可重点关注",
+        "辽宁": "东北地区中辽宁机会相对集中",
+        "云南": "云南贵州方向中云南机会相对更优",
+        "陕西": "陕西甘肃宁夏方向中陕西机会较集中",
+        "甘肃": "陕西甘肃宁夏方向中甘肃机会较集中",
+        "新疆": "新疆岗位数量通常多于西藏"
+      };
+      if (priorityRegionMap[job.prov]) {
+        score += 2;
+        reasons.push(priorityRegionMap[job.prov]);
+      } else if (opportunity.topSet.has(job.prov)) {
+        reasons.push("该地区岗位数量较多，报考机会更充分");
+      }
+      return { score: Math.min(score, 8), reasons };
+    }
+
+    function analyzeJobTypeValue(job) {
+      const group = classifyJob(job);
+      const typeText = compactText(job.type);
+      const otherText = getJobOtherText(job);
+      if (group === "技术岗") {
+        return { score: 10, reasons: ["技术岗，专业课优势明显，复习成本相对更低"] };
+      }
+      if (group === "管理岗") {
+        return { score: 3, reasons: ["管理岗综合能力要求更高，竞争权重适当下调"] };
+      }
+      if (/技术工/.test(typeText)) {
+        const hasSkillLimit = /证书|技能等级|职业资格|资格证|工作经历|经验|高级工|中级工|初级工/.test(otherText);
+        return {
+          score: hasSkillLimit ? 9 : 6,
+          reasons: [hasSkillLimit ? "技术工且有技能限制，竞争范围相对更小" : "技术工岗位，技能基础更重要"]
+        };
+      }
+      if (/普通工/.test(typeText)) {
+        return { score: 1, reasons: ["普通工限制较少，报名范围通常更宽"] };
+      }
+      return { score: 5, reasons: [] };
+    }
+
+    function analyzeRestrictionValue(formData, job) {
+      const text = getJobOtherText(job);
+      const reasons = [];
+      let score = 0;
+      const add = reason => addUnique(reasons, reason);
+
+      if (/党员|中共党员|正式党员|预备党员/.test(text) && formData.isPartyMember === "是") {
+        score += 3; add("要求党员且您已满足，竞争范围缩小");
+      }
+      if (/工作经历|经验/.test(text) && formData.workExperience && formData.workExperience !== "无") {
+        score += 3; add("要求工作经历且您已满足，竞争压力相对降低");
+      }
+      if (/证书|职业资格|资格证|执业资格|CPA|注册会计师|执业医师|教师资格|法律职业资格|驾驶证|驾照/.test(text) && (formData.certificates || []).length > 0) {
+        score += 4; add("要求证书且您已具备，岗位竞争范围更小");
+      }
+      if (/职称|初级专业技术|中级专业技术|副高级|正高级|工程师/.test(text) && (formData.titles || []).length > 0) {
+        score += 3; add("要求职称且您已满足，限制条件形成优势");
+      }
+      if (/退役|服役经历|军队工作经历/.test(text) && formData.militaryService === "有") {
+        score += 2; add("服役经历条件已满足，具备额外竞争优势");
+      }
+      if (/985|211|双一流|软科|前300|知名高校|重点高校/.test(text) && formData.school) {
+        score += 2; add("院校条件形成门槛，符合后竞争范围更小");
+      }
+      if (extractKeyRequirements(job).filter(tag => tag !== "无特殊要求").length >= 3) {
+        score += 2; add("限制条件较多，符合条件后竞争压力相对较小");
+      }
+      if (reasons.length === 0 && text) {
+        score += 1;
+      }
+      return { score: Math.min(score, 14), reasons };
+    }
+
+    function analyzeRecruitScale(job) {
+      const num = parseInt(job.num, 10) || 0;
+      if (num >= 5) return { score: 8, reasons: ["招聘人数较多，上岸机会相对更稳"] };
+      if (num >= 3) return { score: 6, reasons: ["招聘人数较多"] };
+      if (num >= 2) return { score: 4, reasons: ["招聘人数适中"] };
+      return { score: 2, reasons: [] };
+    }
+
+    function calculateRecommendation(job, formData) {
+      const parts = [
+        analyzeMajorCompetition(formData, job),
+        analyzeJobTypeValue(job),
+        analyzeRestrictionValue(formData, job),
+        analyzeGenderAdvantage(formData, job),
+        analyzeRegionOpportunity(job),
+        analyzeRecruitScale(job)
+      ];
+      const score = Math.max(0, Math.min(100, parts.reduce((sum, item) => sum + item.score, 20)));
+      const reasons = [];
+      parts.forEach(item => (item.reasons || []).forEach(reason => addUnique(reasons, reason)));
+      if (score >= 85) addUnique(reasons, "推荐优先报考");
+      else if (score >= 75) addUnique(reasons, "建议重点关注");
+      else addUnique(reasons, "符合报考条件，可作为备选");
+      return { score, reasons: reasons.slice(0, 7) };
+    }
+
+    function applyRecommendationScores(list, formData) {
+      return list
+        .map(job => {
+          const result = calculateRecommendation(job, formData);
+          job._recommendScore = result.score;
+          job._recommendReasons = result.reasons;
+          return job;
+        })
+        .sort((a, b) => {
+          const scoreDiff = (b._recommendScore || 0) - (a._recommendScore || 0);
+          if (scoreDiff !== 0) return scoreDiff;
+          return (parseInt(b.num, 10) || 0) - (parseInt(a.num, 10) || 0);
+        });
+    }
+
+    function getRecommendationReasons(job) {
+      return job._recommendReasons || ["符合您的筛选条件"];
+    }
+
+    function averageScore(list) {
+      const scores = list.map(job => parseScoreValue(job.score)).filter(score => score !== null);
+      if (!scores.length) return null;
+      return scores.reduce((sum, score) => sum + score, 0) / scores.length;
+    }
+
+    function averageRecommendScore(list) {
+      if (!list.length) return 0;
+      return list.reduce((sum, job) => sum + (job._recommendScore || 0), 0) / list.length;
+    }
+
+    function competitionLevel(list) {
+      const avg = averageScore(list);
+      if (avg === null) return "中等";
+      if (avg >= 120) return "较高";
+      if (avg >= 105) return "中等";
+      return "较低";
+    }
+
+    function getTopUnits(list, count = 2) {
+      const map = new Map();
+      list.forEach(job => {
+        const unit = displayValue(job.unit);
+        if (unit === "暂无要求") return;
+        map.set(unit, (map.get(unit) || 0) + 1);
+      });
+      return Array.from(map.entries())
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hans-CN"))
+        .slice(0, count)
+        .map(([unit]) => unit);
+    }
+
+    function getPrimaryGroup(list) {
+      const groups = ["管理岗", "技术岗", "技能岗"].map(label => ({
+        label,
+        count: list.filter(job => classifyJob(job) === label).length
+      }));
+      return groups.sort((a, b) => b.count - a.count)[0] || { label: "技术岗", count: 0 };
+    }
+
+    function reportSummary(list) {
+      const unitSet = new Set(list.map(job => job.unit).filter(Boolean));
+      const provSet = new Set(list.map(job => job.prov).filter(Boolean));
+      const totalNum = list.reduce((sum, job) => sum + (parseInt(job.num, 10) || 0), 0);
+      const avgEntry = averageScore(list);
+      const avgRecommend = Math.round(averageRecommendScore(list));
+      const primaryGroup = getPrimaryGroup(list);
+      const topUnits = getTopUnits(list, 2);
+      return {
+        total: list.length,
+        units: unitSet.size,
+        regions: provSet.size,
+        totalNum,
+        avgEntry,
+        avgRecommend,
+        primaryGroup,
+        topUnits,
+        competition: competitionLevel(list)
+      };
+    }
+
+    function renderReportHero(summary) {
+      const heroStats = document.getElementById("report-hero-stats");
+      if (!heroStats) return;
+      heroStats.innerHTML = `
+        <div class="hero-stat-card"><span>推荐岗位</span><strong>${summary.total}</strong></div>
+        <div class="hero-stat-card"><span>涉及单位</span><strong>${summary.units}</strong></div>
+        <div class="hero-stat-card"><span>覆盖地区</span><strong>${summary.regions}</strong></div>
+        <div class="hero-stat-card"><span>平均入围</span><strong>${summary.avgEntry === null ? "暂无" : summary.avgEntry.toFixed(1)}</strong></div>
+      `;
+    }
+
+    function renderAiReason(filtered) {
+      const container = document.getElementById("ai-reason");
+      if (!container) return;
+      const summary = reportSummary(filtered);
+      const topJob = filtered[0];
+      const reasons = topJob ? getRecommendationReasons(topJob).slice(0, 3).join("、") : "暂无推荐理由";
+      container.innerHTML = `
+        <div class="reason-card">
+          <strong>系统分析</strong>
+          <p>您的条件与 ${selectedYear} 年岗位形成有效匹配，共筛选出 <strong>${summary.total}</strong> 个岗位，覆盖 <strong>${summary.regions}</strong> 个地区、<strong>${summary.units}</strong> 家单位。</p>
+        </div>
+        <div class="reason-card">
+          <strong>报考建议</strong>
+          <p>建议优先关注 <strong>${escHtml(summary.primaryGroup.label)}</strong> 和 <strong>${escHtml(summary.topUnits.join("、") || "招聘人数较多单位")}</strong>。重点理由：${escHtml(reasons)}。</p>
+        </div>
+      `;
+    }
+
+    /* ========================
+       岗位分类与年份切换
+    ======================== */
+    function getYearList(filtered) {
+      const years = Array.from(new Set(filtered.map(p => String(p.yr || '')).filter(Boolean)));
+      return years.sort((a, b) => Number(b) - Number(a));
+    }
+
+    function getYearFiltered(filtered) {
+      return filtered.filter(p => String(p.yr || '') === String(selectedYear));
+    }
+
+    function getGroupFiltered(yearFiltered) {
+      if (selectedGroup === "全部") return yearFiltered;
+      return yearFiltered.filter(p => classifyJob(p) === selectedGroup);
+    }
+
+    function filterJobs(formData) {
+      let eduCount = allPositions.length;
+      let majorCount = allPositions.length;
+      let regionCount = allPositions.length;
+      let schoolCount = allPositions.length;
+      let genderCount = allPositions.length;
+      let certCount = allPositions.length;
+      let titleCount = allPositions.length;
+      let militaryCount = allPositions.length;
+      let partyCount = allPositions.length;
+
+      const filtered = allPositions.filter((p) => {
+        if (!matchEducation(formData.education, p.edu)) { eduCount--; return false; }
+        if (!matchMajor(formData.major, formData.majorCategory, formData.majorDiscipline, p.major)) { majorCount--; return false; }
+        if (!matchRegion(formData.regions, p.prov, formData.acceptTransfer)) { regionCount--; return false; }
+        if (!matchGender(formData.gender, p.gender, p.other)) { genderCount--; return false; }
+        if (!matchCertificates(formData.certificates, p.other)) { certCount--; return false; }
+        if (!matchTitles(formData.titles, p.other)) { titleCount--; return false; }
+        if (!matchMilitary(formData.militaryService, p.other)) { militaryCount--; return false; }
+
+        const hardResult = checkHardRequirements(formData, p);
+        if (!hardResult.pass) {
+          logFilterDrop(p, hardResult);
+          if (hardResult.step === "学校过滤") schoolCount--;
+          else if (hardResult.step === "党员过滤") partyCount--;
+          else if (hardResult.step === "证书过滤") certCount--;
+          else if (hardResult.step === "职称过滤") titleCount--;
+          else if (hardResult.step === "服役经历过滤") militaryCount--;
+          return false;
+        }
+
+        return true;
+      });
+
+      const scored = applyRecommendationScores(filtered, formData);
+
+      return scored;
+    }
+
+    /* ========================
+       数据渲染
+    ======================== */
+    function hasFormField(formData, fieldName) {
+      return Object.prototype.hasOwnProperty.call(formData || {}, fieldName);
+    }
+
+    function displayOptionalArrayFilter(formData, fieldName) {
+      if (!hasFormField(formData, fieldName)) return "不限";
+      const value = formData[fieldName];
+      if (!Array.isArray(value)) return value ? String(value) : "不限";
+      return value.length ? value.join("、") : "无";
+    }
+
+    function displayOptionalValueFilter(formData, fieldName, emptyText = "不限") {
+      if (!hasFormField(formData, fieldName)) return "不限";
+      const value = formData[fieldName];
+      if (value === undefined || value === null || value === "") return emptyText;
+      return String(value);
+    }
+
+    /* 渲染筛选条件 */
+    function renderFilters(formData) {
+      let schoolLabel = "不限";
+      if (formData.school) {
+        let tags = [];
+        if (formData.school.is_985) tags.push("985");
+        if (formData.school.is_211) tags.push("211");
+        if (formData.school.is_double_first_class) tags.push("双一流");
+        schoolLabel = `${formData.school.name} (${tags.length ? tags.join('/') : '普通'} · ${formData.school.province||''})`;
+      }
+      let majorLabel = formData.major || "不限";
+      if (formData.majorCategory) majorLabel += ` (${formData.majorCategory})`;
+      if (formData.majorDiscipline) majorLabel += ` · ${formData.majorDiscipline}`;
+
+      const filters = [
+        { label:"学历", value: formData.education || "不限" },
+        { label:"学位", value: formData.degree || "不限" },
+        { label:"专业", value: majorLabel },
+        { label:"年龄", value: formData.age ? formData.age + "岁" : "不限" },
+        { label:"性别", value: formData.gender || "不限" },
+        { label:"是否党员", value: displayOptionalValueFilter(formData, "isPartyMember") },
+        { label:"毕业院校", value: schoolLabel },
+        { label:"是否应届", value: formData.freshGraduate || "不限" },
+        { label:"服役经历", value: displayOptionalValueFilter(formData, "militaryService") },
+        { label:"工作经历", value: displayOptionalValueFilter(formData, "workExperience", "无") },
+        { label:"证书", value: displayOptionalArrayFilter(formData, "certificates") },
+        { label:"职称", value: displayOptionalArrayFilter(formData, "titles") },
+        { label:"地区意向", value: (formData.regions || []).join("、") || "不限" },
+        { label:"考试类型", value: (formData.examTypes || []).join(" + ") || "不限" },
+        { label:"接受调剂", value: formData.acceptTransfer === "是" ? "是，接受全国调剂" : "否，仅限所选地区" }
+      ];
+      document.getElementById("filter-grid").innerHTML = filters.map(f => `
+        <div class="filter-item">
+          <div class="filter-label">${f.label}</div>
+          <div class="filter-value">${f.value}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderYearSwitcher(allFiltered) {
+      const years = getYearList(allFiltered);
+      if (!years.includes(String(selectedYear))) {
+        selectedYear = years.includes("2026") ? "2026" : (years[0] || "2026");
+      }
+      const container = document.getElementById("year-switcher");
+      container.innerHTML = years.map(year => {
+        const count = allFiltered.filter(p => String(p.yr || '') === year).length;
+        return `
+          <button type="button" class="year-card${year === String(selectedYear) ? ' active' : ''}" data-year="${escHtml(year)}">
+            <div class="year-label">${escHtml(year)}年</div>
+            <div class="year-count">${count}</div>
+          </button>`;
+      }).join("");
+      document.getElementById("year-current-note").textContent =
+        `当前展示 ${selectedYear} 年岗位；点击年份或岗位类型可切换下方统计、TOP10 和岗位列表。`;
+    }
+
+    function renderGroupSwitcher(yearFiltered) {
+      const groups = [
+        { label: "全部", count: yearFiltered.length },
+        { label: "管理岗", count: yearFiltered.filter(p => classifyJob(p) === "管理岗").length },
+        { label: "技术岗", count: yearFiltered.filter(p => classifyJob(p) === "技术岗").length },
+        { label: "技能岗", count: yearFiltered.filter(p => classifyJob(p) === "技能岗").length }
+      ];
+      document.getElementById("group-switcher").innerHTML = groups.map(g => `
+        <button type="button" class="group-card${selectedGroup === g.label ? ' active' : ''}" data-group="${g.label}">
+          ${g.label} ${g.count}
+        </button>
+      `).join("");
+    }
+
+    function parseScoreValue(value) {
+      if (value === undefined || value === null) return null;
+      const match = String(value).match(/\d+(?:\.\d+)?/);
+      if (!match) return null;
+      const score = Number(match[0]);
+      return Number.isFinite(score) ? score : null;
+    }
+
+    function normalizeExamSubject(value) {
+      const text = String(value || "").trim();
+      if (!text || text === "不限" || text === "无" || text === "暂无要求") return "未标注";
+      return text
+        .replace(/专业科目|考试专业科目|科目|类/g, "")
+        .replace(/[（）()]/g, "")
+        .trim() || text;
+    }
+
+    function createSubjectStars(ratio) {
+      const count = ratio >= 0.35 ? 5 : ratio >= 0.22 ? 4 : ratio >= 0.12 ? 3 : ratio >= 0.06 ? 2 : 1;
+      return "★".repeat(count) + "☆".repeat(5 - count);
+    }
+
+    function formatSubjectScore(value) {
+      return value === null || value === undefined ? "暂无" : Number(value).toFixed(1);
+    }
+
+    function buildSubjectStats(filtered) {
+      const total = filtered.length;
+      const map = new Map();
+      filtered.forEach(job => {
+        const subject = normalizeExamSubject(job.exam);
+        if (!map.has(subject)) {
+          map.set(subject, { subject, count: 0, scores: [] });
+        }
+        const item = map.get(subject);
+        item.count += 1;
+        const score = parseScoreValue(job.score);
+        if (score !== null) item.scores.push(score);
+      });
+
+      return Array.from(map.values())
+        .map(item => {
+          const scores = item.scores;
+          const avg = scores.length ? scores.reduce((sum, score) => sum + score, 0) / scores.length : null;
+          const min = scores.length ? Math.min(...scores) : null;
+          const max = scores.length ? Math.max(...scores) : null;
+          return {
+            ...item,
+            ratio: total ? item.count / total : 0,
+            avg,
+            min,
+            max
+          };
+        })
+        .sort((a, b) => b.count - a.count || a.subject.localeCompare(b.subject, "zh-Hans-CN"));
+    }
+
+    function renderSubjectAnalysis(filtered) {
+      const container = document.getElementById("subject-analysis");
+      if (!container) return;
+      if (!filtered.length) {
+        container.innerHTML = '<div class="chart-panel" style="min-height:140px;"><div class="chart-title">暂无可统计岗位</div><p style="color:var(--report-muted);margin:0;">当前筛选结果为空，无法生成专业科目分析。</p></div>';
+        return;
+      }
+
+      const subjects = buildSubjectStats(filtered).slice(0, 5);
+      const topSubjects = subjects.slice(0, 3).map(item => item.subject).join("、");
+      const firstSubject = subjects[0]?.subject || "相关";
+      container.innerHTML = `
+        <div class="subject-summary">
+          根据当前推荐结果，您的岗位主要集中在：<strong>${escHtml(topSubjects)}</strong>。建议优先准备：<strong>${escHtml(firstSubject)}专业科目</strong>。
+        </div>
+        <div class="subject-grid">
+          ${subjects.map((item, index) => `
+            <div class="subject-card">
+              <div class="subject-card-header">
+                <span class="subject-rank">${index + 1}</span>
+                <div class="subject-name">${escHtml(item.subject)}</div>
+                <div class="subject-stars">${createSubjectStars(item.ratio)}</div>
+              </div>
+              <div class="subject-metrics">
+                <div class="subject-metric"><span>岗位数量</span><strong>${item.count}</strong></div>
+                <div class="subject-metric"><span>占比</span><strong>${(item.ratio * 100).toFixed(1)}%</strong></div>
+                <div class="subject-metric"><span>平均入围</span><strong>${formatSubjectScore(item.avg)}</strong></div>
+                <div class="subject-metric"><span>最低 / 最高</span><strong>${formatSubjectScore(item.min)} / ${formatSubjectScore(item.max)}</strong></div>
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function renderYearView(allFiltered) {
+      const yearFiltered = getYearFiltered(allFiltered);
+      const filtered = getGroupFiltered(yearFiltered);
+      renderYearSwitcher(allFiltered);
+      renderGroupSwitcher(yearFiltered);
+      renderStats(filtered, yearFiltered);
+      renderTop10(filtered);
+      renderAllJobs(filtered);
+      renderSubjectAnalysis(filtered);
+      renderCharts(filtered, allFiltered);
+      renderAiReason(filtered);
+    }
+
+    /* ========================
+       事件绑定
+    ======================== */
+    document.addEventListener("click", (e) => {
+      const card = e.target.closest(".year-card");
+      if (!card) return;
+      selectedYear = card.dataset.year;
+      renderYearView(filteredPositions);
+    });
+
+    document.addEventListener("click", (e) => {
+      const card = e.target.closest(".group-card");
+      if (!card) return;
+      selectedGroup = card.dataset.group;
+      renderYearView(filteredPositions);
+    });
+
+    document.addEventListener("input", (e) => {
+      if (e.target.id !== "report-job-search") return;
+      reportListSearch = e.target.value.trim();
+      renderAllJobs(currentRenderedJobs);
+    });
+
+    document.addEventListener("change", (e) => {
+      if (e.target.id === "report-job-sort") {
+        reportListSort = e.target.value;
+        renderAllJobs(currentRenderedJobs);
+      }
+      if (e.target.id === "report-job-group") {
+        reportListGroup = e.target.value;
+        renderAllJobs(currentRenderedJobs);
+      }
+    });
+
+    /* 渲染统计数字（基于当前年份筛选结果） */
+    function renderStats(filtered, yearFiltered) {
+      currentRenderedJobs = filtered;
+      const totalNum = filtered.reduce((s, p) => s + (parseInt(p.num) || 0), 0);
+      const provSet = new Set(filtered.map(p => p.prov).filter(Boolean));
+      const unitSet = new Set(filtered.map(p => p.unit).filter(Boolean));
+      const mgmtCount = yearFiltered.filter(p => classifyJob(p) === '管理岗').length;
+      const techCount = yearFiltered.filter(p => classifyJob(p) === '技术岗').length;
+      const skillCount = yearFiltered.filter(p => classifyJob(p) === '技能岗').length;
+      const summary = reportSummary(filtered);
+      renderReportHero(summary);
+
+      document.getElementById("stats-hero").innerHTML = `
+        <div class="stat-card primary">
+          <div class="stat-number">${filtered.length}</div>
+          <div class="stat-label">${selectedYear}年${selectedGroup}岗位</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">${mgmtCount}</div>
+          <div class="stat-label">管理岗</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">${techCount}</div>
+          <div class="stat-label">技术岗</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">${skillCount}</div>
+          <div class="stat-label">技能岗</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">${totalNum}</div>
+          <div class="stat-label">招聘总人数</div>
+        </div>
+      `;
+      document.getElementById("stats-detail").innerHTML = `
+        <div class="stat-detail-item">
+          <span class="sdi-label">涉及省份</span>
+          <span class="sdi-value">${provSet.size}</span>
+        </div>
+        <div class="stat-detail-item">
+          <span class="sdi-label">涉及单位</span>
+          <span class="sdi-value">${unitSet.size}</span>
+        </div>
+        <div class="stat-detail-item">
+          <span class="sdi-label">当前年份</span>
+          <span class="sdi-value">${selectedYear}</span>
+        </div>
+      `;
+    }
+
+    /* 渲染 TOP10（按综合推荐分取前10） */
+    function renderTop10(filtered) {
+      const sorted = [...filtered].sort((a, b) => {
+        const scoreDiff = (b._recommendScore || 0) - (a._recommendScore || 0);
+        if (scoreDiff !== 0) return scoreDiff;
+        return (parseInt(b.num) || 0) - (parseInt(a.num) || 0);
+      });
+      const top10 = sorted.slice(0, 10);
+      currentTopJobs = top10;
+
+      if (top10.length === 0) {
+        document.getElementById("top10-grid").innerHTML = '<p style="color:var(--text-tertiary);text-align:center;grid-column:1/-1;">无匹配岗位</p>';
+        return;
+      }
+
+      document.getElementById("top10-grid").innerHTML = top10.map((p, i) => {
+        const typeLabel = classifyJob(p);
+        const locText = [p.prov, p.city].filter(Boolean).join(' ') || p.loc || '';
+        const reasons = getRecommendationReasons(p);
+        const stars = getStarRating(p);
+        const score = Math.round(p._recommendScore || 0);
+        const reasonTags = ["专业匹配", "学历符合", "地区符合", (parseInt(p.num, 10) || 0) >= 2 ? "招聘人数多" : "条件清晰"];
+        const cardClass = i === 0 ? "top10-card top-one" : (i < 3 ? "top10-card compact" : "top10-card list-item");
+        const shortReason = reasons[0] || "符合报考条件";
+        const metaItems = i < 3
+          ? [
+              `类别：<strong>${escHtml(typeLabel)}</strong>`,
+              `地区：<strong>${escHtml(locText)}</strong>`,
+              `招聘人数：<strong>${p.num || '?'}人</strong>`,
+              `学历：<strong>${escHtml(p.edu)}</strong>`
+            ]
+          : [
+              `单位：<strong>${escHtml(p.unit)}</strong>`,
+              `地区：<strong>${escHtml(locText)}</strong>`,
+              `学历：<strong>${escHtml(p.edu)}</strong>`
+            ];
+
+        if (i >= 3) {
+          return `
+          <div class="${cardClass}" onclick="openJobModal(currentTopJobs[${i}])">
+            <div>
+              <span class="rank-badge">TOP ${i + 1}</span>
+              <div class="job-title">${escHtml(p.title)}</div>
+            </div>
+            <div class="job-meta">
+              <span>单位：<strong>${escHtml(p.unit)}</strong></span>
+              <span>地区：<strong>${escHtml(locText)}</strong></span>
+              <span>学历：<strong>${escHtml(p.edu)}</strong></span>
+            </div>
+            <div class="list-score">
+              <div class="top-actions">
+                <button type="button" class="btn btn-primary btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看岗位</button>
+                <button type="button" class="btn btn-outline btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看单位</button>
+              </div>
+              <div class="score-inline"><span>推荐指数</span><strong>${score}</strong></div>
+            </div>
+          </div>`;
+        }
+
+        return `
+        <div class="${cardClass}" onclick="openJobModal(currentTopJobs[${i}])">
+          <div>
+            <span class="rank-badge">TOP ${i + 1}</span>
+            <div class="job-title">${escHtml(p.title)}</div>
+            <div class="job-meta">
+              ${metaItems.map(item => `<span>${item}</span>`).join("")}
+            </div>
+            ${i > 0 ? `<div class="job-unit-line">单位：<strong>${escHtml(p.unit)}</strong></div>` : ""}
+            ${i === 0 ? `
+              <div class="reason-tags">${reasonTags.map(tag => `<span>${tag}</span>`).join("")}</div>
+              <div class="recommend-reason">为什么推荐：${reasons.map(reason => escHtml(reason)).join('；')}</div>
+              <div class="top-actions">
+                <button type="button" class="btn btn-primary btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看岗位</button>
+                <button type="button" class="btn btn-outline btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看单位</button>
+              </div>
+            ` : `
+              <div class="mini-reason">${escHtml(shortReason)}</div>
+            `}
+          </div>
+          ${i === 0 ? `
+            <div class="score-box">
+              <span>推荐指数</span>
+              <strong>${score}</strong>
+              <div class="star-rating">${stars}</div>
+            </div>
+          ` : `
+            <div class="list-score">
+              <div class="top-actions">
+                <button type="button" class="btn btn-primary btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看岗位</button>
+                <button type="button" class="btn btn-outline btn-sm" onclick="event.stopPropagation();openJobModal(currentTopJobs[${i}])">查看单位</button>
+              </div>
+              <div class="score-inline"><span>推荐指数</span><strong>${score}</strong></div>
+            </div>
+          `}
+        </div>`;
+      }).join("");
+    }
+
+    /* 渲染全部岗位表格 */
+    function renderAllJobs(filtered) {
+      let view = [...filtered];
+      if (reportListGroup !== "全部") {
+        view = view.filter(p => classifyJob(p) === reportListGroup);
+      }
+      if (reportListSearch) {
+        const kw = compactLowerText(reportListSearch);
+        view = view.filter(p => compactLowerText([p.title, p.unit, p.prov, p.city, p.loc, p.major].join(" ")).includes(kw));
+      }
+      view.sort((a, b) => {
+        if (reportListSort === "num") return (parseInt(b.num, 10) || 0) - (parseInt(a.num, 10) || 0);
+        if (reportListSort === "region") return String(a.prov || a.loc || "").localeCompare(String(b.prov || b.loc || ""), "zh-Hans-CN");
+        if (reportListSort === "unit") return String(a.unit || "").localeCompare(String(b.unit || ""), "zh-Hans-CN");
+        const scoreDiff = (b._recommendScore || 0) - (a._recommendScore || 0);
+        if (scoreDiff !== 0) return scoreDiff;
+        return (parseInt(b.num, 10) || 0) - (parseInt(a.num, 10) || 0);
+      });
+
+      if (view.length === 0) {
+        document.getElementById("all-jobs-body").innerHTML = '<tr><td colspan="9" style="text-align:center;color:var(--text-tertiary);padding:32px;">无匹配岗位</td></tr>';
+        return;
+      }
+      const page = view.slice(0, 20);
+      currentListJobs = page;
+      document.getElementById("all-jobs-body").innerHTML = page.map((p, idx) => {
+        const group = classifyJob(p);
+        const catBadge = group === '技能岗' ? 'badge-military' : (group === '管理岗' ? 'badge-public' : 'badge-civil');
+        const keyTags = extractKeyRequirements(p);
+        const keyTagHtml = keyTags.map(tag =>
+          `<span class="key-tag${tag === '无特殊要求' ? ' muted' : ''}">${escHtml(tag)}</span>`
+        ).join("");
+        return `
+        <tr onclick="openJobModal(currentListJobs[${idx}])" style="cursor:pointer;">
+          <td>${escHtml(p.title)}</td>
+          <td><span class="badge ${catBadge}">${escHtml(group)}</span></td>
+          <td>${escHtml(p.loc)}</td>
+          <td>${p.num || '?'}人</td>
+          <td>${escHtml(p.edu)}</td>
+          <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="${escHtml(p.major)}">${escHtml((p.major||'').slice(0,30))}</td>
+          <td>${escHtml(p.unit)}</td>
+          <td><div class="key-requirements">${keyTagHtml}</div></td>
+          <td><span style="font-size:12px;color:var(--text-tertiary);">${escHtml(p.yr||'')}年</span></td>
+        </tr>`;
+      }).join("");
+      if (view.length > 20) {
+        document.getElementById("all-jobs-body").innerHTML += `<tr><td colspan="9"><div class="table-more">已展示前20条，<a href="recommend.html">重新调整条件并推荐</a></div></td></tr>`;
+      }
+    }
+
+    /* 渲染岗位分布统计 */
+    function renderCharts(filtered, allFiltered = filtered) {
+      const provCount = {};
+      filtered.forEach(p => { if (p.prov) provCount[p.prov] = (provCount[p.prov] || 0) + 1; });
+      const topProvs = Object.entries(provCount).sort((a,b) => b[1]-a[1]).slice(0,5);
+      const mgmtCount = filtered.filter(p => classifyJob(p) === '管理岗').length;
+      const techCount = filtered.filter(p => classifyJob(p) === '技术岗').length;
+      const skillCount = filtered.filter(p => classifyJob(p) === '技能岗').length;
+      const typeRows = [
+        ["管理岗", mgmtCount, "#10B981"],
+        ["技术岗", techCount, "#2563EB"],
+        ["技能岗", skillCount, "#F59E0B"]
+      ];
+      const typeMax = Math.max(...typeRows.map(row => row[1]), 1);
+      const years = getYearList(allFiltered);
+      const yearRows = years.map(year => [year, allFiltered.filter(p => String(p.yr || "") === year).length]);
+      const yearMax = Math.max(...yearRows.map(row => row[1]), 1);
+
+      const eduCount = {};
+      filtered.forEach(p => {
+        const e = p.edu || '';
+        if (e.includes('博士')) eduCount['博士'] = (eduCount['博士']||0)+1;
+        else if (e.includes('硕士')||e.includes('研究生')) eduCount['硕士'] = (eduCount['硕士']||0)+1;
+        else if (e.includes('本科')) eduCount['本科'] = (eduCount['本科']||0)+1;
+        else if (e.includes('大专')||e.includes('专科')||e.includes('高中')||e.includes('中专')) eduCount['大专及以下'] = (eduCount['大专及以下']||0)+1;
+        else eduCount['其他'] = (eduCount['其他']||0)+1;
+      });
+
+      const chartGrid = document.querySelector('.chart-grid');
+      if (!chartGrid) return;
+
+      chartGrid.innerHTML = `
+        <div class="chart-panel">
+          <div class="chart-title">年度趋势</div>
+          ${yearRows.map(([year, count]) => `
+            <div class="bar-row">
+              <span>${escHtml(year)}</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${Math.max(4, Math.round(count / yearMax * 100))}%"></div></div>
+              <strong>${count}</strong>
+            </div>
+          `).join("")}
+        </div>
+        <div class="chart-panel">
+          <div class="chart-title">${selectedYear}年岗位类别</div>
+          ${typeRows.map(([label, count, color]) => `
+            <div class="bar-row">
+              <span>${label}</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${Math.max(4, Math.round(count / typeMax * 100))}%;background:${color};"></div></div>
+              <strong>${count}</strong>
+            </div>
+          `).join("")}
+        </div>
+        <div class="chart-panel">
+          <div class="chart-title">岗位数量前5省份</div>
+          ${topProvs.map(([k,v]) => `
+            <div class="bar-row">
+              <span>${escHtml(k)}</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${Math.max(4, Math.round(v / Math.max(topProvs[0]?.[1] || 1, 1) * 100))}%"></div></div>
+              <strong>${v}</strong>
+            </div>
+          `).join('')}
+        </div>
+        <div class="chart-panel">
+          <div class="chart-title">学历要求分布</div>
+          ${Object.entries(eduCount).sort((a,b)=>b[1]-a[1]).map(([k,v]) => `
+            <div class="bar-row">
+              <span>${escHtml(k)}</span>
+              <div class="bar-track"><div class="bar-fill" style="width:${Math.max(4, Math.round(v / Math.max(filtered.length, 1) * 100))}%;background:#10B981;"></div></div>
+              <strong>${v}</strong>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function generateAiPrintReport() {
+      const formData = currentReportFormData || {};
+      const reportJobs = currentRenderedJobs.length ? currentRenderedJobs : filteredPositions;
+      const topJobs = currentTopJobs.length ? currentTopJobs.slice(0, 5) : reportJobs.slice(0, 5);
+      const summary = reportSummary(reportJobs);
+      const topSubjects = buildSubjectStats(reportJobs).slice(0, 3);
+      const topUnits = getTopUnits(reportJobs, 3);
+      const now = new Date();
+      const dateText = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+      const timeText = `${dateText} ${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
+      const userItems = [
+        ["学历", formData.education || "不限"],
+        ["专业", formData.major || "不限"],
+        ["年龄", formData.age ? `${formData.age}岁` : "不限"],
+        ["地区", (formData.regions || []).join("、") || "不限"],
+        ["党员", formData.isPartyMember || "不限"],
+        ["工作经历", formData.workExperience || "无"],
+        ["调剂意向", formData.acceptTransfer === "是" ? "接受调剂" : "仅所选地区"],
+        ["考试类别", (formData.examTypes || ["军队文职"]).join("、")]
+      ];
+      const summaryItems = [
+        ["推荐岗位", summary.total],
+        ["涉及单位", summary.units],
+        ["覆盖地区", summary.regions],
+        ["平均入围", summary.avgEntry === null ? "暂无" : summary.avgEntry.toFixed(1)]
+      ];
+      const topReasons = topJobs.flatMap(job => getRecommendationReasons(job).slice(0, 2)).slice(0, 5);
+      const adviceUnits = topUnits.length ? topUnits.join("、") : "推荐单位";
+      const adviceText = `建议优先关注${escHtml(adviceUnits)}等单位；优先选择专业匹配度高、学历门槛清晰、招聘人数相对更多且竞争压力适中的岗位。${topReasons.length ? `主要依据：${escHtml([...new Set(topReasons)].join("；"))}。` : ""}`;
+      const unitRows = topUnits.map(unit => `
+        <div class="pdf-unit"><span>★★★★★</span><strong>${escHtml(unit)}</strong></div>
+      `).join("") || `<div class="pdf-empty">暂无推荐单位</div>`;
+      const jobRows = topJobs.map((job, index) => {
+        const loc = [job.prov, job.city].filter(Boolean).join(" ") || job.loc || "暂无";
+        return `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${escHtml(displayValue(job.title))}</td>
+            <td>${escHtml(displayValue(job.unit))}</td>
+            <td>${escHtml(displayValue(loc))}</td>
+            <td>${escHtml(displayValue(job.edu))}</td>
+            <td>${Math.round(job._recommendScore || 0)}</td>
+          </tr>`;
+      }).join("") || `<tr><td colspan="6">暂无推荐岗位</td></tr>`;
+      const subjectRows = topSubjects.map(item => `
+        <div class="pdf-subject">
+          <strong>${escHtml(item.subject)}</strong>
+          <span>${(item.ratio * 100).toFixed(1)}%</span>
+          <span>平均 ${formatSubjectScore(item.avg)}</span>
+        </div>
+      `).join("") || `<div class="pdf-empty">暂无专业分析</div>`;
+      const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>AI岗位推荐分析报告</title>
+  <style>
+    @page { size: A4 portrait; margin: 12mm; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #111827; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; background: #FFFFFF; }
+    .pdf-page { width: 186mm; min-height: 273mm; padding: 0; }
+    .pdf-header { display:flex; justify-content:space-between; align-items:flex-start; padding-bottom:14px; border-bottom:2px solid #2563EB; }
+    .pdf-brand { display:flex; gap:10px; align-items:center; color:#111827; font-weight:900; }
+    .pdf-logo { width:34px; height:34px; border-radius:10px; display:grid; place-items:center; background:#2563EB; color:white; }
+    h1 { margin: 14px 0 4px; font-size: 28px; line-height: 1.2; }
+    .pdf-muted { color:#6B7280; font-size:12px; line-height:1.6; }
+    .pdf-section { margin-top: 14px; }
+    .pdf-title { margin:0 0 8px; color:#111827; font-size:15px; font-weight:900; }
+    .pdf-grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; }
+    .pdf-card { min-height:48px; padding:9px 10px; border:1px solid #E5E7EB; border-radius:10px; background:#F8FAFC; }
+    .pdf-card span { display:block; margin-bottom:3px; color:#6B7280; font-size:10px; font-weight:700; }
+    .pdf-card strong { color:#111827; font-size:12px; line-height:1.35; word-break:break-word; }
+    .pdf-summary .pdf-card { background:#EFF6FF; border-color:#BFDBFE; }
+    .pdf-summary strong { color:#2563EB; font-size:18px; }
+    .pdf-two { display:grid; grid-template-columns:1fr 1.35fr; gap:10px; }
+    .pdf-panel { padding:11px; border:1px solid #E5E7EB; border-radius:12px; background:#FFFFFF; }
+    .pdf-unit { display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid #EEF2F7; }
+    .pdf-unit:last-child { border-bottom:0; }
+    .pdf-unit span { color:#F59E0B; letter-spacing:1px; font-size:12px; }
+    .pdf-unit strong { font-size:12px; text-align:right; }
+    table { width:100%; border-collapse:collapse; overflow:hidden; border:1px solid #E5E7EB; border-radius:12px; font-size:11px; }
+    th { padding:8px 7px; background:#EFF6FF; color:#1D4ED8; text-align:left; font-size:10px; }
+    td { padding:8px 7px; border-top:1px solid #EEF2F7; vertical-align:top; line-height:1.35; }
+    .pdf-subjects { display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; }
+    .pdf-subject { padding:10px; border:1px solid #E5E7EB; border-radius:10px; background:#F8FAFC; }
+    .pdf-subject strong { display:block; margin-bottom:6px; font-size:13px; }
+    .pdf-subject span { display:block; color:#6B7280; font-size:11px; line-height:1.6; }
+    .pdf-advice { padding:12px 14px; border-radius:12px; background:#EFF6FF; border:1px solid #BFDBFE; color:#1F2937; font-size:12px; line-height:1.8; }
+    .pdf-footer { margin-top:14px; padding-top:10px; border-top:1px solid #E5E7EB; display:flex; justify-content:space-between; color:#6B7280; font-size:10px; }
+    .pdf-empty { color:#6B7280; font-size:12px; }
+  </style>
+</head>
+<body>
+  <main class="pdf-page">
+    <header class="pdf-header">
+      <div>
+        <div class="pdf-brand"><div class="pdf-logo">知</div><div>后进知学</div></div>
+        <h1>AI岗位推荐分析报告</h1>
+        <div class="pdf-muted">生成日期：${escHtml(dateText)} ｜ 考试类型：${escHtml((formData.examTypes || ["军队文职"]).join("、"))}</div>
+      </div>
+      <div class="pdf-muted" style="text-align:right;">军队文职智能报考平台<br>AI Recommendation Report</div>
+    </header>
+    <section class="pdf-section">
+      <h2 class="pdf-title">用户信息摘要</h2>
+      <div class="pdf-grid">${userItems.map(([label, value]) => `<div class="pdf-card"><span>${label}</span><strong>${escHtml(value)}</strong></div>`).join("")}</div>
+    </section>
+    <section class="pdf-section pdf-summary">
+      <h2 class="pdf-title">推荐结果摘要</h2>
+      <div class="pdf-grid">${summaryItems.map(([label, value]) => `<div class="pdf-card"><span>${label}</span><strong>${escHtml(value)}</strong></div>`).join("")}</div>
+    </section>
+    <section class="pdf-section pdf-two">
+      <div class="pdf-panel">
+        <h2 class="pdf-title">推荐单位 TOP3</h2>
+        ${unitRows}
+      </div>
+      <div class="pdf-panel">
+        <h2 class="pdf-title">推荐专业分析 TOP3</h2>
+        <div class="pdf-subjects">${subjectRows}</div>
+      </div>
+    </section>
+    <section class="pdf-section">
+      <h2 class="pdf-title">推荐岗位 TOP5</h2>
+      <table>
+        <thead><tr><th>序号</th><th>岗位名称</th><th>单位</th><th>地区</th><th>学历</th><th>推荐指数</th></tr></thead>
+        <tbody>${jobRows}</tbody>
+      </table>
+    </section>
+    <section class="pdf-section">
+      <h2 class="pdf-title">AI综合建议</h2>
+      <div class="pdf-advice">${adviceText}</div>
+    </section>
+    <footer class="pdf-footer">
+      <span>生成时间：${escHtml(timeText)}</span>
+      <span>全国编制考试资料库 · 军队文职智能报考平台 · © 2026</span>
+    </footer>
+  </main>
+</body>
+</html>`;
+      const iframe = document.createElement("iframe");
+      iframe.style.position = "fixed";
+      iframe.style.right = "0";
+      iframe.style.bottom = "0";
+      iframe.style.width = "0";
+      iframe.style.height = "0";
+      iframe.style.border = "0";
+      iframe.setAttribute("aria-hidden", "true");
+      document.body.appendChild(iframe);
+      const doc = iframe.contentWindow.document;
+      doc.open();
+      doc.write(html);
+      doc.close();
+      const cleanup = () => {
+        setTimeout(() => {
+          if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
+        }, 400);
+      };
+      setTimeout(() => {
+        iframe.contentWindow.focus();
+        iframe.contentWindow.onafterprint = cleanup;
+        iframe.contentWindow.print();
+        setTimeout(cleanup, 3000);
+      }, 120);
+    }
+
+    /* 初始化 */
+    document.addEventListener("DOMContentLoaded", async () => {
+      const now = new Date();
+      document.getElementById("report-date").textContent =
+        `生成时间：${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")}`;
+
+      // 读取表单数据
+      let formData = {
+        education: "", degree: "", major: "不限", majorCategory: "", majorDiscipline: "",
+        age: "", gender: "",
+        isPartyMember: "不限", workExperience: "无", freshGraduate: "不限",
+        militaryService: "不限", regions: [], acceptTransfer: "否",
+        examTypes: ["军队文职"], certificates: [], titles: [], school: null
+      };
+      try {
+        const raw = localStorage.getItem("recommendFormData");
+        if (raw) formData = JSON.parse(raw);
+      } catch (e) {}
+      currentReportFormData = formData;
+
+      // 加载所有数据
+      [schoolsData, majorsData, certificatesData, titlesData] = await Promise.all([
+        loadJSON("data/schools.json"),
+        loadJSON("data/majors.json"),
+        loadJSON("data/certificates.json"),
+        loadJSON("data/titles.json")
+      ]);
+      await loadPositions();
+
+      renderFilters(formData);
+
+      filteredPositions = filterJobs(formData);
+
+      selectedYear = getYearList(filteredPositions).includes("2026") ? "2026" : (getYearList(filteredPositions)[0] || "2026");
+      renderYearView(filteredPositions);
+    });
+  </script>
+</body>
+</html>

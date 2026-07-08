@@ -1,0 +1,12 @@
+# 禁止上传
+mini-program/
+ai/
+db/
+docs/
+资料归档/
+.DS_Store
+.env
+server.py
+README.md
+
+# papers 目录由 papers/.gitignore 单独控制

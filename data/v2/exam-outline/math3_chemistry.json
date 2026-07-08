@@ -1,0 +1,33 @@
+{
+  "id": "math3_chemistry",
+  "name": "数学3+化学",
+  "file": null,
+  "category": "理工类",
+  "target": "化工、弹药、材料、环境检测、军队化验岗",
+  "parts": [
+    {
+      "name": "数学基础",
+      "ratio": "30%",
+      "topics": "初等高数、统计基础"
+    },
+    {
+      "name": "无机化学、有机化学",
+      "ratio": "40%"
+    },
+    {
+      "name": "分析化学、物理化学",
+      "ratio": "30%"
+    }
+  ],
+  "key_features": "含军用材料、防腐、防爆、环境化学特色考点",
+  "overview": {
+    "summary": "适用于化工、弹药、材料、环境检测、军队化验岗。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "化工、弹药、材料、环境检测、军队化验岗",
+    "majorCategory": "理工类"
+  }
+}

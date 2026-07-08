@@ -1,0 +1,32 @@
+{
+  "id": "english",
+  "name": "英语",
+  "file": "16244568_c7f73da586cf8192975004e2d46d93c3",
+  "category": "人文社科类",
+  "target": "教学科研、军事翻译和外事岗位",
+  "features": "含客观题+主观题，词汇量要求13000+",
+  "parts": [
+    {
+      "name": "基础知识",
+      "topics": "语法与词汇（13000认知词汇/8000熟练运用）、英语国家概况、语言文学知识"
+    },
+    {
+      "name": "阅读理解",
+      "topics": "5篇阅读材料约3000词，含军事人物传记及军事类经典作品，阅读速度150词/分钟以上"
+    },
+    {
+      "name": "英汉互译",
+      "topics": "英译汉（约150词）、汉译英（约200字），题材含军事时事、国情军情"
+    }
+  ],
+  "overview": {
+    "summary": "适用于教学科研、军事翻译和外事岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "客观+主观",
+    "hasSubjective": true,
+    "applicableJobs": "教学科研、军事翻译和外事岗位",
+    "majorCategory": "人文社科类"
+  }
+}

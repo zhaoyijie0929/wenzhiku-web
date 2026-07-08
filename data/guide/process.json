@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "description": "报考指南 - 考试全流程数据。按真实报考顺序整理为流程图节点。",
+  "items": [
+    {
+      "order": 1,
+      "title": "了解考试",
+      "stage": "第一阶段",
+      "description": "先了解军队文职是什么、适合哪些人、整体考试节奏和主要报考限制。",
+      "focus": "建立基本判断，不急着选岗位。",
+      "href": "guide.html"
+    },
+    {
+      "order": 2,
+      "title": "AI岗位推荐",
+      "stage": "第二阶段",
+      "description": "输入学历、专业、地区等条件，由系统先筛出更适合优先关注的岗位方向。",
+      "focus": "先用推荐报告缩小范围，再结合岗位百科理解岗位内容。",
+      "href": "recommend.html"
+    },
+    {
+      "order": 3,
+      "title": "岗位选择",
+      "stage": "第二阶段",
+      "description": "结合岗位条件、入围分数、招聘人数和自身偏好，筛出优先报考方向。",
+      "focus": "不要只看地区，也要看竞争强度。",
+      "href": "recommend.html"
+    },
+    {
+      "order": 4,
+      "title": "开始备考",
+      "stage": "第三阶段",
+      "description": "确认公共科目和专业科目，制定复习计划，先用真题判断题型和难度。",
+      "focus": "先看大纲，再做真题。",
+      "href": "guide-exam.html"
+    },
+    {
+      "order": 5,
+      "title": "公告发布",
+      "stage": "第四阶段",
+      "description": "关注年度招考公告、岗位计划、报名时间、考试时间和资格条件变化。",
+      "focus": "公告发布后，以当年公告为准。",
+      "href": "policy-reader.html"
+    },
+    {
+      "order": 6,
+      "title": "网上报名",
+      "stage": "第四阶段",
+      "description": "按公告要求填写报名信息、选择岗位、上传材料并完成报名确认。",
+      "focus": "信息、专业名称和岗位代码要反复核对。",
+      "href": "guide-process.html#registration"
+    },
+    {
+      "order": 7,
+      "title": "资格审核",
+      "stage": "第四阶段",
+      "description": "等待系统审核或补充材料，确认自己是否通过岗位资格条件初审。",
+      "focus": "审核期间保持通讯畅通。",
+      "href": "guide-process.html#qualification"
+    },
+    {
+      "order": 8,
+      "title": "打印准考证",
+      "stage": "第四阶段",
+      "description": "在规定时间内下载并打印准考证，提前确认考点、交通和考试用品。",
+      "focus": "不要临近考试才打印。",
+      "href": "guide-process.html"
+    },
+    {
+      "order": 9,
+      "title": "笔试",
+      "stage": "第三阶段",
+      "description": "参加公共科目和专业科目考试，按准考证要求到指定考点应试。",
+      "focus": "公共科目和专业科目都不能忽视。",
+      "href": "papers.html"
+    },
+    {
+      "order": 10,
+      "title": "成绩公布",
+      "stage": "第五阶段",
+      "description": "查询笔试成绩和入围情况，判断是否进入后续面试、体检等环节。",
+      "focus": "关注入围名单和后续通知。",
+      "href": "policy-reader.html"
+    },
+    {
+      "order": 11,
+      "title": "面试",
+      "stage": "第五阶段",
+      "description": "按照用人单位安排参加面试或专业能力考核，展示岗位匹配度。",
+      "focus": "提前熟悉岗位职责和单位特点。",
+      "href": "job-list.html"
+    },
+    {
+      "order": 12,
+      "title": "体检",
+      "stage": "第五阶段",
+      "description": "按通知参加体检，重点关注通用标准、补充标准和岗位特殊要求。",
+      "focus": "有疑问提前查标准，不要靠猜。",
+      "href": "guide-qualification.html#medical"
+    },
+    {
+      "order": 13,
+      "title": "政治考核",
+      "stage": "第五阶段",
+      "description": "配合完成政治考核、材料核验和相关调查，保持材料真实一致。",
+      "focus": "如实填写，提前准备证明材料。",
+      "href": "guide-qualification.html#political"
+    },
+    {
+      "order": 14,
+      "title": "公示录用",
+      "stage": "第五阶段",
+      "description": "通过综合考察后进入公示、审批和录用环节，按要求完成后续手续。",
+      "focus": "关注公示名单和单位通知。",
+      "href": "guide-process.html#admission"
+    }
+  ]
+}

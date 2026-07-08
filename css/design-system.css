@@ -1,0 +1,126 @@
+/* ============================================================
+   Design System v2.0 — 后进知学 · 教育科技平台
+   定位：现代教育科技平台（非政府/军队/政务网站）
+   参考：Apple、Notion、飞书、Linear、得到 App
+   品牌理念：知不足而奋进 · 望远山而前行
+   ============================================================ */
+
+:root {
+  /* ========================================
+     1. 品牌色系
+     ======================================== */
+  --brand-primary: #2563EB;
+  --brand-primary-hover: #1D4ED8;
+  --brand-primary-dark: #1E40AF;
+  --brand-primary-light: #EFF6FF;
+  --brand-primary-pale: #DBEAFE;
+
+  /* ========================================
+     2. 中性色
+     ======================================== */
+  --bg-page: #FAFBFC;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F8F9FA;
+  --bg-hover: #F3F4F6;
+  --bg-overlay: rgba(0,0,0,0.04);
+
+  /* ========================================
+     3. 文字色
+     ======================================== */
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-tertiary: #9CA3AF;
+  --text-inverse: #FFFFFF;
+  --text-link: #2563EB;
+
+  /* ========================================
+     4. 边框
+     ======================================== */
+  --border-default: #E5E7EB;
+  --border-light: #F3F4F6;
+  --border-focus: #2563EB;
+
+  /* ========================================
+     5. 阴影（全站唯一：极轻 · 仅制造层级）
+     ======================================== */
+  --shadow-sm: 0 8px 30px rgba(15,23,42,.06);
+  --shadow-md: 0 8px 30px rgba(15,23,42,.06);
+  --shadow-lg: 0 8px 30px rgba(15,23,42,.06);
+  --shadow-product: 0 8px 30px rgba(15,23,42,.06);
+
+  /* ========================================
+     6. 圆角（统一规范）
+     ======================================== */
+  --radius-hero: 24px;
+  --radius-lg: 20px;   /* 大卡片 */
+  --radius-md: 20px;   /* 中卡片 */
+  --radius-sm: 12px;   /* 按钮 */
+  --radius-xs: 12px;   /* 输入框 / 标签 */
+  --radius-tag: 8px;   /* 小标签 */
+
+  /* ========================================
+     7. 字体系统（五级）
+     ======================================== */
+  --font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+  --font-h1: 32px;
+  --font-h2: 22px;
+  --font-h3: 17px;
+  --font-body: 15px;
+  --font-caption: 13px;
+  --font-xs: 11px;
+
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --lh-heading: 1.3;
+  --lh-body: 1.7;
+  --lh-caption: 1.5;
+
+  /* 正文最大阅读宽度 */
+  --reading-width: 680px;
+
+  /* ========================================
+     8. 间距系统（4px 网格）
+     ======================================== */
+  --sp-4xs: 2px;
+  --sp-3xs: 4px;
+  --sp-2xs: 6px;
+  --sp-xs: 8px;
+  --sp-sm: 12px;
+  --sp-md: 16px;
+  --sp-lg: 20px;
+  --sp-xl: 24px;
+  --sp-2xl: 28px;
+  --sp-3xl: 32px;
+  --sp-4xl: 40px;
+  --sp-5xl: 48px;
+  --sp-6xl: 64px;
+  --sp-7xl: 80px;
+
+  /* ========================================
+     9. 强调色（极少使用）
+     ======================================== */
+  --accent-amber: #F59E0B;
+  --accent-amber-light: #FFFBEB;
+  --accent-amber-border: #FDE68A;
+  --accent-green: #10B981;
+  --accent-red: #EF4444;
+
+  /* 兼容旧变量引用 */
+  --accent-gold: #F59E0B;
+
+  /* ========================================
+     10. 布局
+     ======================================== */
+  --max-width: 1200px;
+  --header-height: 64px;
+
+  /* ========================================
+     11. 过渡
+     ======================================== */
+  --transition-fast: 0.15s ease;
+  --transition: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>岗位热力地图 - 军队文职智能报考平台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/design-system.css?v=20260703">
+  <link rel="stylesheet" href="css/style.css?v=20260703">
+</head>
+<body>
+  <div id="site-header"></div>
+  <script src="js/header-v2.js?v=20260707"></script>
+
+  <main class="heatmap-page">
+    <section class="heatmap-hero">
+      <div>
+        <span class="heatmap-kicker">岗位数据分析</span>
+        <h1>全国岗位热力地图</h1>
+        <p>按年份、岗位类别、学历、学位和地区筛选岗位分布，帮助你先判断哪些地区机会更多。</p>
+      </div>
+      <div class="heatmap-hero-stats">
+        <div><span>岗位总数</span><strong id="heatmap-total-jobs">--</strong></div>
+        <div><span>招聘人数</span><strong id="heatmap-total-recruits">--</strong></div>
+        <div><span>涉及单位</span><strong id="heatmap-total-units">--</strong></div>
+        <div><span>覆盖省份</span><strong id="heatmap-total-provinces">--</strong></div>
+      </div>
+    </section>
+
+    <section class="heatmap-filter-card" aria-label="热力地图筛选">
+      <div class="heatmap-filter-group">
+        <label for="heatmap-year">年份</label>
+        <select id="heatmap-year"></select>
+      </div>
+      <div class="heatmap-filter-group">
+        <label for="heatmap-category">岗位类别</label>
+        <select id="heatmap-category">
+          <option value="全部">全部</option>
+          <option value="管理岗">管理岗</option>
+          <option value="技术岗">技术岗</option>
+          <option value="技能岗">技能岗</option>
+        </select>
+      </div>
+      <div class="heatmap-filter-group">
+        <label for="heatmap-degree">学位</label>
+        <select id="heatmap-degree"></select>
+      </div>
+      <div class="heatmap-filter-group">
+        <label for="heatmap-edu">学历</label>
+        <select id="heatmap-edu"></select>
+      </div>
+      <div class="heatmap-filter-group">
+        <label for="heatmap-province">地区</label>
+        <select id="heatmap-province"></select>
+      </div>
+      <div class="heatmap-filter-group heatmap-filter-major">
+        <label for="heatmap-major">专业关键词</label>
+        <input id="heatmap-major" type="search" placeholder="如：计算机、会计、护理">
+        <div class="heatmap-major-hint" id="heatmap-major-hint">输入专业后自动识别专业类与学科门类</div>
+      </div>
+      <div class="heatmap-filter-group">
+        <label for="heatmap-metric">着色指标</label>
+        <select id="heatmap-metric">
+          <option value="jobs">岗位数量</option>
+          <option value="recruits">招聘人数</option>
+          <option value="units">涉及单位</option>
+          <option value="score">平均入围</option>
+        </select>
+      </div>
+      <button class="heatmap-reset" type="button" id="heatmap-reset">重置筛选</button>
+    </section>
+
+    <section class="heatmap-workbench">
+      <div class="heatmap-map-card">
+        <div class="heatmap-section-head">
+          <div>
+            <h2>地区岗位分布</h2>
+            <p id="heatmap-subtitle">正在读取岗位数据...</p>
+          </div>
+        </div>
+        <div id="heatmap-chart" class="heatmap-chart"></div>
+      </div>
+
+      <aside class="heatmap-side-card">
+        <div class="heatmap-side-head">
+          <h3>TOP 招聘地区</h3>
+          <span id="heatmap-rank-unit">岗位数量</span>
+        </div>
+        <div class="heatmap-rank-list" id="heatmap-rank"></div>
+      </aside>
+    </section>
+
+    <section class="heatmap-province-card" id="heatmap-province-card">
+      <div class="heatmap-section-head">
+        <div>
+          <h2 id="heatmap-province-title">地区明细</h2>
+          <p>点击地图省份后，可查看该地区当前筛选条件下的岗位概览。</p>
+        </div>
+        <a id="heatmap-province-action" href="recommend.html">进入智能推荐</a>
+      </div>
+      <div class="heatmap-detail-grid" id="heatmap-detail-grid"></div>
+    </section>
+  </main>
+
+  <script src="assets/heatmap/china.js?v=20260703"></script>
+  <script src="assets/heatmap/echarts.min.js?v=20260703"></script>
+  <script src="js/job-classifier.js?v=20260703"></script>
+  <script src="js/heatmap-page.js?v=20260706"></script>
+</body>
+</html>

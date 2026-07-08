@@ -1,0 +1,43 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "mode": "compatible-first",
+  "rules": [
+    {
+      "module": "岗位推荐/热力图/推荐报告",
+      "legacy": "data/positions.json",
+      "v2": "后续可接 data/v2/jobs.json + data/positions.json 映射",
+      "status": "legacy-active"
+    },
+    {
+      "module": "岗位百科",
+      "legacy": "data/job-database.csv",
+      "v2": "data/v2/jobs.json + docs/job/*.md",
+      "status": "v2-ready-compatible"
+    },
+    {
+      "module": "考试科目",
+      "legacy": "data/exam-outline.json + data/exam-subject-introductions.json",
+      "v2": "data/v2/exam.json + docs/exam/*.md + data/v2/exam-outline/*.json",
+      "status": "v2-ready-compatible"
+    },
+    {
+      "module": "真题中心",
+      "legacy": "data/papers.json",
+      "v2": "data/v2/papers.json",
+      "status": "v2-ready-compatible"
+    },
+    {
+      "module": "政策中心",
+      "legacy": "data/policy-annotations/*",
+      "v2": "data/v2/policy.json + docs/policy/*.md",
+      "status": "v2-ready-compatible"
+    },
+    {
+      "module": "报考指南",
+      "legacy": "data/guide/*.json",
+      "v2": "data/v2/guide.json + docs/guide|medical|political|faq",
+      "status": "v2-ready-compatible"
+    }
+  ]
+}

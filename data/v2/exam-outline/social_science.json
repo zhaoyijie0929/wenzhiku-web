@@ -1,0 +1,32 @@
+{
+  "id": "social_science",
+  "name": "社会科学基础理论",
+  "file": "16244568_86fe6489819e658731d0bfe9c408fdfb",
+  "category": "人文社科类",
+  "target": "机关管理类文职人员岗位",
+  "features": "新大纲合并科目（原哲学/历史/政治学合并），含主观题",
+  "parts": [
+    {
+      "name": "马克思主义哲学原理",
+      "topics": "哲学基本问题、唯物辩证法、实践与认识、社会基本矛盾、真理与价值"
+    },
+    {
+      "name": "马克思主义中国化时代化理论成果",
+      "topics": "毛泽东思想、邓小平理论、三个代表、科学发展观、习近平新时代中国特色社会主义思想"
+    },
+    {
+      "name": "中国近现代史",
+      "topics": "反对外国侵略、辛亥革命、中国共产党诞生、抗日战争、解放战争、新中国建设、改革开放、新时代"
+    }
+  ],
+  "overview": {
+    "summary": "适用于机关管理类文职人员岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "客观+主观",
+    "hasSubjective": true,
+    "applicableJobs": "机关管理类文职人员岗位",
+    "majorCategory": "人文社科类"
+  }
+}

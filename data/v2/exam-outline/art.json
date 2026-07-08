@@ -1,0 +1,33 @@
+{
+  "id": "art",
+  "name": "艺术基础综合",
+  "file": "16244568_f695077ddff74f87fadac8b1d6cf06b3",
+  "category": "人文社科类",
+  "target": "军队文化艺术类岗位",
+  "features": "含主观题（文学/戏剧/影视/音乐/美术/舞蹈/设计各出一题，自选一题作答）",
+  "parts": [
+    {
+      "name": "艺术基础理论",
+      "topics": "艺术的本质/特征/功能、起源和发展、艺术创作、艺术作品、艺术门类、艺术鉴赏与批评"
+    },
+    {
+      "name": "艺术史",
+      "topics": "中国艺术史（先秦至现当代）、外国艺术史（古代至20世纪）"
+    },
+    {
+      "name": "艺术作品鉴赏",
+      "topics": "文学类作品（中国/外国）、戏剧与影视类作品、音乐与舞蹈类作品、美术作品、艺术设计"
+    }
+  ],
+  "key_features": "军旅艺术的特殊审美品格为特色考点",
+  "overview": {
+    "summary": "适用于军队文化艺术类岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "客观+主观",
+    "hasSubjective": true,
+    "applicableJobs": "军队文化艺术类岗位",
+    "majorCategory": "人文社科类"
+  }
+}

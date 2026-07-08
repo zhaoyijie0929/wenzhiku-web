@@ -1,0 +1,223 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "description": "政策中心统一索引。正文指向 Markdown，批注和 PDF 均保留原路径。",
+  "items": [
+    {
+      "id": "mgmt-notice-2026",
+      "title": "2026年管理技术岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/mgmt-notice-2026.md",
+      "annotation": "data/policy-annotations/01_2026年管理技术岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "01_2026年管理技术岗招考公告.md",
+      "stats": {
+        "paragraphCount": 67,
+        "annotationCount": 32
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "mgmt-guide-2026",
+      "title": "2026年管理技术岗报考指南",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/mgmt-guide-2026.md",
+      "annotation": "data/policy-annotations/02_2026年管理技术岗报考指南_批注版.json",
+      "pdf": null,
+      "sourceFile": "02_2026年管理技术岗报考指南.md",
+      "stats": {
+        "paragraphCount": 224,
+        "annotationCount": 36
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-notice-2026",
+      "title": "2026年军队文职人员公开招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-notice-2026.md",
+      "annotation": "data/policy-annotations/03_2026年军队文职人员公开招考公告_批注版.json",
+      "pdf": "data/policy/2026年军队文职人员公开招考公告.pdf",
+      "sourceFile": "03_2026年军队文职人员公开招考公告.md",
+      "stats": {
+        "paragraphCount": 50,
+        "annotationCount": 20
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-east",
+      "title": "东部战区2026年技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-east.md",
+      "annotation": "data/policy-annotations/04_东部战区2026年技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "04_东部战区2026年技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 35,
+        "annotationCount": 11
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-rocket",
+      "title": "2026年火箭军技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-rocket.md",
+      "annotation": "data/policy-annotations/05_2026年火箭军技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "05_2026年火箭军技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 29,
+        "annotationCount": 9
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-army",
+      "title": "2026年陆军技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-army.md",
+      "annotation": "data/policy-annotations/06_2026年陆军技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "06_2026年陆军技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 28,
+        "annotationCount": 11
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-logistics",
+      "title": "中央军委后勤保障部2026年技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-logistics.md",
+      "annotation": "data/policy-annotations/07_中央军委后勤保障部2026年技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "07_中央军委后勤保障部2026年技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 31,
+        "annotationCount": 9
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-airforce-notice",
+      "title": "2026年空军技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-airforce-notice.md",
+      "annotation": "data/policy-annotations/08_2026年空军技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "08_2026年空军技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 33,
+        "annotationCount": 12
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-navy",
+      "title": "海军2026年技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-navy.md",
+      "annotation": "data/policy-annotations/09_海军2026年技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "09_海军2026年技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 32,
+        "annotationCount": 11
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-airforce-guide",
+      "title": "2026年空军技能岗报考指南",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-airforce-guide.md",
+      "annotation": "data/policy-annotations/10_2026年空军技能岗报考指南_批注版.json",
+      "pdf": null,
+      "sourceFile": "10_2026年空军技能岗报考指南.md",
+      "stats": {
+        "paragraphCount": 23,
+        "annotationCount": 8
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-west",
+      "title": "2026年西部战区技能岗招考公告",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-west.md",
+      "annotation": "data/policy-annotations/11_2026年西部战区技能岗招考公告_批注版.json",
+      "pdf": null,
+      "sourceFile": "11_2026年西部战区技能岗招考公告.md",
+      "stats": {
+        "paragraphCount": 34,
+        "annotationCount": 12
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    },
+    {
+      "id": "skill-navy-syllabus",
+      "title": "海军技能岗理论考试大纲",
+      "category": "政策公告",
+      "publishedAt": null,
+      "content": "docs/policy/skill-navy-syllabus.md",
+      "annotation": "data/policy-annotations/12_海军技能岗理论考试大纲_批注版.json",
+      "pdf": null,
+      "sourceFile": "12_海军技能岗理论考试大纲.md",
+      "stats": {
+        "paragraphCount": 42,
+        "annotationCount": 5
+      },
+      "legacy": {
+        "manifest": "data/policy-annotations/manifest.json",
+        "dataDir": "data/policy-annotations/"
+      }
+    }
+  ]
+}

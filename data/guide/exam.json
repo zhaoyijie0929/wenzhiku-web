@@ -1,0 +1,277 @@
+{
+  "version": "1.0.0",
+  "description": "报考指南 - 考试科目入口数据。由 data/exam-outline.json 生成，用于说明考试科目列表入口。",
+  "source": "data/exam-outline.json",
+  "items": [
+    {
+      "id": "public",
+      "name": "公共科目",
+      "category": "公共科目",
+      "summary": "军队文职考试通用科目，所有报考人员均需重点准备。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题（单选+多选+判断）",
+      "detailUrl": "guide-exam.html?subject=public"
+    },
+    {
+      "id": "management",
+      "name": "管理学",
+      "category": "管理类",
+      "summary": "适用于军队管理类文职人员岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "客观+主观",
+      "detailUrl": "guide-exam.html?subject=management"
+    },
+    {
+      "id": "social_science",
+      "name": "社会科学基础理论",
+      "category": "人文社科类",
+      "summary": "适用于机关管理类文职人员岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "客观+主观",
+      "detailUrl": "guide-exam.html?subject=social_science"
+    },
+    {
+      "id": "law",
+      "name": "法学",
+      "category": "人文社科类",
+      "summary": "适用于军事法院、军事检察院、政法机关。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=law"
+    },
+    {
+      "id": "education",
+      "name": "教育学",
+      "category": "人文社科类",
+      "summary": "适用于军队院校、科研单位和训练机构。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=education"
+    },
+    {
+      "id": "sports",
+      "name": "体育学",
+      "category": "人文社科类",
+      "summary": "适用于军队院校、训练机构。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=sports"
+    },
+    {
+      "id": "journalism",
+      "name": "新闻传播学",
+      "category": "人文社科类",
+      "summary": "适用于军队宣传文化机构、新闻宣传岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "客观+主观",
+      "detailUrl": "guide-exam.html?subject=journalism"
+    },
+    {
+      "id": "publishing",
+      "name": "出版学",
+      "category": "人文社科类",
+      "summary": "适用于宣传文化机构、院校。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=publishing"
+    },
+    {
+      "id": "english",
+      "name": "英语",
+      "category": "人文社科类",
+      "summary": "适用于教学科研、军事翻译和外事岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "客观+主观",
+      "detailUrl": "guide-exam.html?subject=english"
+    },
+    {
+      "id": "art",
+      "name": "艺术基础综合",
+      "category": "人文社科类",
+      "summary": "适用于军队文化艺术类岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "客观+主观",
+      "detailUrl": "guide-exam.html?subject=art"
+    },
+    {
+      "id": "accounting",
+      "name": "会计学",
+      "category": "经济类",
+      "summary": "适用于军队机关财务保障岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=accounting"
+    },
+    {
+      "id": "audit",
+      "name": "审计学",
+      "category": "经济类",
+      "summary": "适用于军队审计监督机构。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=audit"
+    },
+    {
+      "id": "economics",
+      "name": "经济学",
+      "category": "经济类",
+      "summary": "适用于经济管理和勤务保障岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=economics"
+    },
+    {
+      "id": "clinical_medicine",
+      "name": "临床医学",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=clinical_medicine"
+    },
+    {
+      "id": "nursing",
+      "name": "护理学",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构护理岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=nursing"
+    },
+    {
+      "id": "tcm",
+      "name": "中医学",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构中医药岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=tcm"
+    },
+    {
+      "id": "pharmacy",
+      "name": "药学",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构药学岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=pharmacy"
+    },
+    {
+      "id": "tcm_pharmacy",
+      "name": "中药学",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构中药学岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=tcm_pharmacy"
+    },
+    {
+      "id": "medical_lab",
+      "name": "医学检验技术",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构检验岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=medical_lab"
+    },
+    {
+      "id": "medical_imaging",
+      "name": "医学影像技术",
+      "category": "医学类",
+      "summary": "适用于军队医疗卫生机构影像岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=medical_imaging"
+    },
+    {
+      "id": "math1",
+      "name": "数学1",
+      "category": "理工类",
+      "summary": "适用于武器工程、装备研发、通信工程、科研技术岗。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=math1"
+    },
+    {
+      "id": "math2_physics",
+      "name": "数学2+物理",
+      "category": "理工类",
+      "summary": "适用于工程技术、装备运维、实验岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=math2_physics"
+    },
+    {
+      "id": "math3_chemistry",
+      "name": "数学3+化学",
+      "category": "理工类",
+      "summary": "适用于化工、弹药、材料、环境检测、军队化验岗。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=math3_chemistry"
+    },
+    {
+      "id": "biochemistry_plant_physiology",
+      "name": "生物化学+植物生理学",
+      "category": "农学/生命科学类",
+      "summary": "适用于军队院校、科研机构、军兵种机关和部队等单位，从事农业科技、科研等专业技术工作的文职人员岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=biochemistry_plant_physiology"
+    },
+    {
+      "id": "biochemistry_animal_physiology",
+      "name": "生物化学+动物生理学",
+      "category": "畜牧/生命科学类",
+      "summary": "适用于军队院校、科研机构、医疗卫生、军兵种机关和部队等单位，从事畜禽养殖、卫生防疫、科研等专业技术工作的文职人员岗位。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=biochemistry_animal_physiology"
+    },
+    {
+      "id": "library",
+      "name": "图书",
+      "category": "图书档案类",
+      "summary": "适用于军队院校、训练机构教员和图书馆文职人员岗位，从事教学、教学辅助等专业技术工作。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=library"
+    },
+    {
+      "id": "archives",
+      "name": "档案",
+      "category": "图书档案类",
+      "summary": "适用于军队院校教员和档案管理机构文职人员岗位，从事教学、档案管理等专业技术工作。",
+      "fullScore": 100,
+      "duration": "120分钟",
+      "questionType": "全客观题",
+      "detailUrl": "guide-exam.html?subject=archives"
+    }
+  ]
+}

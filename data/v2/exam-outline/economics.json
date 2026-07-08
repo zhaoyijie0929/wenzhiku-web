@@ -1,0 +1,43 @@
+{
+  "id": "economics",
+  "name": "经济学",
+  "file": "16244568_57ff67d2b63e4b4c1df0e5d944fdaaac",
+  "category": "经济类",
+  "target": "经济管理和勤务保障岗位",
+  "parts": [
+    {
+      "name": "微观经济学",
+      "topics": "均衡价格理论、效用理论、生产与成本理论、市场理论、生产要素价格决定"
+    },
+    {
+      "name": "宏观经济学",
+      "topics": "国民收入核算、国民收入决定、IS-LM模型、宏观经济政策、AD-AS模型、失业与通胀、开放经济、经济增长"
+    },
+    {
+      "name": "经济法",
+      "topics": "物权法、招标投标法、合同法、票据法、知识产权法"
+    },
+    {
+      "name": "财政学",
+      "topics": "财政概述、财政支出、税收、国债、国家预算、财政政策"
+    },
+    {
+      "name": "金融学",
+      "topics": "货币与货币制度、信用和利率、金融市场、金融机构、货币供求、货币政策、金融监管"
+    },
+    {
+      "name": "统计学",
+      "topics": "统计数据调查与整理、分布数值特征、时间序列分析、统计指数、抽样推断、相关与回归分析"
+    }
+  ],
+  "overview": {
+    "summary": "适用于经济管理和勤务保障岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "经济管理和勤务保障岗位",
+    "majorCategory": "经济类"
+  }
+}

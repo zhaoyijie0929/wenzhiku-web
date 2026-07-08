@@ -1,0 +1,40 @@
+{
+  "id": "law",
+  "name": "法学",
+  "file": "16244568_f7d3f367cad8ecf8a3ea9424fc5ea660",
+  "category": "人文社科类",
+  "target": "军事法院、军事检察院、政法机关",
+  "parts": [
+    {
+      "name": "习近平法治思想",
+      "topics": "十一个坚持、依法治军战略"
+    },
+    {
+      "name": "法学理论",
+      "topics": "法的本体、法的演进、法的运行、法与社会"
+    },
+    {
+      "name": "宪法",
+      "topics": "国家基本制度、公民基本权利义务、国家机构、宪法实施与监督"
+    },
+    {
+      "name": "实体法和程序法",
+      "topics": "行政法、民法、刑法、民事诉讼法、刑事诉讼法、行政诉讼法、仲裁制度"
+    },
+    {
+      "name": "国际法",
+      "topics": "国际法基本问题、武装冲突法、海洋法、外交关系法"
+    }
+  ],
+  "key_features": "国防相关法律占比极高（30%），含武装冲突法等军事特色内容",
+  "overview": {
+    "summary": "适用于军事法院、军事检察院、政法机关。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "军事法院、军事检察院、政法机关",
+    "majorCategory": "人文社科类"
+  }
+}

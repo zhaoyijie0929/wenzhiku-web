@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>政策批注阅读 - 军队文职智能报考平台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/design-system.css?v=20260703">
+  <link rel="stylesheet" href="css/style.css?v=20260703">
+  <link rel="stylesheet" href="css/policy-reader.css?v=20260706">
+</head>
+<body>
+  <div id="site-header"></div>
+  <script src="js/header-v2.js?v=20260707"></script>
+
+  <main class="policy-reader-page">
+    <section class="policy-reader-hero">
+      <div>
+        <div class="policy-reader-kicker">政策解读中心</div>
+        <h1>段落批注阅读器</h1>
+        <p>左侧保持官方原文连续阅读，关键句用红色波浪线标注；右侧同步展示考生视角解读和踩坑提醒。</p>
+      </div>
+      <div class="policy-reader-stats" aria-label="当前政策数据统计">
+        <div>
+          <strong id="readerParagraphCount">-</strong>
+          <span>正文段落</span>
+        </div>
+        <div>
+          <strong id="readerAnnotationCount">-</strong>
+          <span>重点批注</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="policy-reader-workspace">
+      <aside class="policy-reader-toolbar">
+        <div class="policy-reader-nav-wrap">
+          <div class="policy-reader-nav-title">政策文件</div>
+          <div class="policy-reader-nav" id="policyReaderNav"></div>
+          <select id="policyReaderSelect" hidden></select>
+        </div>
+        <div class="policy-reader-actions">
+          <a class="btn btn-outline btn-sm" href="policy.html">返回政策中心</a>
+        </div>
+      </aside>
+      <div class="policy-reader-main">
+        <section class="policy-related-guide" id="policyRelatedGuide" aria-label="相关指南"></section>
+
+        <section class="policy-reader-card">
+          <div class="policy-reader-titlebar">
+            <div>
+              <div class="policy-reader-topic" id="readerTopic">正在加载</div>
+              <h2 id="readerTitle">政策批注阅读</h2>
+            </div>
+            <div class="policy-reader-hint">红色下划线为需要重点理解的官方原文</div>
+          </div>
+          <div id="policyReaderApp" class="policy-reader-content">
+            <div class="policy-reader-loading">正在加载批注数据...</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/policy-reader.js?v=20260707"></script>
+</body>
+</html>

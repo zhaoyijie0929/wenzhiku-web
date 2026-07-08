@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "certificate_name": "高等学校教师资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 2,
+    "certificate_name": "出版专业技术人员（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 3,
+    "certificate_name": "执业医师资格证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 4,
+    "certificate_name": "执业护士资格证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 5,
+    "certificate_name": "药师/执业药师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 6,
+    "certificate_name": "住院医师规范化培训合格证书",
+    "certificate_alias": ""
+  },
+  {
+    "id": 7,
+    "certificate_name": "母婴保健技术服务人员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 8,
+    "certificate_name": "一级注册建筑师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 9,
+    "certificate_name": "二级注册建筑师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 10,
+    "certificate_name": "一级注册结构工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 11,
+    "certificate_name": "二级注册结构工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 12,
+    "certificate_name": "注册土木工程师（岩土/水利/港口/道路）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 13,
+    "certificate_name": "注册公用设备工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 14,
+    "certificate_name": "注册电气工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 15,
+    "certificate_name": "注册化工工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 16,
+    "certificate_name": "注册环保工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 17,
+    "certificate_name": "监理工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 18,
+    "certificate_name": "造价工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 19,
+    "certificate_name": "一级建造师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 20,
+    "certificate_name": "二级建造师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 21,
+    "certificate_name": "注册城乡规划师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 22,
+    "certificate_name": "注册测绘师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 23,
+    "certificate_name": "房地产估价师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 24,
+    "certificate_name": "电工证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 25,
+    "certificate_name": "管道工证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 26,
+    "certificate_name": "焊工证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 27,
+    "certificate_name": "注册会计师（CPA）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 28,
+    "certificate_name": "会计专业技术资格（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 29,
+    "certificate_name": "审计专业技术资格（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 30,
+    "certificate_name": "税务师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 31,
+    "certificate_name": "资产评估师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 32,
+    "certificate_name": "经济专业技术资格（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 33,
+    "certificate_name": "出纳岗（中级会计师资格证）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 34,
+    "certificate_name": "法律职业资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 35,
+    "certificate_name": "中国委托公证人资格（香港/澳门）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 36,
+    "certificate_name": "执业律师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 37,
+    "certificate_name": "专利代理师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 38,
+    "certificate_name": "计算机技术与软件专业技术资格（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 39,
+    "certificate_name": "软件工程师资格证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 40,
+    "certificate_name": "计算机等级考试证书（二级等）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 41,
+    "certificate_name": "计算机操作员证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 42,
+    "certificate_name": "驾驶证（A1/A2/B1/B2/C1等）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 43,
+    "certificate_name": "汽车驾驶员证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 44,
+    "certificate_name": "汽车维修工（技能等级证）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 45,
+    "certificate_name": "机动车检测维修专业技术人员职业资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 46,
+    "certificate_name": "航空人员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 47,
+    "certificate_name": "船员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 48,
+    "certificate_name": "注册验船师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 49,
+    "certificate_name": "仓储管理员证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 50,
+    "certificate_name": "物流服务师证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 51,
+    "certificate_name": "中式烹调师职业资格证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 52,
+    "certificate_name": "中式面点师职业资格证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 53,
+    "certificate_name": "营房维修岗（电工证/管道工证等）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 54,
+    "certificate_name": "保管员证",
+    "certificate_alias": ""
+  },
+  {
+    "id": 55,
+    "certificate_name": "新闻记者职业资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 56,
+    "certificate_name": "广播电视播音员、主持人资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 57,
+    "certificate_name": "演出经纪人员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 58,
+    "certificate_name": "文印员（排版操作证等）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 59,
+    "certificate_name": "翻译专业资格（一/二/三级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 60,
+    "certificate_name": "英语专业八级证书",
+    "certificate_alias": ""
+  },
+  {
+    "id": 61,
+    "certificate_name": "社会工作者职业资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 62,
+    "certificate_name": "工程咨询（投资）专业技术人员职业资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 63,
+    "certificate_name": "环境影响评价工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 64,
+    "certificate_name": "注册安全工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 65,
+    "certificate_name": "一级/二级注册消防工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 66,
+    "certificate_name": "一级/二级注册计量师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 67,
+    "certificate_name": "核安全设备无损检验人员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 68,
+    "certificate_name": "注册核安全工程师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 69,
+    "certificate_name": "拍卖师",
+    "certificate_alias": ""
+  },
+  {
+    "id": 70,
+    "certificate_name": "银行业专业人员职业资格（初/中/高级）",
+    "certificate_alias": ""
+  },
+  {
+    "id": 71,
+    "certificate_name": "证券期货基金业从业人员资格",
+    "certificate_alias": ""
+  },
+  {
+    "id": 72,
+    "certificate_name": "精算师",
+    "certificate_alias": ""
+  }
+]

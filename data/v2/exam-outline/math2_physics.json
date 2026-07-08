@@ -1,0 +1,52 @@
+{
+  "id": "math2_physics",
+  "name": "数学2+物理",
+  "file": "16244568_84951d07ed2fadf3a39fc0f736a369c5",
+  "category": "理工类",
+  "target": "工程技术、装备运维、实验岗位",
+  "parts": [
+    {
+      "name": "高等数学（数2）",
+      "topics": "函数极限连续、一元微积分、多元微积分、常微分方程"
+    },
+    {
+      "name": "线性代数",
+      "topics": "行列式、矩阵、向量、线性方程组、矩阵相似化简、二次型"
+    },
+    {
+      "name": "力学",
+      "topics": "质点运动学、牛顿运动定律、动量与角动量、功和能、刚体定轴转动"
+    },
+    {
+      "name": "热学",
+      "topics": "气体动理论、热力学第一/第二定律"
+    },
+    {
+      "name": "电磁学",
+      "topics": "静电场、导体与电介质、恒定磁场、电磁感应"
+    },
+    {
+      "name": "振动和波动",
+      "topics": "简谐振动、机械波、电磁波"
+    },
+    {
+      "name": "波动光学",
+      "topics": "光的干涉、衍射、偏振"
+    },
+    {
+      "name": "近代物理基础",
+      "topics": "狭义相对论、光的量子性、量子力学基本原理"
+    }
+  ],
+  "key_features": "侧重工程物理、装备物理应用，贴合军队装备运维",
+  "overview": {
+    "summary": "适用于工程技术、装备运维、实验岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "工程技术、装备运维、实验岗位",
+    "majorCategory": "理工类"
+  }
+}

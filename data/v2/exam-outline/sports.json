@@ -1,0 +1,32 @@
+{
+  "id": "sports",
+  "name": "体育学",
+  "file": "16244568_be415d369045eb15d5e08d2bd047e4d0",
+  "category": "人文社科类",
+  "target": "军队院校、训练机构",
+  "parts": [
+    {
+      "name": "体育学基础综合",
+      "topics": "体育概述、体育功能、运动医学（解剖学/生理学/心理学）、体育科研方法"
+    },
+    {
+      "name": "体育运动专业知识",
+      "topics": "运动训练学概述、训练原则、训练方法、运动技术能力"
+    },
+    {
+      "name": "综合应用",
+      "topics": "教学训练计划、课堂教学组织、功能性训练、运动损伤预防、特殊环境与运动能力、体育竞赛组织"
+    }
+  ],
+  "key_features": "部队体能训练、军事体育为核心特色（20%）",
+  "overview": {
+    "summary": "适用于军队院校、训练机构。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题",
+    "hasSubjective": false,
+    "applicableJobs": "军队院校、训练机构",
+    "majorCategory": "人文社科类"
+  }
+}

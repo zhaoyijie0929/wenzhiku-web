@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "count": 12,
+  "items": [
+    {
+      "file": "01_2026年管理技术岗招考公告_批注版.json",
+      "title": "2026年管理技术岗招考公告",
+      "sourceFile": "01_2026年管理技术岗招考公告.md",
+      "topic": "mgmt-notice-2026",
+      "paragraphCount": 67,
+      "annotationCount": 32
+    },
+    {
+      "file": "02_2026年管理技术岗报考指南_批注版.json",
+      "title": "2026年管理技术岗报考指南",
+      "sourceFile": "02_2026年管理技术岗报考指南.md",
+      "topic": "mgmt-guide-2026",
+      "paragraphCount": 224,
+      "annotationCount": 36
+    },
+    {
+      "file": "03_2026年军队文职人员公开招考公告_批注版.json",
+      "title": "2026年军队文职人员公开招考公告",
+      "sourceFile": "03_2026年军队文职人员公开招考公告.md",
+      "topic": "skill-notice-2026",
+      "paragraphCount": 50,
+      "annotationCount": 20
+    },
+    {
+      "file": "04_东部战区2026年技能岗招考公告_批注版.json",
+      "title": "东部战区2026年技能岗招考公告",
+      "sourceFile": "04_东部战区2026年技能岗招考公告.md",
+      "topic": "skill-east",
+      "paragraphCount": 35,
+      "annotationCount": 11
+    },
+    {
+      "file": "05_2026年火箭军技能岗招考公告_批注版.json",
+      "title": "2026年火箭军技能岗招考公告",
+      "sourceFile": "05_2026年火箭军技能岗招考公告.md",
+      "topic": "skill-rocket",
+      "paragraphCount": 29,
+      "annotationCount": 9
+    },
+    {
+      "file": "06_2026年陆军技能岗招考公告_批注版.json",
+      "title": "2026年陆军技能岗招考公告",
+      "sourceFile": "06_2026年陆军技能岗招考公告.md",
+      "topic": "skill-army",
+      "paragraphCount": 28,
+      "annotationCount": 11
+    },
+    {
+      "file": "07_中央军委后勤保障部2026年技能岗招考公告_批注版.json",
+      "title": "中央军委后勤保障部2026年技能岗招考公告",
+      "sourceFile": "07_中央军委后勤保障部2026年技能岗招考公告.md",
+      "topic": "skill-logistics",
+      "paragraphCount": 31,
+      "annotationCount": 9
+    },
+    {
+      "file": "08_2026年空军技能岗招考公告_批注版.json",
+      "title": "2026年空军技能岗招考公告",
+      "sourceFile": "08_2026年空军技能岗招考公告.md",
+      "topic": "skill-airforce-notice",
+      "paragraphCount": 33,
+      "annotationCount": 12
+    },
+    {
+      "file": "09_海军2026年技能岗招考公告_批注版.json",
+      "title": "海军2026年技能岗招考公告",
+      "sourceFile": "09_海军2026年技能岗招考公告.md",
+      "topic": "skill-navy",
+      "paragraphCount": 32,
+      "annotationCount": 11
+    },
+    {
+      "file": "10_2026年空军技能岗报考指南_批注版.json",
+      "title": "2026年空军技能岗报考指南",
+      "sourceFile": "10_2026年空军技能岗报考指南.md",
+      "topic": "skill-airforce-guide",
+      "paragraphCount": 23,
+      "annotationCount": 8
+    },
+    {
+      "file": "11_2026年西部战区技能岗招考公告_批注版.json",
+      "title": "2026年西部战区技能岗招考公告",
+      "sourceFile": "11_2026年西部战区技能岗招考公告.md",
+      "topic": "skill-west",
+      "paragraphCount": 34,
+      "annotationCount": 12
+    },
+    {
+      "file": "12_海军技能岗理论考试大纲_批注版.json",
+      "title": "海军技能岗理论考试大纲",
+      "sourceFile": "12_海军技能岗理论考试大纲.md",
+      "topic": "skill-navy-syllabus",
+      "paragraphCount": 42,
+      "annotationCount": 5
+    }
+  ]
+}

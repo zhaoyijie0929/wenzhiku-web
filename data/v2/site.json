@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "name": "全国编制考试资料库",
+  "description": "V2 Data Layer 总入口。当前为兼容模式，旧页面 URL 与旧数据路径保持不变。",
+  "indexes": {
+    "guide": "data/v2/guide.json",
+    "jobs": "data/v2/jobs.json",
+    "exam": "data/v2/exam.json",
+    "policy": "data/v2/policy.json",
+    "papers": "data/v2/papers.json",
+    "attachments": "data/v2/attachments.json"
+  },
+  "legacyCompatibility": {
+    "positions": "data/positions.json",
+    "jobDatabase": "data/job-database.csv",
+    "papers": "data/papers.json",
+    "examOutline": "data/exam-outline.json",
+    "examIntroductions": "data/exam-subject-introductions.json",
+    "guide": "data/guide/*.json",
+    "policyAnnotations": "data/policy-annotations/manifest.json"
+  }
+}

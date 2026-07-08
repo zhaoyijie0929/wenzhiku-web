@@ -1,0 +1,1639 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "description": "岗位百科统一索引。结构化字段继续来自 data/job-database.csv，Markdown 作为未来正文层。",
+  "source": "data/job-database.csv",
+  "count": 163,
+  "items": [
+    {
+      "id": "001",
+      "title": "参谋（九级文员以下/及以下，综合计划方向）",
+      "categorySource": "管理技术岗",
+      "summary": "机关”大管家”，综合能力要求高，发展路径较好。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/001.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "002",
+      "title": "参谋（九级文员以下/及以下，国防动员方向）",
+      "categorySource": "管理技术岗",
+      "summary": "军地联系密切，政策性较强，工作稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/002.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "003",
+      "title": "参谋（九级文员以下/及以下，作战/战备方向）",
+      "categorySource": "管理技术岗",
+      "summary": "节奏快、责任重，是机关核心业务岗位之一。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/003.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "004",
+      "title": "参谋（九级文员以下/及以下，训练管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "训练工作的组织者，统筹协调能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/004.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "005",
+      "title": "参谋（九级文员以下/及以下，后勤保障方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘数量较多，就业面广，是后勤管理的重要岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/005.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "006",
+      "title": "参谋（九级文员以下/及以下，装备管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏管理协调，适合工程技术背景考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/006.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "007",
+      "title": "参谋（九级文员以下/及以下，组织人事方向）",
+      "categorySource": "管理技术岗",
+      "summary": "机关核心岗位之一，对政策理解和保密意识要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/007.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "008",
+      "title": "参谋（九级文员以下/及以下，信息化方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来热门岗位，信息化建设需求持续增长。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/008.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "009",
+      "title": "参谋（九级文员以下/及以下，战勤计划方向）",
+      "categorySource": "管理技术岗",
+      "summary": "保障任务重，应急响应要求高，适合组织协调能力强的考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/009.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "010",
+      "title": "干事（九级文员以下/及以下，组织工作方向）",
+      "categorySource": "管理技术岗",
+      "summary": "机关党建核心岗位，政策性强，发展空间较好。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/010.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "011",
+      "title": "干事（九级文员以下/及以下，宣传文化方向）",
+      "categorySource": "管理技术岗",
+      "summary": "适合文字功底好、善于策划宣传工作的考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/011.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "012",
+      "title": "干事（九级文员以下/及以下，人力资源方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作规律，适合管理类专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/012.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "013",
+      "title": "干事（九级文员以下/及以下，保卫工作方向）",
+      "categorySource": "管理技术岗",
+      "summary": "责任较大，需要较强的风险防控意识。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/013.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "014",
+      "title": "干事（九级文员以下/及以下，纪检/纪律审查方向）",
+      "categorySource": "管理技术岗",
+      "summary": "纪律监督岗位，原则性和保密要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/014.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "015",
+      "title": "干事（九级文员以下/及以下，老干部工作方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作节奏平稳，服务保障属性较强。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/015.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "016",
+      "title": "干事（九级文员以下/及以下，新闻文化方向）",
+      "categorySource": "管理技术岗",
+      "summary": "兼具宣传与文化建设职能，创意能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/016.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "017",
+      "title": "干事（九级文员以下/及以下，教育训练方向）",
+      "categorySource": "管理技术岗",
+      "summary": "适合教育类专业和具有培训组织能力的考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/017.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "018",
+      "title": "助理员（九级文员以下/及以下，财务工作方向）",
+      "categorySource": "管理技术岗",
+      "summary": "管理岗中招聘数量较多，工作稳定，适合财经类专业考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/018.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "019",
+      "title": "助理员（九级文员以下/及以下，装备保障/装备管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "兼顾管理与装备保障，适合理工科背景考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/019.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "020",
+      "title": "助理员（九级文员以下/及以下，营房管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "后勤保障的重要岗位，工作节奏相对稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/020.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "021",
+      "title": "助理员/助理工程师（基建工程管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工程管理岗位，适合建筑类专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/021.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "022",
+      "title": "助理员（九级文员以下/及以下，医疗管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "医疗管理与行政结合，是医院系统常见管理岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/022.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "023",
+      "title": "助理员（九级文员以下/及以下，采购管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "采购流程规范，适合细心、责任心强的考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/023.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "024",
+      "title": "助理员（九级文员以下/及以下，物资管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "后勤保障基础岗位，工作稳定、需求较多。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/024.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "025",
+      "title": "助理员（九级文员以下/及以下，行政管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "管理岗中最常见的岗位之一，综合事务多，对沟通协调和文字能力要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/025.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "026",
+      "title": "医师/主治医师（临床医疗方向）",
+      "categorySource": "管理技术岗",
+      "summary": "军队文职招聘人数最多的专业技术岗位之一，发展空间广，但工作压力较大。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/026.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "027",
+      "title": "医师/主治医师（中医医疗方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来招聘数量持续增长，适合中医学专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/027.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "028",
+      "title": "医师/主治医师（口腔疾病诊疗方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作规律，压力相对较小，是医学岗位中的热门选择。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/028.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "029",
+      "title": "医师/主治医师（麻醉方向）",
+      "categorySource": "管理技术岗",
+      "summary": "责任重大，专业性极强，对心理素质要求高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/029.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "030",
+      "title": "医师/主治医师（急诊方向）",
+      "categorySource": "管理技术岗",
+      "summary": "压力最大、成长最快的医学岗位之一。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/030.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "031",
+      "title": "医师/主治医师（外科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "技术要求高，职业发展空间大。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/031.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "032",
+      "title": "医师/主治医师（内科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "需求稳定，几乎所有军队医院都有招聘。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/032.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "033",
+      "title": "医师/主治医师（妇产科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "责任重大，适合妇产医学专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/033.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "034",
+      "title": "医师/主治医师（儿科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业要求高，需要较强的沟通能力和耐心。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/034.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "035",
+      "title": "医师/主治医师（全科医疗方向）",
+      "categorySource": "管理技术岗",
+      "summary": "基层医疗保障的重要岗位，工作相对稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/035.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "036",
+      "title": "医师/主治医师（皮肤科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作节奏相对稳定，是医学岗位中压力较小的专业之一。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/036.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "037",
+      "title": "医师/主治医师（肿瘤科方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业性强，需要持续学习最新诊疗技术。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/037.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "038",
+      "title": "药师/主管药师",
+      "categorySource": "管理技术岗",
+      "summary": "军队医院长期招聘岗位，工作稳定，适合药学专业考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/038.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "039",
+      "title": "技师/主管技师（医学检验方向）",
+      "categorySource": "管理技术岗",
+      "summary": "医学技术岗位代表之一，招聘数量稳定。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/039.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "040",
+      "title": "技师/主管技师（放射技术方向）",
+      "categorySource": "管理技术岗",
+      "summary": "设备操作要求高，影像技术应用广泛。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/040.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "041",
+      "title": "技师/主管技师（医学影像方向）",
+      "categorySource": "管理技术岗",
+      "summary": "医学影像需求持续增长，是热门医技岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/041.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "042",
+      "title": "技师/主管技师（病理技术方向）",
+      "categorySource": "管理技术岗",
+      "summary": "幕后医学岗位，专业性强，工作节奏稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/042.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "043",
+      "title": "技师/主管技师（康复医学与理疗方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来招聘增长较快，适合康复专业毕业生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/043.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "044",
+      "title": "医师/主治医师（营养方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作规律，适合营养学及食品相关专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/044.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "045",
+      "title": "医师/主治医师（心理医疗或心理服务方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来需求不断增加，是发展较快的新兴专业岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/045.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "046",
+      "title": "医师（疾病预防控制方向）",
+      "categorySource": "管理技术岗",
+      "summary": "公共卫生保障的重要岗位，应急任务较多。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/046.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "047",
+      "title": "护师/主管护师（临床护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘人数最多的护理岗位，适合护理专业毕业生，稳定但工作强度较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/047.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "048",
+      "title": "护师/主管护师（重症/ICU护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "护理岗位中工作强度最高，对专业能力要求极高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/048.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "049",
+      "title": "护师/主管护师（手术室护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业技术要求高，责任重大，是护理热门方向之一。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/049.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "050",
+      "title": "护师/护士（门诊护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "护理岗位中工作规律较好，是不少考生关注的方向。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/050.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "051",
+      "title": "护师/主管护师（老干部护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作稳定、压力相对较小，是护理专业较受欢迎的岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/051.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "052",
+      "title": "护师/主管护师（康复护理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作节奏较平稳，适合喜欢长期护理管理工作的考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/052.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "053",
+      "title": "护师/护士（助产方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业性强，责任重大，对心理素质和应急能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/053.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "054",
+      "title": "讲师",
+      "categorySource": "管理技术岗",
+      "summary": "教学科研类招聘最多的岗位之一，适合硕士、博士报考。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/054.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "055",
+      "title": "助教",
+      "categorySource": "管理技术岗",
+      "summary": "青年教师起步岗位，适合应届硕士、博士。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/055.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "056",
+      "title": "助理实验师/实验师（实验教学或实验室管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "实践性较强，适合理工科专业毕业生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/056.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "057",
+      "title": "助理馆员/馆员（图书馆方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作稳定，加班少，是文职中公认工作节奏较平稳的岗位之一。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/057.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "058",
+      "title": "助教/助理工程师（教育技术方向）",
+      "categorySource": "管理技术岗",
+      "summary": "教育与信息技术结合，近年来需求持续增长。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/058.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "059",
+      "title": "助理编辑/编辑",
+      "categorySource": "管理技术岗",
+      "summary": "适合文字功底扎实、细致严谨的考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/059.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "060",
+      "title": "助理工程师/工程师（软件工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "计算机专业最热门岗位之一，招聘数量多，发展前景广。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/060.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "061",
+      "title": "助理工程师/工程师（网络工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "网络建设与维护核心岗位，招聘稳定，需求持续增长。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/061.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "062",
+      "title": "助理工程师/工程师（网络安全方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近几年增长最快的热门岗位之一，对专业能力要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/062.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "063",
+      "title": "助理工程师/工程师（大数据方向）",
+      "categorySource": "管理技术岗",
+      "summary": "数据分析方向热门岗位，发展潜力较大。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/063.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "064",
+      "title": "助理工程师/工程师（人工智能方向）",
+      "categorySource": "管理技术岗",
+      "summary": "新兴重点发展方向，高学历岗位占比较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/064.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "065",
+      "title": "助理工程师/工程师（通信工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "传统热门专业，岗位覆盖军队多个单位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/065.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "066",
+      "title": "助理工程师/工程师（光电工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业性较强，主要面向光电类专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/066.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "067",
+      "title": "助理工程师/工程师（雷达工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业方向明确，适合电子信息及雷达专业毕业生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/067.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "068",
+      "title": "助理工程师/工程师（装备工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "军队装备保障核心岗位，需求稳定，发展空间较大。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/068.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "069",
+      "title": "助理工程师/工程师（军械工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏装备保障方向，适合机械、兵器相关专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/069.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "070",
+      "title": "助理工程师/工程师（航空装备方向）",
+      "categorySource": "管理技术岗",
+      "summary": "航空类热门岗位，专业性强，对口专业要求严格。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/070.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "071",
+      "title": "助理工程师/工程师（船舶装备方向）",
+      "categorySource": "管理技术岗",
+      "summary": "海军特色岗位，主要面向船舶类专业毕业生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/071.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "072",
+      "title": "助理工程师/工程师（土木工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘数量较多，是土木专业主要报考方向。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/072.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "073",
+      "title": "助理工程师/工程师（建筑工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏设计与工程管理，适合建筑学专业。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/073.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "074",
+      "title": "助理工程师/工程师（工程造价方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作稳定，适合工程管理、工程造价专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/074.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "075",
+      "title": "助理工程师/工程师（营房工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "后勤工程保障的重要岗位，工作节奏相对稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/075.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "076",
+      "title": "助理工程师/工程师（机电工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "适用范围广，是机械类专业的重要报考岗位。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/076.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "077",
+      "title": "助理工程师/工程师（自动化方向）",
+      "categorySource": "管理技术岗",
+      "summary": "智能装备建设的重要岗位，近年来需求持续增加。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/077.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "078",
+      "title": "助理工程师/工程师（测控技术方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业方向明确，适合测控、仪器仪表类专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/078.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "079",
+      "title": "助理会计师/会计师",
+      "categorySource": "管理技术岗",
+      "summary": "财经类最热门岗位之一，招聘稳定，发展路径清晰。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/079.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "080",
+      "title": "助理审计师/审计师",
+      "categorySource": "管理技术岗",
+      "summary": "专业性和政策性较强，适合审计专业及财会专业考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/080.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "081",
+      "title": "助理会计师/会计师（预算会计方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏预算管理方向，适合财务管理专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/081.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "082",
+      "title": "助理员/助理会计师（资产管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "稳定性较高，兼顾财务和实物资产管理。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/082.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "083",
+      "title": "助理员/助理会计师（经费管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏资金管理方向，工作规律、稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/083.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "084",
+      "title": "助理会计师/助理经济师（税务管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘数量相对较少，专业对口性较强。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/084.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "085",
+      "title": "助理审计师/审计师（采购审计方向）",
+      "categorySource": "管理技术岗",
+      "summary": "兼具采购和审计双重专业特点，适合审计、财会专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/085.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "086",
+      "title": "助理馆员/馆员（图书馆方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作稳定、压力较小，是文职岗位中节奏较平稳的专业技术岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/086.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "087",
+      "title": "助理馆员/馆员（档案管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "稳定性高，适合细心、耐心强的考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/087.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "088",
+      "title": "助理编辑/编辑",
+      "categorySource": "管理技术岗",
+      "summary": "文字能力要求高，适合文学、新闻传播类专业。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/088.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "089",
+      "title": "助理编辑/编辑（出版管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏出版运营管理，岗位数量相对较少。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/089.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "090",
+      "title": "研究实习员/助理研究员（党史研究方向）",
+      "categorySource": "管理技术岗",
+      "summary": "研究性质较强，适合历史学、党史专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/090.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "091",
+      "title": "助理馆员/馆员（文献管理方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏科研保障方向，工作节奏稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/091.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "092",
+      "title": "助理编辑/助理记者（新媒体采编方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来需求增长较快，适合新闻传播、网络与新媒体专业考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/092.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "093",
+      "title": "助理工程师/助理员/研究实习员（合同法务方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作内容覆盖面广，是法学专业报考较多的岗位之一。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/093.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "094",
+      "title": "助理翻译/翻译（英语方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘数量最多的外语岗位，适合英语专业及高水平英语人才。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/094.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "095",
+      "title": "助理翻译/翻译（俄语方向）",
+      "categorySource": "管理技术岗",
+      "summary": "岗位数量相对较少，但竞争压力通常低于英语岗位。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/095.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "096",
+      "title": "助理翻译/翻译（日语方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘数量较少，适合日语专业毕业生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/096.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "097",
+      "title": "助理翻译/翻译（小语种方向）",
+      "categorySource": "管理技术岗",
+      "summary": "岗位较少，但专业稀缺性高，竞争相对较小。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/097.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "098",
+      "title": "助理翻译/翻译（情报翻译方向）",
+      "categorySource": "管理技术岗",
+      "summary": "兼具语言能力和信息分析能力，是外语类岗位中专业要求最高的方向之一。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/098.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "099",
+      "title": "助理记者/记者",
+      "categorySource": "管理技术岗",
+      "summary": "新闻传播专业主要报考岗位，文字能力和采访能力要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/099.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "100",
+      "title": "助理记者/电影技术岗位（摄像方向）",
+      "categorySource": "管理技术岗",
+      "summary": "实践性较强，适合影视摄影及广播电视专业。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/100.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "101",
+      "title": "四级编导/编导",
+      "categorySource": "管理技术岗",
+      "summary": "宣传文化系统热门岗位，创意和统筹能力要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/101.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "102",
+      "title": "四级美术师/美术设计岗位",
+      "categorySource": "管理技术岗",
+      "summary": "适合视觉传达、艺术设计专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/102.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "103",
+      "title": "助理工程师/美术设计岗位（平面设计方向）",
+      "categorySource": "管理技术岗",
+      "summary": "工作稳定，设计能力是核心竞争力。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/103.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "104",
+      "title": "助理编辑/助理工程师（视频制作方向）",
+      "categorySource": "管理技术岗",
+      "summary": "短视频时代需求持续增长，是热门岗位之一。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/104.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "105",
+      "title": "助理编辑/助理记者（新媒体运营方向）",
+      "categorySource": "管理技术岗",
+      "summary": "近年来增长最快的宣传岗位之一，适合网络与新媒体专业。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/105.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "106",
+      "title": "干事/助理编辑（宣传方向）",
+      "categorySource": "管理技术岗",
+      "summary": "综合宣传岗位，覆盖单位广，招聘相对稳定。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/106.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "107",
+      "title": "助理记者/摄影方向",
+      "categorySource": "管理技术岗",
+      "summary": "适合摄影专业考生，实践能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/107.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "108",
+      "title": "研究实习员/助理研究员",
+      "categorySource": "管理技术岗",
+      "summary": "科研岗位起点，适合硕士、博士及科研能力较强的考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/108.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "109",
+      "title": "助理实验师/研究实习员（实验研究方向）",
+      "categorySource": "管理技术岗",
+      "summary": "偏实验技术路线，适合理工科和医学专业考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/109.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "110",
+      "title": "研究实习员/助理研究员（材料研究方向）",
+      "categorySource": "管理技术岗",
+      "summary": "材料类专业主要报考方向，科研属性明显。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/110.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "111",
+      "title": "研究实习员/助理研究员（生物医药方向）",
+      "categorySource": "管理技术岗",
+      "summary": "医学科研重要方向，适合生物、药学及医学专业考生。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/111.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "112",
+      "title": "研究实习员/助理研究员（人工智能研究方向）",
+      "categorySource": "管理技术岗",
+      "summary": "当前重点发展的科研方向，高学历岗位占比较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/112.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "113",
+      "title": "研究实习员/助理研究员（情报研究方向）",
+      "categorySource": "管理技术岗",
+      "summary": "兼具研究和分析能力要求，是军队特色科研岗位。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/113.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "114",
+      "title": "助理工程师/工程师（测绘工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "测绘专业主要报考方向，兼具外业与内业工作特点。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/114.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "115",
+      "title": "助理工程师/工程师（地理信息方向）",
+      "categorySource": "管理技术岗",
+      "summary": "数字化测绘核心岗位，近年来需求逐步增加。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/115.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "116",
+      "title": "助理工程师/工程师（水文工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "专业方向明确，野外保障任务相对较多。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/116.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "117",
+      "title": "助理工程师/工程师（气象工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "军队保障体系的重要岗位，需要较强的数据分析能力。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/117.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "118",
+      "title": "助理工程师/工程师（遥感工程方向）",
+      "categorySource": "管理技术岗",
+      "summary": "军队信息化建设的重要技术岗位，发展前景较好。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/118.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "119",
+      "title": "助理农艺师/农艺师（园艺方向）",
+      "categorySource": "管理技术岗",
+      "summary": "岗位数量较少，适合园艺专业毕业生。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/119.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "120",
+      "title": "助理农艺师/农艺师（农业技术方向）",
+      "categorySource": "管理技术岗",
+      "summary": "招聘较少，专业针对性较强。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/120.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "121",
+      "title": "助理工程师/工程师（营区环保绿化方向）",
+      "categorySource": "管理技术岗",
+      "summary": "稳定性较高，招聘规模相对较小。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/121.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "132",
+      "title": "火炮修理工 / 压制火炮修理工",
+      "categorySource": "技能岗",
+      "summary": "重大演训、装备保障及年度检修期间工作量明显增加。\n装备保障核心岗位，实践能力要求高，适合机械类技能人才。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/132.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "133",
+      "title": "防暴装甲车修理工 / 轮式装甲底盘修理工",
+      "categorySource": "技能岗",
+      "summary": "演训和野外保障期间工作较忙。\n车辆维修需求稳定，是技能岗的重要组成部分。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/133.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "134",
+      "title": "特种车辆修理工兼司机",
+      "categorySource": "技能岗",
+      "summary": "保障任务期间工作增加。\n专业性较强，适合汽车维修类技能人才。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/134.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "135",
+      "title": "光电仪器修理工",
+      "categorySource": "技能岗",
+      "summary": "重大保障任务期间工作较忙。\n技术含量较高，适合电子、光电专业技能人员。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/135.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "136",
+      "title": "电站修理工",
+      "categorySource": "技能岗",
+      "summary": "停电抢修和重大任务期间需应急值守。\n需求长期稳定，持证人员优势明显。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/136.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "137",
+      "title": "液压修理工",
+      "categorySource": "技能岗",
+      "summary": "设备集中维修期间较忙。\n装备维修重要工种，实践经验要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/137.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "138",
+      "title": "钳工",
+      "categorySource": "技能岗",
+      "summary": "维修高峰期间工作增加。\n传统技能岗位，对动手能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/138.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "139",
+      "title": "涂装工",
+      "categorySource": "技能岗",
+      "summary": "大型装备维护期间较忙。\n专业技能明确，岗位数量相对较少。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/139.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "140",
+      "title": "工程机械修理工",
+      "categorySource": "技能岗",
+      "summary": "工程保障任务期间工作强度较高。\n工程保障的重要技能岗位。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/140.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "141",
+      "title": "水电工 / 水电修理工",
+      "categorySource": "技能岗",
+      "summary": "故障抢修时需要随时到岗。\n营区保障不可缺少的基础岗位。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/141.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "142",
+      "title": "通信修理工 / 通信装备修理工",
+      "categorySource": "技能岗",
+      "summary": "重大通信保障和演训期间较忙。\n技能岗中技术含量较高，通信专业技能优势明显。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/142.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "143",
+      "title": "通用驾驶员",
+      "categorySource": "技能岗",
+      "summary": "遇有重大活动、节假日保障或紧急运输任务时需加班和值班。\n技能岗招聘较多的岗位之一，工作稳定，对驾驶技术要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/143.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "144",
+      "title": "司机",
+      "categorySource": "技能岗",
+      "summary": "演训保障、应急任务期间工作量明显增加。\n专业性较强，通常要求相应车型驾驶资格。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/144.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "145",
+      "title": "司机兼修理工 / 通用驾驶员兼修理工",
+      "categorySource": "技能岗",
+      "summary": "运输任务集中时工作较忙。\n一专多能岗位，兼具驾驶与维修能力更具竞争优势。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/145.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "146",
+      "title": "气象雷达应用员兼驾驶员",
+      "categorySource": "技能岗",
+      "summary": "重大演训、应急保障及恶劣天气期间工作增加。\n专业保障岗位，兼顾运输和气象设备保障。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/146.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "147",
+      "title": "操作手",
+      "categorySource": "技能岗",
+      "summary": "工程建设、抢险救灾和重大保障任务期间工作强度较高。\n工程保障核心技能岗位，持有相应操作证书更具优势。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/147.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "148",
+      "title": "炊事员",
+      "categorySource": "技能岗",
+      "summary": "需早起备餐，节假日、重大演训及大型活动期间保障任务增加。\n技能岗招聘数量较多，工作稳定，但体力消耗较大。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/148.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "149",
+      "title": "炊事班班长",
+      "categorySource": "技能岗",
+      "summary": "保障任务期间需全程组织协调，工作时间较长。\n兼顾烹饪与管理，组织协调能力要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/149.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "150",
+      "title": "食堂管理员",
+      "categorySource": "技能岗",
+      "summary": "节假日、大型活动期间工作增加。\n偏管理岗位，工作规律性相对较好。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/150.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "151",
+      "title": "给养员",
+      "categorySource": "技能岗",
+      "summary": "大型保障任务和集中采购期间工作增加。\n保障供应岗位，责任心和细致程度要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/151.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "152",
+      "title": "炊事员 / 给养员",
+      "categorySource": "技能岗",
+      "summary": "需提前准备主食，节日保障期间工作增加。\n技能要求明确，持有中式面点师资格证更具优势。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/152.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "153",
+      "title": "给养员 / 食堂管理员",
+      "categorySource": "技能岗",
+      "summary": "节假日前及大型保障任务期间工作增加。\n食品安全的重要保障岗位，细心和责任心尤为重要。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/153.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "154",
+      "title": "仓库保管员",
+      "categorySource": "技能岗",
+      "summary": "集中收发物资、年度盘点及重大保障任务期间工作量增加。\n技能岗中招聘较多，工作稳定，责任心要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/154.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "155",
+      "title": "器材保管员",
+      "categorySource": "技能岗",
+      "summary": "装备集中保障期间工作增加。\n设备管理专业性较强，适合细致耐心的考生。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/155.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "156",
+      "title": "物资保管员 / 综合物资保管员",
+      "categorySource": "技能岗",
+      "summary": "大型保障任务期间工作量增加。\n后勤保障的重要岗位，稳定性较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/156.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "157",
+      "title": "采购员 / 保管员",
+      "categorySource": "技能岗",
+      "summary": "集中采购和年度保障期间工作增加。\n兼顾采购与仓储管理，工作较为稳定。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/157.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "158",
+      "title": "调度员",
+      "categorySource": "技能岗",
+      "summary": "重大保障、演训和应急运输期间工作较忙，部分岗位实行值班制度。\n后勤保障体系的重要协调岗位，对组织协调能力要求较高。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/158.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "159",
+      "title": "木工",
+      "categorySource": "技能岗",
+      "summary": "营房集中维修及保障任务期间工作增加。\n传统保障工种，工作节奏相对稳定，技术经验越丰富优势越明显。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/159.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "160",
+      "title": "水暖工",
+      "categorySource": "技能岗",
+      "summary": "冬季供暖、突发故障及抢修期间需及时到岗。\n营区基础设施的重要保障岗位，具有较强实用性。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/160.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "161",
+      "title": "园艺员 / 园艺技师",
+      "categorySource": "技能岗",
+      "summary": "春秋绿化和重大活动保障期间工作增加。\n工作环境较好，适合园艺及绿化相关技能人员。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/161.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "162",
+      "title": "司泵员",
+      "categorySource": "技能岗",
+      "summary": "实行值班制度，突发设备故障时需紧急处理。\n保障供水系统稳定运行的专业岗位，责任较大。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/162.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "163",
+      "title": "电梯员 / 营房维修工",
+      "categorySource": "技能岗",
+      "summary": "故障抢修及节假日值班期间工作增加。\n专业性较强，持证人员报考优势明显。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/163.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "164",
+      "title": "营房维修工",
+      "categorySource": "技能岗",
+      "summary": "遇有突发设施故障或大型维修工程时工作增加。\n营区综合保障核心岗位，工作内容覆盖面广，需求长期稳定。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/164.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "165",
+      "title": "话务员",
+      "categorySource": "技能岗",
+      "summary": "部分单位实行24小时轮班和值班制度，重大任务期间通信保障时间延长。\n通信保障基础岗位，工作稳定，对责任心要求较高。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/165.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "166",
+      "title": "文印员",
+      "categorySource": "技能岗",
+      "summary": "会议保障、材料集中印制期间工作增加。\n行政保障岗位，工作规律，适合熟悉办公设备操作的人员。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/166.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "167",
+      "title": "通信员 / 收发员",
+      "categorySource": "技能岗",
+      "summary": "重大任务和文件集中流转期间工作增加。\n偏行政通信保障，细致严谨是岗位核心要求。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/167.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "168",
+      "title": "视频会议系统管理员",
+      "categorySource": "技能岗",
+      "summary": "大型会议、节假日保障期间工作增加。\n近年来需求不断增加，信息化保障特色明显。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/168.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "169",
+      "title": "网络管理员 / 网络监控员 / 信息安全员",
+      "categorySource": "技能岗",
+      "summary": "网络故障、系统升级及重大保障期间需值班。\n技能岗中技术含量较高，适合计算机、网络技术相关技能人员。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/169.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "170",
+      "title": "卫生员",
+      "categorySource": "技能岗",
+      "summary": "实行轮班制度，重大医疗保障期间工作增加。\n医疗辅助保障的重要岗位，招聘较为稳定。",
+      "recommendStars": "★★★★★",
+      "content": "docs/job/170.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "171",
+      "title": "理发员",
+      "categorySource": "技能岗",
+      "summary": "重大活动、节假日前理发需求增加。\n生活保障岗位，工作节奏相对稳定，具有理发技能证书更具优势。",
+      "recommendStars": "★★★☆☆",
+      "content": "docs/job/171.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "172",
+      "title": "档案管理员兼司机",
+      "categorySource": "技能岗",
+      "summary": "外出公务及档案集中整理期间工作增加。\n复合型岗位，同时具备行政保障和驾驶保障职责。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/172.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    },
+    {
+      "id": "173",
+      "title": "勤务班班长",
+      "categorySource": "技能岗",
+      "summary": "重大活动、节假日和集中保障期间工作量增加。\n综合管理岗位，既负责保障工作，也承担基层管理职责。",
+      "recommendStars": "★★★★☆",
+      "content": "docs/job/173.md",
+      "source": "data/job-database.csv",
+      "attachments": []
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "description": "报考指南统一索引。旧页面继续读取 data/guide/*.json。",
+  "items": [
+    {
+      "id": "process",
+      "title": "考试全流程",
+      "type": "markdown+json",
+      "content": "docs/guide/process.md",
+      "data": "data/guide/process.json",
+      "url": "guide-process.html"
+    },
+    {
+      "id": "jobs",
+      "title": "岗位介绍",
+      "type": "csv+markdown",
+      "index": "data/v2/jobs.json",
+      "data": "data/job-database.csv",
+      "url": "job-list.html"
+    },
+    {
+      "id": "exam",
+      "title": "考试科目",
+      "type": "markdown+json",
+      "index": "data/v2/exam.json",
+      "legacy": [
+        "data/exam-outline.json",
+        "data/exam-subject-introductions.json"
+      ],
+      "url": "guide-exam.html"
+    },
+    {
+      "id": "medical",
+      "title": "体检标准",
+      "type": "markdown+json",
+      "content": "docs/medical/standard.md",
+      "data": "data/guide/medical.json",
+      "url": "guide-medical.html"
+    },
+    {
+      "id": "political",
+      "title": "政治考核",
+      "type": "markdown+json",
+      "content": "docs/political/review.md",
+      "data": "data/guide/political.json",
+      "url": "guide-political.html"
+    },
+    {
+      "id": "faq",
+      "title": "常见问题",
+      "type": "markdown+json",
+      "content": "docs/faq/index.md",
+      "data": "data/guide/faq.json",
+      "url": "guide-faq.html"
+    }
+  ]
+}

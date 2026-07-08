@@ -1,0 +1,33 @@
+{
+  "id": "journalism",
+  "name": "新闻传播学",
+  "file": "16244568_4410344efbfaa01ac764ae4a403c93fd",
+  "category": "人文社科类",
+  "target": "军队宣传文化机构、新闻宣传岗位",
+  "features": "含主观题",
+  "parts": [
+    {
+      "name": "传播学原理",
+      "topics": "人类传播发展、传播模式与要素、人内/人际/群体/组织/大众传播、受众理论、传播效果、国际传播"
+    },
+    {
+      "name": "新闻理论",
+      "topics": "新闻与新闻活动、新闻选择、新闻媒介、中外新闻史、新闻事业、党性原则、新闻舆论"
+    },
+    {
+      "name": "新闻实务",
+      "topics": "新闻采访、新闻写作（消息/通讯/评论）、新闻编辑、新闻摄影、广播电视新闻、融合新闻生产"
+    }
+  ],
+  "key_features": "军队宣传、强军舆论、国防新闻采编占比30%",
+  "overview": {
+    "summary": "适用于军队宣传文化机构、新闻宣传岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "客观+主观",
+    "hasSubjective": true,
+    "applicableJobs": "军队宣传文化机构、新闻宣传岗位",
+    "majorCategory": "人文社科类"
+  }
+}

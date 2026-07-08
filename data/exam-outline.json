@@ -1,0 +1,1131 @@
+{
+  "meta": {
+    "title": "军队文职人员公开招考笔试全科目考试大纲数据库",
+    "source": "中央军委政治工作部",
+    "date": "2023年8月",
+    "description": "包含公共科目+26门专业科目考试大纲的结构化数据，适用于AI检索查询",
+    "total_subjects": 27,
+    "version": "2025-2026大纲版",
+    "updated_at": "2026-07-05 03:36:20",
+    "site_generated_from": "军队文职考试大纲数据库.json",
+    "introduction_source": "军队文职全部专业科目详细介绍（统一模板版）.docx"
+  },
+  "subjects": [
+    {
+      "id": "public",
+      "name": "公共科目",
+      "category": "公共科目",
+      "满分": 100,
+      "考试时长_min": 120,
+      "题型": "全客观题（单选+多选+判断）",
+      "题量": 110,
+      "parts": [
+        {
+          "name": "基本知识",
+          "score": 40,
+          "question_count": 60,
+          "chapters": [
+            {
+              "name": "国防与军队知识",
+              "score": 14,
+              "ratio": "35%",
+              "question_count": "约20题",
+              "key_points": "国防法、文职人员条例、军队纪律、军队安全保密、新时代国防政策、军兵种职能、军队思想政治建设、战备工作、军人权益与义务",
+              "features": "纯军队特色、独家考点，多选题重灾区，失分率最高；新规迭代快，每年必考新法新规"
+            },
+            {
+              "name": "时政与国情国力",
+              "score": 8,
+              "ratio": "20%",
+              "question_count": "约12题",
+              "key_points": "近一年重大会议、强军时政、科技成就、国防动态、国家大政方针、国情地理、经济数据",
+              "features": "极强时效性，强军时政占比超60%，考前3个月为高频命题窗口期"
+            },
+            {
+              "name": "马克思主义理论",
+              "score": 6,
+              "ratio": "15%",
+              "question_count": "约9题",
+              "key_points": "唯物论、辩证法、认识论、历史唯物主义、商品经济、剩余价值、资本理论",
+              "features": "基础理论为主，难度低于考研，侧重理解应用"
+            },
+            {
+              "name": "人文与社会",
+              "score": 5,
+              "ratio": "12.5%",
+              "question_count": "约7题",
+              "key_points": "中国历史、世界史、文学常识、传统文化、科技史、生活常识",
+              "features": "知识面广、分值低，性价比最低"
+            },
+            {
+              "name": "法律常识",
+              "score": 5,
+              "ratio": "12.5%",
+              "question_count": "约7题",
+              "key_points": "宪法、民法典、刑法、行政法、诉讼法基础，重点结合军队执法场景"
+            },
+            {
+              "name": "思想道德与法治",
+              "score": 2,
+              "ratio": "5%",
+              "question_count": "约3题",
+              "features": "送分题，难度极低，正确率90%以上"
+            }
+          ]
+        },
+        {
+          "name": "岗位能力",
+          "score": 60,
+          "question_count": 50,
+          "per_question_score": 1.2,
+          "chapters": [
+            {
+              "name": "言语理解与表达",
+              "ratio": "24%",
+              "score": 14.4,
+              "question_count": 12,
+              "features": "侧重军队公文语言、书面语体、主旨概括、语句排序、实词辨析"
+            },
+            {
+              "name": "数量关系",
+              "ratio": "20%",
+              "score": 12,
+              "question_count": 10,
+              "features": "数字推理、数学运算，难度低于省考，侧重基础题型"
+            },
+            {
+              "name": "判断推理",
+              "ratio": "28%",
+              "score": 16.8,
+              "question_count": 14,
+              "features": "图形、定义、类比、逻辑判断，逻辑推理为拉分重点"
+            },
+            {
+              "name": "资料分析",
+              "ratio": "28%",
+              "score": 16.8,
+              "question_count": 14,
+              "features": "计算简单、公式固定，最简单高分模块，正确率可冲满分"
+            }
+          ]
+        }
+      ],
+      "overview": {
+        "summary": "军队文职考试通用科目，所有报考人员均需重点准备。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题（单选+多选+判断）",
+        "hasSubjective": false,
+        "applicableJobs": "全部报考人员",
+        "majorCategory": "公共科目"
+      }
+    },
+    {
+      "id": "management",
+      "name": "管理学",
+      "file": "16244568_34bc0ff8e7f761ba22a6c91a368d47e9",
+      "category": "管理类",
+      "target": "军队管理类文职人员岗位",
+      "features": "文职唯一含主观题专业（客观70分+主观30分）",
+      "parts": [
+        {
+          "name": "管理学基础",
+          "ratio": "20%",
+          "topics": "管理职能、决策、组织、领导、控制、创新"
+        },
+        {
+          "name": "组织行为学",
+          "ratio": "15%",
+          "topics": "个体行为、群体行为、团队管理、激励理论"
+        },
+        {
+          "name": "人力资源管理",
+          "ratio": "20%",
+          "topics": "招聘、培训、绩效、薪酬、文职人员人事制度"
+        },
+        {
+          "name": "公共事业管理",
+          "ratio": "10%",
+          "topics": "公共服务、应急管理、后勤保障"
+        },
+        {
+          "name": "行政伦理学",
+          "ratio": "10%",
+          "topics": "公职人员职业道德、军队纪律伦理、廉政建设"
+        },
+        {
+          "name": "公文写作",
+          "ratio": "25%+主观30分",
+          "topics": "法定公文写作、公文改错、通知/请示/报告/函/通报等军队常用公文"
+        }
+      ],
+      "key_features": "所有案例题、实务题均以部队机关、军队后勤、文职工作为背景，不考地方企业管理",
+      "overview": {
+        "summary": "适用于军队管理类文职人员岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队管理类文职人员岗位",
+        "majorCategory": "管理类"
+      }
+    },
+    {
+      "id": "social_science",
+      "name": "社会科学基础理论",
+      "file": "16244568_86fe6489819e658731d0bfe9c408fdfb",
+      "category": "人文社科类",
+      "target": "机关管理类文职人员岗位",
+      "features": "新大纲合并科目（原哲学/历史/政治学合并），含主观题",
+      "parts": [
+        {
+          "name": "马克思主义哲学原理",
+          "topics": "哲学基本问题、唯物辩证法、实践与认识、社会基本矛盾、真理与价值"
+        },
+        {
+          "name": "马克思主义中国化时代化理论成果",
+          "topics": "毛泽东思想、邓小平理论、三个代表、科学发展观、习近平新时代中国特色社会主义思想"
+        },
+        {
+          "name": "中国近现代史",
+          "topics": "反对外国侵略、辛亥革命、中国共产党诞生、抗日战争、解放战争、新中国建设、改革开放、新时代"
+        }
+      ],
+      "overview": {
+        "summary": "适用于机关管理类文职人员岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "机关管理类文职人员岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "law",
+      "name": "法学",
+      "file": "16244568_f7d3f367cad8ecf8a3ea9424fc5ea660",
+      "category": "人文社科类",
+      "target": "军事法院、军事检察院、政法机关",
+      "parts": [
+        {
+          "name": "习近平法治思想",
+          "topics": "十一个坚持、依法治军战略"
+        },
+        {
+          "name": "法学理论",
+          "topics": "法的本体、法的演进、法的运行、法与社会"
+        },
+        {
+          "name": "宪法",
+          "topics": "国家基本制度、公民基本权利义务、国家机构、宪法实施与监督"
+        },
+        {
+          "name": "实体法和程序法",
+          "topics": "行政法、民法、刑法、民事诉讼法、刑事诉讼法、行政诉讼法、仲裁制度"
+        },
+        {
+          "name": "国际法",
+          "topics": "国际法基本问题、武装冲突法、海洋法、外交关系法"
+        }
+      ],
+      "key_features": "国防相关法律占比极高（30%），含武装冲突法等军事特色内容",
+      "overview": {
+        "summary": "适用于军事法院、军事检察院、政法机关。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军事法院、军事检察院、政法机关",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "education",
+      "name": "教育学",
+      "file": "16244568_c557a22a77d068de662037660b6748aa",
+      "category": "人文社科类",
+      "target": "军队院校、科研单位和训练机构",
+      "parts": [
+        {
+          "name": "习近平总书记关于教育的重要论述",
+          "topics": "教育强国、立德树人、社会主义办学方向、新时代军事教育方针"
+        },
+        {
+          "name": "教育学原理",
+          "topics": "教育基本理论、课程与教学、德育、教师与学生、学校管理"
+        },
+        {
+          "name": "中国教育史",
+          "topics": "古代教育史、近代教育史、现代教育史"
+        },
+        {
+          "name": "外国教育史",
+          "topics": "古代教育史、近代教育史、现代教育史、欧美教育思潮"
+        },
+        {
+          "name": "教育研究方法",
+          "topics": "研究设计、历史研究法、比较研究法、观察法、调查法、实验法"
+        },
+        {
+          "name": "心理学",
+          "topics": "普通心理学、教育心理学、学习理论"
+        }
+      ],
+      "overview": {
+        "summary": "适用于军队院校、科研单位和训练机构。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研单位和训练机构",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "sports",
+      "name": "体育学",
+      "file": "16244568_be415d369045eb15d5e08d2bd047e4d0",
+      "category": "人文社科类",
+      "target": "军队院校、训练机构",
+      "parts": [
+        {
+          "name": "体育学基础综合",
+          "topics": "体育概述、体育功能、运动医学（解剖学/生理学/心理学）、体育科研方法"
+        },
+        {
+          "name": "体育运动专业知识",
+          "topics": "运动训练学概述、训练原则、训练方法、运动技术能力"
+        },
+        {
+          "name": "综合应用",
+          "topics": "教学训练计划、课堂教学组织、功能性训练、运动损伤预防、特殊环境与运动能力、体育竞赛组织"
+        }
+      ],
+      "key_features": "部队体能训练、军事体育为核心特色（20%）",
+      "overview": {
+        "summary": "适用于军队院校、训练机构。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、训练机构",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "journalism",
+      "name": "新闻传播学",
+      "file": "16244568_4410344efbfaa01ac764ae4a403c93fd",
+      "category": "人文社科类",
+      "target": "军队宣传文化机构、新闻宣传岗位",
+      "features": "含主观题",
+      "parts": [
+        {
+          "name": "传播学原理",
+          "topics": "人类传播发展、传播模式与要素、人内/人际/群体/组织/大众传播、受众理论、传播效果、国际传播"
+        },
+        {
+          "name": "新闻理论",
+          "topics": "新闻与新闻活动、新闻选择、新闻媒介、中外新闻史、新闻事业、党性原则、新闻舆论"
+        },
+        {
+          "name": "新闻实务",
+          "topics": "新闻采访、新闻写作（消息/通讯/评论）、新闻编辑、新闻摄影、广播电视新闻、融合新闻生产"
+        }
+      ],
+      "key_features": "军队宣传、强军舆论、国防新闻采编占比30%",
+      "overview": {
+        "summary": "适用于军队宣传文化机构、新闻宣传岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队宣传文化机构、新闻宣传岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "publishing",
+      "name": "出版学",
+      "file": "16244568_148cc41a1579d7500219fa57763e0fac",
+      "category": "人文社科类",
+      "target": "宣传文化机构、院校",
+      "parts": [
+        {
+          "name": "出版专业基础",
+          "topics": "出版与出版工作、出版物、我国出版业、文字规范、现代汉语、修辞、古汉语及古代文化"
+        },
+        {
+          "name": "出版实务",
+          "topics": "选题策划、图书编辑、期刊出版、书刊整体设计、校对业务、书刊印制、音像制品/电子出版物/数字出版"
+        },
+        {
+          "name": "编辑出版史",
+          "topics": "中国古代/近代/社会主义编辑出版事业、国外编辑出版事业"
+        },
+        {
+          "name": "出版政策法规",
+          "topics": "出版法律规范、出版主体法律、出版合同法律、著作权法律"
+        }
+      ],
+      "key_features": "军队出版物审核、国防出版规范占比30%",
+      "overview": {
+        "summary": "适用于宣传文化机构、院校。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "宣传文化机构、院校",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "english",
+      "name": "英语",
+      "file": "16244568_c7f73da586cf8192975004e2d46d93c3",
+      "category": "人文社科类",
+      "target": "教学科研、军事翻译和外事岗位",
+      "features": "含客观题+主观题，词汇量要求13000+",
+      "parts": [
+        {
+          "name": "基础知识",
+          "topics": "语法与词汇（13000认知词汇/8000熟练运用）、英语国家概况、语言文学知识"
+        },
+        {
+          "name": "阅读理解",
+          "topics": "5篇阅读材料约3000词，含军事人物传记及军事类经典作品，阅读速度150词/分钟以上"
+        },
+        {
+          "name": "英汉互译",
+          "topics": "英译汉（约150词）、汉译英（约200字），题材含军事时事、国情军情"
+        }
+      ],
+      "overview": {
+        "summary": "适用于教学科研、军事翻译和外事岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "教学科研、军事翻译和外事岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "art",
+      "name": "艺术基础综合",
+      "file": "16244568_f695077ddff74f87fadac8b1d6cf06b3",
+      "category": "人文社科类",
+      "target": "军队文化艺术类岗位",
+      "features": "含主观题（文学/戏剧/影视/音乐/美术/舞蹈/设计各出一题，自选一题作答）",
+      "parts": [
+        {
+          "name": "艺术基础理论",
+          "topics": "艺术的本质/特征/功能、起源和发展、艺术创作、艺术作品、艺术门类、艺术鉴赏与批评"
+        },
+        {
+          "name": "艺术史",
+          "topics": "中国艺术史（先秦至现当代）、外国艺术史（古代至20世纪）"
+        },
+        {
+          "name": "艺术作品鉴赏",
+          "topics": "文学类作品（中国/外国）、戏剧与影视类作品、音乐与舞蹈类作品、美术作品、艺术设计"
+        }
+      ],
+      "key_features": "军旅艺术的特殊审美品格为特色考点",
+      "overview": {
+        "summary": "适用于军队文化艺术类岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "客观+主观",
+        "hasSubjective": true,
+        "applicableJobs": "军队文化艺术类岗位",
+        "majorCategory": "人文社科类"
+      }
+    },
+    {
+      "id": "accounting",
+      "name": "会计学",
+      "file": "16244568_1af73e5585f4be9dd6b0cb2f75668a8e",
+      "category": "经济类",
+      "target": "军队机关财务保障岗位",
+      "parts": [
+        {
+          "name": "微观经济学",
+          "topics": "均衡价格理论、效用理论、生产与成本理论、市场理论、生产要素价格决定"
+        },
+        {
+          "name": "宏观经济学",
+          "topics": "国民收入核算、国民收入决定、IS-LM模型、宏观经济政策、AD-AS模型、失业与通胀、经济增长"
+        },
+        {
+          "name": "经济法",
+          "topics": "物权法、招标投标法、合同法、票据法、知识产权法"
+        },
+        {
+          "name": "基础会计",
+          "topics": "会计概述、会计要素与等式、账户与复式记账、企业经济业务核算、会计凭证/账簿、成本计算、财产清查、财务报告"
+        },
+        {
+          "name": "政府会计",
+          "topics": "政府会计概述、财政总会计、行政事业单位会计"
+        },
+        {
+          "name": "财务管理",
+          "topics": "财务价值观念、资本成本、筹资管理、资本结构、投资管理、资产管理、利润分配、财务分析"
+        }
+      ],
+      "key_features": "军队预算管理、军队经费核算、军费收支规则为核心特色（30%）",
+      "overview": {
+        "summary": "适用于军队机关财务保障岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队机关财务保障岗位",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "audit",
+      "name": "审计学",
+      "file": "16244568_a0514075704f20ccad43faaa48aa9df5",
+      "category": "经济类",
+      "target": "军队审计监督机构",
+      "parts": [
+        {
+          "name": "微观经济学",
+          "topics": "均衡价格理论、效用理论、生产与成本理论、市场理论"
+        },
+        {
+          "name": "宏观经济学",
+          "topics": "国民收入核算、国民收入决定、宏观经济政策、失业与通胀"
+        },
+        {
+          "name": "经济法",
+          "topics": "物权法、招标投标法、合同法、票据法、知识产权法"
+        },
+        {
+          "name": "审计基础理论",
+          "topics": "审计概述、审计规范与职业道德、审计程序与方法、审计报告、国家审计主要业务类型"
+        },
+        {
+          "name": "企业审计",
+          "topics": "销售与收款循环审计、采购与付款循环审计、生产与存货循环审计、货币资金审计"
+        },
+        {
+          "name": "建设项目审计",
+          "topics": "前期工作审计、造价审计、财务审计、管理审计、绩效审计"
+        }
+      ],
+      "key_features": "军队经费审计、专项审计、国防经费监管为核心特色（35%）",
+      "overview": {
+        "summary": "适用于军队审计监督机构。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队审计监督机构",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "economics",
+      "name": "经济学",
+      "file": "16244568_57ff67d2b63e4b4c1df0e5d944fdaaac",
+      "category": "经济类",
+      "target": "经济管理和勤务保障岗位",
+      "parts": [
+        {
+          "name": "微观经济学",
+          "topics": "均衡价格理论、效用理论、生产与成本理论、市场理论、生产要素价格决定"
+        },
+        {
+          "name": "宏观经济学",
+          "topics": "国民收入核算、国民收入决定、IS-LM模型、宏观经济政策、AD-AS模型、失业与通胀、开放经济、经济增长"
+        },
+        {
+          "name": "经济法",
+          "topics": "物权法、招标投标法、合同法、票据法、知识产权法"
+        },
+        {
+          "name": "财政学",
+          "topics": "财政概述、财政支出、税收、国债、国家预算、财政政策"
+        },
+        {
+          "name": "金融学",
+          "topics": "货币与货币制度、信用和利率、金融市场、金融机构、货币供求、货币政策、金融监管"
+        },
+        {
+          "name": "统计学",
+          "topics": "统计数据调查与整理、分布数值特征、时间序列分析、统计指数、抽样推断、相关与回归分析"
+        }
+      ],
+      "overview": {
+        "summary": "适用于经济管理和勤务保障岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "经济管理和勤务保障岗位",
+        "majorCategory": "经济类"
+      }
+    },
+    {
+      "id": "clinical_medicine",
+      "name": "临床医学",
+      "file": "16244568_f58b2e44e55a62b88fac2bd8a4937305",
+      "category": "医学类",
+      "target": "军队医疗卫生岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "内科学",
+          "topics": "呼吸/心血管/消化/泌尿/血液/内分泌/风湿/理化因素所致疾病"
+        },
+        {
+          "name": "外科学",
+          "topics": "外科总论、普通外科、骨科、胸心外科、泌尿系统疾病"
+        },
+        {
+          "name": "妇产科学",
+          "topics": "妊娠及并发症、胎儿及附属物异常、分娩及产褥期、生殖系统炎症/肿瘤/内分泌"
+        },
+        {
+          "name": "儿科学",
+          "topics": "营养障碍、新生儿疾病、免疫性/感染性/消化/呼吸/心血管/泌尿系统疾病"
+        },
+        {
+          "name": "神经病和精神病学",
+          "topics": "神经系统疾病、精神障碍"
+        },
+        {
+          "name": "传染病学",
+          "topics": "病毒性/细菌性/寄生虫传染病"
+        }
+      ],
+      "key_features": "侧重战创伤、急诊急救、野外卫勤保障（10%），区别于普通执业医师考试",
+      "overview": {
+        "summary": "适用于军队医疗卫生岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "nursing",
+      "name": "护理学",
+      "file": "16244568_89fbe1c6b09b2c129bd1f65997462e7a",
+      "category": "医学类",
+      "target": "军队医疗卫生机构护理岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "基础护理学",
+          "topics": "护理学发展、相关理论与模式、整体护理、伦理与法律、护患沟通、环境与感染防控、休息活动、舒适疼痛、饮食营养、排泄、给药、生命体征、冷热疗法、病情观察、临终护理"
+        },
+        {
+          "name": "内科护理学",
+          "topics": "呼吸/循环/消化/泌尿/血液/内分泌/风湿/神经系统疾病护理"
+        },
+        {
+          "name": "外科护理学",
+          "topics": "水电解质平衡、休克、围术期、感染、损伤、神经外科、甲状腺乳腺、胸心外科、腹部外科、泌尿外科、运动系统、其他外科"
+        },
+        {
+          "name": "妇产科/儿科/传染病护理学",
+          "topics": "妊娠期护理、产褥期、高危妊娠、新生儿护理、传染病护理"
+        }
+      ],
+      "key_features": "军队医院战备护理、院感管控、野外救护为核心差异考点（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构护理岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构护理岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "tcm",
+      "name": "中医学",
+      "file": "16244568_0e1850300ea23b25f3f9425a293fe73f",
+      "category": "医学类",
+      "target": "军队医疗卫生机构中医药岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "中医学基础",
+          "topics": "中医理论（阴阳五行/藏象/气血津液/病因病机/防治原则）、中医诊断学（四诊/八纲/脏腑辨证）、中药学、方剂学"
+        },
+        {
+          "name": "针灸学",
+          "topics": "经络腧穴、刺灸法、针灸治疗学"
+        },
+        {
+          "name": "中医内科学",
+          "topics": "肺系/心系/脑系/脾胃系/肝胆系/肾系/气血津液/肢体经络/温病"
+        },
+        {
+          "name": "中医外科学",
+          "topics": "疮疡、乳房疾病、瘿、瘤岩、皮肤及性传播疾病、肛肠、泌尿男性生殖系、周围血管、其他外科疾病"
+        },
+        {
+          "name": "中医妇科学",
+          "topics": "月经病、带下病、妊娠病、产后病、妇科杂病"
+        },
+        {
+          "name": "中医儿科学",
+          "topics": "新生儿疾病、肺系/脾胃系/心肝系病证"
+        }
+      ],
+      "key_features": "训练伤康复、劳损调理、部队常见伤病中医干预（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构中医药岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构中医药岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "pharmacy",
+      "name": "药学",
+      "file": "16244568_eb5141f2bf1ce158859ccce1830bfc1e",
+      "category": "医学类",
+      "target": "军队医疗卫生机构药学岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "药理学",
+          "topics": "传出神经系统药、中枢神经药、心血管药、激素类药、抗菌药、抗肿瘤药等32章"
+        },
+        {
+          "name": "药物分析",
+          "topics": "药品质量标准、药物鉴别、杂质检查、分析方法要求、典型药物分析、体内药物分析"
+        },
+        {
+          "name": "药剂学",
+          "topics": "液体制剂、灭菌制剂、固体制剂、半固体制剂、气雾剂、制剂新技术、生物药剂学"
+        },
+        {
+          "name": "药物化学",
+          "topics": "中枢神经药、外周神经药、循环系统药、消化系统药、解热镇痛药、抗肿瘤药、抗生素、合成抗菌药"
+        }
+      ],
+      "key_features": "军队战备药品保障、野战药品储备、应急用药、批量伤员用药方案（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构药学岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构药学岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "tcm_pharmacy",
+      "name": "中药学",
+      "file": "16244568_000dd150b9085e7f09241efa2ed02ba8",
+      "category": "医学类",
+      "target": "军队医疗卫生机构中药学岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "中药药理学",
+          "topics": "中药药性、配伍、药效学/药动学/毒理学、解表/清热/泻下/祛风湿/化湿/利水/温里/理气/消食/止血/活血/化痰止咳/安神/平肝/开窍/补虚/收涩/攻毒方药"
+        },
+        {
+          "name": "中药鉴定学",
+          "topics": "根茎类/茎木类/皮类/叶类/花类/果实种子类/全草类/藻菌地衣类/树脂类/动物类/矿物类中药鉴定"
+        },
+        {
+          "name": "中药药剂学",
+          "topics": "调剂、制药卫生、原辅料、粉碎筛析、浸提分离、浸出制剂、液体制剂、注射剂、外用膏剂、栓剂、散剂、丸剂、颗粒剂、胶囊剂、片剂等24章"
+        },
+        {
+          "name": "中药化学",
+          "topics": "糖苷类、醌类、苯丙素类、黄酮类、萜类和挥发油、三萜类、甾体类、生物碱、鞣质、提取分离方法"
+        }
+      ],
+      "key_features": "野战中药应用、训练伤中药调理（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构中药学岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构中药学岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "medical_lab",
+      "name": "医学检验技术",
+      "file": "16244568_cf44d1875938d65760833e2ef880c7ba",
+      "category": "医学类",
+      "target": "军队医疗卫生机构检验岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "临床检验基础",
+          "topics": "血液/尿液/粪便/脑脊液/浆膜腔积液/精液/前列腺液/阴道分泌物检验"
+        },
+        {
+          "name": "临床生化检验",
+          "topics": "血浆蛋白质、糖代谢、脂蛋白代谢、血清酶学、微量元素、体液酸碱平衡、肝胆/肾脏/心脏/内分泌疾病生化检查"
+        },
+        {
+          "name": "临床免疫检验",
+          "topics": "感染性疾病、超敏反应、自身免疫病、免疫增殖病、免疫缺陷病、肿瘤标志物、移植免疫"
+        },
+        {
+          "name": "临床微生物检验",
+          "topics": "细菌形态/生理/耐药性、各类病原菌检验、病毒/真菌/医院感染"
+        },
+        {
+          "name": "临床血液学检验",
+          "topics": "骨髓细胞形态学、贫血、血栓与止血检查"
+        },
+        {
+          "name": "临床分子生物学检验",
+          "topics": "核酸扩增、基因测序、核酸杂交、感染性疾病分子检验"
+        },
+        {
+          "name": "临床检验标准与方法",
+          "topics": "实验室管理、质量控制、法律法规及行业标准、各类检验方法"
+        }
+      ],
+      "key_features": "野外快速检验、传染病筛查、军队检验科质控（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构检验岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构检验岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "medical_imaging",
+      "name": "医学影像技术",
+      "file": "16244568_a962e9f718aa8fdd70ffe022f94b00a8",
+      "category": "医学类",
+      "target": "军队医疗卫生机构影像岗位",
+      "parts": [
+        {
+          "name": "医学基础综合",
+          "ratio": "30%",
+          "topics": "解剖学、生理学、病理学、诊断学、医学伦理学、医患沟通、卫生法规"
+        },
+        {
+          "name": "超声技术",
+          "topics": "超声概述、心脏超声、血管超声、腹部和盆腔器官超声、浅表组织和器官超声"
+        },
+        {
+          "name": "放射技术",
+          "topics": "放射学总论（X线/DR/CT/MR/PACS/对比剂）、各系统检查技术、中枢神经/头颈部/呼吸/心血管/消化/泌尿生殖/骨关节影像学诊断"
+        },
+        {
+          "name": "核医学技术",
+          "topics": "核物理基础、放射性药物、辐射防护、核素示踪和显像、体外分析、肿瘤/骨/内分泌/泌尿/心血管/神经/呼吸/消化等系统显像、放射性核素治疗"
+        }
+      ],
+      "key_features": "战创伤影像检查规范、野战影像、批量伤员快速筛查、军队影像设备防护标准（10%）",
+      "overview": {
+        "summary": "适用于军队医疗卫生机构影像岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队医疗卫生机构影像岗位",
+        "majorCategory": "医学类"
+      }
+    },
+    {
+      "id": "math1",
+      "name": "数学1",
+      "file": "16244568_f79e197661bf2be286e08f2cb037c7eb",
+      "category": "理工类",
+      "target": "武器工程、装备研发、通信工程、科研技术岗",
+      "parts": [
+        {
+          "name": "高等数学",
+          "topics": "函数极限连续、一元微积分、向量代数与空间解析几何、多元微积分、无穷级数、常微分方程"
+        },
+        {
+          "name": "线性代数",
+          "topics": "行列式、矩阵、向量、线性方程组、矩阵相似化简、二次型"
+        },
+        {
+          "name": "概率论与数理统计",
+          "topics": "随机事件与概率、随机变量及分布、多维随机变量、数字特征、大数定律与中心极限定理、样本抽样分布、参数估计、假设检验"
+        }
+      ],
+      "overview": {
+        "summary": "适用于武器工程、装备研发、通信工程、科研技术岗。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "武器工程、装备研发、通信工程、科研技术岗",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "math2_physics",
+      "name": "数学2+物理",
+      "file": "16244568_84951d07ed2fadf3a39fc0f736a369c5",
+      "category": "理工类",
+      "target": "工程技术、装备运维、实验岗位",
+      "parts": [
+        {
+          "name": "高等数学（数2）",
+          "topics": "函数极限连续、一元微积分、多元微积分、常微分方程"
+        },
+        {
+          "name": "线性代数",
+          "topics": "行列式、矩阵、向量、线性方程组、矩阵相似化简、二次型"
+        },
+        {
+          "name": "力学",
+          "topics": "质点运动学、牛顿运动定律、动量与角动量、功和能、刚体定轴转动"
+        },
+        {
+          "name": "热学",
+          "topics": "气体动理论、热力学第一/第二定律"
+        },
+        {
+          "name": "电磁学",
+          "topics": "静电场、导体与电介质、恒定磁场、电磁感应"
+        },
+        {
+          "name": "振动和波动",
+          "topics": "简谐振动、机械波、电磁波"
+        },
+        {
+          "name": "波动光学",
+          "topics": "光的干涉、衍射、偏振"
+        },
+        {
+          "name": "近代物理基础",
+          "topics": "狭义相对论、光的量子性、量子力学基本原理"
+        }
+      ],
+      "key_features": "侧重工程物理、装备物理应用，贴合军队装备运维",
+      "overview": {
+        "summary": "适用于工程技术、装备运维、实验岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "工程技术、装备运维、实验岗位",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "math3_chemistry",
+      "name": "数学3+化学",
+      "file": null,
+      "category": "理工类",
+      "target": "化工、弹药、材料、环境检测、军队化验岗",
+      "parts": [
+        {
+          "name": "数学基础",
+          "ratio": "30%",
+          "topics": "初等高数、统计基础"
+        },
+        {
+          "name": "无机化学、有机化学",
+          "ratio": "40%"
+        },
+        {
+          "name": "分析化学、物理化学",
+          "ratio": "30%"
+        }
+      ],
+      "key_features": "含军用材料、防腐、防爆、环境化学特色考点",
+      "overview": {
+        "summary": "适用于化工、弹药、材料、环境检测、军队化验岗。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "化工、弹药、材料、环境检测、军队化验岗",
+        "majorCategory": "理工类"
+      }
+    },
+    {
+      "id": "biochemistry_plant_physiology",
+      "name": "生物化学+植物生理学",
+      "file": "16244568_b1dcc048f24b7b13141bd1dafed6786d",
+      "category": "农学/生命科学类",
+      "target": "军队院校、科研机构、军兵种机关和部队等单位，从事农业科技、科研等专业技术工作的文职人员岗位",
+      "features": "闭卷笔试，考试时限120分钟，满分100分，客观性试题",
+      "parts": [
+        {
+          "name": "生物化学",
+          "topics": "生命的分子基础、物质代谢与能量转换、遗传信息的传递"
+        },
+        {
+          "name": "植物生理学",
+          "topics": "植物生理学基础、水分和矿物质营养、物质代谢与能量转换、植物的生长与发育"
+        }
+      ],
+      "key_features": "重点检验生物化学和植物生理学专业知识，以及综合分析、判断解决农业科技和科研实际问题的能力",
+      "overview": {
+        "summary": "适用于军队院校、科研机构、军兵种机关和部队等单位，从事农业科技、科研等专业技术工作的文职人员岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研机构、军兵种机关和部队等单位，从事农业科技、科研等专业技术工作的文职人员岗位",
+        "majorCategory": "农学/生命科学类"
+      }
+    },
+    {
+      "id": "biochemistry_animal_physiology",
+      "name": "生物化学+动物生理学",
+      "file": "16244568_0bbd57d41a60ec66a60370e462fd9374",
+      "category": "畜牧/生命科学类",
+      "target": "军队院校、科研机构、医疗卫生、军兵种机关和部队等单位，从事畜禽养殖、卫生防疫、科研等专业技术工作的文职人员岗位",
+      "features": "闭卷笔试，考试时限120分钟，满分100分，客观性试题",
+      "parts": [
+        {
+          "name": "生物化学",
+          "topics": "生命的分子基础、物质代谢与能量转换、遗传信息的传递"
+        },
+        {
+          "name": "动物生理学",
+          "topics": "动物生理学的细胞学基础、器官生理、动物卫生安全"
+        }
+      ],
+      "key_features": "重点检验生物化学和动物生理学专业知识，以及综合分析、判断解决畜牧养殖和动物卫生安全实际问题的能力",
+      "overview": {
+        "summary": "适用于军队院校、科研机构、医疗卫生、军兵种机关和部队等单位，从事畜禽养殖、卫生防疫、科研等专业技术工作的文职人员岗位。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、科研机构、医疗卫生、军兵种机关和部队等单位，从事畜禽养殖、卫生防疫、科研等专业技术工作的文职人员岗位",
+        "majorCategory": "畜牧/生命科学类"
+      }
+    },
+    {
+      "id": "library",
+      "name": "图书",
+      "file": "16244568_be05ec5be4938a8592a893137736509d",
+      "category": "图书档案类",
+      "target": "军队院校、训练机构教员和图书馆文职人员岗位，从事教学、教学辅助等专业技术工作",
+      "features": "闭卷笔试，考试时限120分钟，满分100分，客观性试题",
+      "parts": [
+        {
+          "name": "图书档案基础综合",
+          "topics": "管理学概论、信息管理学概论"
+        },
+        {
+          "name": "图书专业知识",
+          "topics": "图书馆学概论、图书情报管理实务"
+        }
+      ],
+      "key_features": "重点测查图书馆文职人员岗位相关基础知识、专业知识和综合分析、创新实践、调查研究、应变适应、贯彻执行等能力",
+      "overview": {
+        "summary": "适用于军队院校、训练机构教员和图书馆文职人员岗位，从事教学、教学辅助等专业技术工作。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校、训练机构教员和图书馆文职人员岗位，从事教学、教学辅助等专业技术工作",
+        "majorCategory": "图书档案类"
+      }
+    },
+    {
+      "id": "archives",
+      "name": "档案",
+      "file": "16244568_248ae463ac60d9638a092d9667c4e4ea",
+      "category": "图书档案类",
+      "target": "军队院校教员和档案管理机构文职人员岗位，从事教学、档案管理等专业技术工作",
+      "features": "闭卷笔试，考试时限120分钟，满分100分，客观性试题",
+      "parts": [
+        {
+          "name": "图书档案基础综合",
+          "topics": "管理学概论、信息管理学概论"
+        },
+        {
+          "name": "档案专业知识",
+          "topics": "档案学概论、档案法规标准与职业道德、档案管理实务、档案信息化建设"
+        }
+      ],
+      "key_features": "重点测查档案文职人员岗位相关基础知识、专业知识和综合分析、创新实践、调查研究、应变适应、数学计算等能力",
+      "overview": {
+        "summary": "适用于军队院校教员和档案管理机构文职人员岗位，从事教学、档案管理等专业技术工作。",
+        "fullScore": 100,
+        "durationMinutes": 120,
+        "durationText": "120分钟",
+        "questionType": "全客观题",
+        "hasSubjective": false,
+        "applicableJobs": "军队院校教员和档案管理机构文职人员岗位，从事教学、档案管理等专业技术工作",
+        "majorCategory": "图书档案类"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1427 @@
+{
+  "version": "2.0",
+  "updatedAt": "2026-07-07",
+  "description": "真题中心 V2 索引。旧页面继续读取 data/papers.json。",
+  "items": [
+    {
+      "id": "1",
+      "title": "2019年档案学真题及解析",
+      "description": "2019年档案学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "档案学",
+      "major": "档案学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/档案学/2019年档案学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "档案学",
+        "档案学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "2",
+      "title": "2019年法学真题及解析",
+      "description": "2019年法学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "法学",
+      "major": "法学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/法学/2019年法学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "法学",
+        "法学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "3",
+      "title": "2020年法学真题及解析",
+      "description": "2020年法学真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "法学",
+      "major": "法学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/法学/2020年法学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "法学",
+        "法学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "4",
+      "title": "2021年（公共科目）试题（网友回忆版）",
+      "description": "2021年公共科目网友回忆版资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "公共科目",
+      "major": "",
+      "type": "公共科目",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2021（公共科目）试题（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "公共科目",
+        "公共科目",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "5",
+      "title": "2022年（公共科目）试题（网友回忆版）",
+      "description": "2022年公共科目网友回忆版资料",
+      "year": 2022,
+      "category": "军队文职",
+      "subject": "公共科目",
+      "major": "",
+      "type": "公共科目",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2022年（公共科目）试题（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2022",
+      "tags": [
+        "2022",
+        "公共科目",
+        "公共科目",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "6",
+      "title": "2023年（公共科目）题（网友回忆版）",
+      "description": "2023年公共科目网友回忆版资料",
+      "year": 2023,
+      "category": "军队文职",
+      "subject": "公共科目",
+      "major": "",
+      "type": "公共科目",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2023年（公共科目）题（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2023",
+      "tags": [
+        "2023",
+        "公共科目",
+        "公共科目",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "7",
+      "title": "2024年（公共科目）试题（网友回忆版）",
+      "description": "2024年公共科目网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "公共科目",
+      "major": "",
+      "type": "公共科目",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年（公共科目）试题（网友回忆版）_副本.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "公共科目",
+        "公共科目",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "8",
+      "title": "2025年（公共科目）试题（网友回忆版）",
+      "description": "2025年公共科目网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "公共科目",
+      "major": "",
+      "type": "公共科目",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年（公共科目）试题（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "公共科目",
+        "公共科目",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "9",
+      "title": "2018年管理学真题及解析",
+      "description": "2018年管理学真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年管理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "管理学",
+        "管理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "10",
+      "title": "2019年管理学真题及解析",
+      "description": "2019年管理学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年管理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "管理学",
+        "管理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "11",
+      "title": "2020年管理学真题及解析",
+      "description": "2020年管理学真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2020管理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "管理学",
+        "管理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "12",
+      "title": "2021年管理学真题及解析",
+      "description": "2021年管理学真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2021年管理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "管理学",
+        "管理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "13",
+      "title": "2022年管理学真题及解析",
+      "description": "2022年管理学真题及解析资料",
+      "year": 2022,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2022年管理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2022",
+      "tags": [
+        "2022",
+        "管理学",
+        "管理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "14",
+      "title": "2024年管理学试卷（网友回忆版）",
+      "description": "2024年管理学网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年管理学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "管理学",
+        "管理学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "15",
+      "title": "2025年管理学试卷（网友回忆版）",
+      "description": "2025年管理学网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "管理学",
+      "major": "管理学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年管理学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "管理学",
+        "管理学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "16",
+      "title": "2018年护理学真题及解析",
+      "description": "2018年护理学真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "护理学",
+      "major": "护理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年护理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "护理学",
+        "护理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "17",
+      "title": "2019年护理学真题及解析",
+      "description": "2019年护理学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "护理学",
+      "major": "护理学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年护理学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "护理学",
+        "护理学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "18",
+      "title": "2020年护理学真题",
+      "description": "2020年护理学真题资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "护理学",
+      "major": "护理学",
+      "type": "专业课",
+      "paperType": "真题",
+      "pdf": "papers/2020年护理学真题.pdf",
+      "analysis": false,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "护理学",
+        "护理学",
+        "专业课",
+        "真题",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "19",
+      "title": "2021年护理学真题",
+      "description": "2021年护理学真题资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "护理学",
+      "major": "护理学",
+      "type": "专业课",
+      "paperType": "真题",
+      "pdf": "papers/2021年护理学真题.pdf",
+      "analysis": false,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "护理学",
+        "护理学",
+        "专业课",
+        "真题",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "20",
+      "title": "2025年护理学试卷（网友回忆版）",
+      "description": "2025年护理学网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "护理学",
+      "major": "护理学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年护理学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "护理学",
+        "护理学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "21",
+      "title": "2018年文职会计学真题及解析",
+      "description": "2018年会计学真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "22",
+      "title": "2019年文职会计学真题及解析",
+      "description": "2019年会计学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "23",
+      "title": "2020年文职会计学真题及解析",
+      "description": "2020年会计学真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2020年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "24",
+      "title": "2021年文职会计学真题及解析",
+      "description": "2021年会计学真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2021年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "25",
+      "title": "2022年文职会计学真题及解析",
+      "description": "2022年会计学真题及解析资料",
+      "year": 2022,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2022年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2022",
+      "tags": [
+        "2022",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "26",
+      "title": "2023年文职会计学真题及解析",
+      "description": "2023年会计学真题及解析资料",
+      "year": 2023,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2023年文职会计学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2023",
+      "tags": [
+        "2023",
+        "会计学",
+        "会计学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "27",
+      "title": "2024年会计学试卷（网友回忆版）",
+      "description": "2024年会计学网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年会计学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "会计学",
+        "会计学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "28",
+      "title": "2025年会计学试卷（网友回忆版）",
+      "description": "2025年会计学网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "会计学",
+      "major": "会计学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年会计学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "会计学",
+        "会计学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "29",
+      "title": "2013年教育学真题及解析",
+      "description": "2013年教育学真题及解析资料",
+      "year": 2013,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/教育学/2013年教育学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2013",
+      "tags": [
+        "2013",
+        "教育学",
+        "教育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "30",
+      "title": "2018年文职教育学真题及解析",
+      "description": "2018年教育学真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年文职教育学真题及解析(1).pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "教育学",
+        "教育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "31",
+      "title": "2019年文职教育学真题及解析",
+      "description": "2019年教育学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年文职教育学真题及解析(1).pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "教育学",
+        "教育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "32",
+      "title": "2020年文职教育学真题及解析",
+      "description": "2020年教育学真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2020年文职教育学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "教育学",
+        "教育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "33",
+      "title": "2021年文职教育学真题及解析",
+      "description": "2021年教育学真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2021年文职教育学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "教育学",
+        "教育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "34",
+      "title": "2024年教育学试卷（精选网友回忆版）",
+      "description": "2024年教育学网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年教育学试卷（精选网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "教育学",
+        "教育学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "35",
+      "title": "2025年教育学试卷（网友回忆版）",
+      "description": "2025年教育学网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "教育学",
+      "major": "教育学",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年教育学试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "教育学",
+        "教育学",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "36",
+      "title": "2019年经济学真题及解析",
+      "description": "2019年经济学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "经济学",
+      "major": "经济学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/经济学/2019年经济学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "经济学",
+        "经济学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "37",
+      "title": "2018年临床医学真题及解析",
+      "description": "2018年临床医学真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "临床医学",
+      "major": "临床医学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/临床医学/2018年临床医学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "临床医学",
+        "临床医学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "38",
+      "title": "2019年临床医学真题及解析",
+      "description": "2019年临床医学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "临床医学",
+      "major": "临床医学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/临床医学/2019年临床医学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "临床医学",
+        "临床医学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "39",
+      "title": "2018年文职数学1真题及解析",
+      "description": "2018年数学1真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年文职数学1真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "数学1",
+        "数学1",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "40",
+      "title": "2019年文职数学1真题及解析",
+      "description": "2019年数学1真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年文职数学1真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "数学1",
+        "数学1",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "41",
+      "title": "2020年文职数学1真题及解析",
+      "description": "2020年数学1真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2020年文职数学1真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "数学1",
+        "数学1",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "42",
+      "title": "2021年文职数学1真题及解析",
+      "description": "2021年数学1真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2021年文职数学1真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "数学1",
+        "数学1",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "43",
+      "title": "2023年文职数学1真题及解析",
+      "description": "2023年数学1真题及解析资料",
+      "year": 2023,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2023年文职数学1真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2023",
+      "tags": [
+        "2023",
+        "数学1",
+        "数学1",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "44",
+      "title": "2024年数学1试卷（网友回忆版）",
+      "description": "2024年数学1网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年数学1试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "数学1",
+        "数学1",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "45",
+      "title": "2025年数学1试卷（网友回忆版）",
+      "description": "2025年数学1网友回忆版资料",
+      "year": 2025,
+      "category": "军队文职",
+      "subject": "数学1",
+      "major": "数学1",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2025年数学1试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2025",
+      "tags": [
+        "2025",
+        "数学1",
+        "数学1",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "46",
+      "title": "2018年文职数学2物理真题及解析",
+      "description": "2018年数学2+物理真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2018年文职数学2物理真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "47",
+      "title": "2019年文职数学2物理真题及解析",
+      "description": "2019年数学2+物理真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2019年文职数学2物理真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "48",
+      "title": "2020年文职数学2物理真题及解析",
+      "description": "2020年数学2+物理真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2020年文职数学2物理真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "49",
+      "title": "2021年文职数学2物理真题及解析",
+      "description": "2021年数学2+物理真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2021年文职数学2物理真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "50",
+      "title": "2023年文职数学2物理真题及解析",
+      "description": "2023年数学2+物理真题及解析资料",
+      "year": 2023,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/2023年文职数学2物理真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2023",
+      "tags": [
+        "2023",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "51",
+      "title": "2024年数学2+物理试卷（网友回忆版）",
+      "description": "2024年数学2+物理网友回忆版资料",
+      "year": 2024,
+      "category": "军队文职",
+      "subject": "数学2+物理",
+      "major": "数学2+物理",
+      "type": "专业课",
+      "paperType": "网友回忆版",
+      "pdf": "papers/2024年数学2+物理试卷（网友回忆版）.pdf",
+      "analysis": false,
+      "updatedAt": "2024",
+      "tags": [
+        "2024",
+        "数学2+物理",
+        "数学2+物理",
+        "专业课",
+        "网友回忆版",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "52",
+      "title": "2019年数学3+化学真题及解析",
+      "description": "2019年数学3+化学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "数学3+化学",
+      "major": "数学3+化学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/数学3+化学/2019年数学3+化学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "数学3+化学",
+        "数学3+化学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "53",
+      "title": "2021年数学3+化学真题及解析",
+      "description": "2021年数学3+化学真题及解析资料",
+      "year": 2021,
+      "category": "军队文职",
+      "subject": "数学3+化学",
+      "major": "数学3+化学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/数学3+化学/2021年数学3+化学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2021",
+      "tags": [
+        "2021",
+        "数学3+化学",
+        "数学3+化学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "54",
+      "title": "2019年体育学真题及解析",
+      "description": "2019年体育学真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "体育学",
+      "major": "体育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/体育学/2019年体育学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "体育学",
+        "体育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "55",
+      "title": "2020年体育学真题及解析",
+      "description": "2020年体育学真题及解析资料",
+      "year": 2020,
+      "category": "军队文职",
+      "subject": "体育学",
+      "major": "体育学",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/体育学/2020年体育学真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2020",
+      "tags": [
+        "2020",
+        "体育学",
+        "体育学",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "56",
+      "title": "2018年英语真题及解析",
+      "description": "2018年英语真题及解析资料",
+      "year": 2018,
+      "category": "军队文职",
+      "subject": "英语",
+      "major": "英语",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/英语/2018年英语真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2018",
+      "tags": [
+        "2018",
+        "英语",
+        "英语",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    },
+    {
+      "id": "57",
+      "title": "2019年英语真题及解析",
+      "description": "2019年英语真题及解析资料",
+      "year": 2019,
+      "category": "军队文职",
+      "subject": "英语",
+      "major": "英语",
+      "type": "专业课",
+      "paperType": "真题及解析",
+      "pdf": "papers/补充真题/英语/2019年英语真题及解析.pdf",
+      "analysis": true,
+      "updatedAt": "2019",
+      "tags": [
+        "2019",
+        "英语",
+        "英语",
+        "专业课",
+        "真题及解析",
+        "军队文职"
+      ],
+      "legacy": {
+        "source": "data/papers.json"
+      }
+    }
+  ]
+}

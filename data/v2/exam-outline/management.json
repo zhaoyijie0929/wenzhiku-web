@@ -1,0 +1,51 @@
+{
+  "id": "management",
+  "name": "管理学",
+  "file": "16244568_34bc0ff8e7f761ba22a6c91a368d47e9",
+  "category": "管理类",
+  "target": "军队管理类文职人员岗位",
+  "features": "文职唯一含主观题专业（客观70分+主观30分）",
+  "parts": [
+    {
+      "name": "管理学基础",
+      "ratio": "20%",
+      "topics": "管理职能、决策、组织、领导、控制、创新"
+    },
+    {
+      "name": "组织行为学",
+      "ratio": "15%",
+      "topics": "个体行为、群体行为、团队管理、激励理论"
+    },
+    {
+      "name": "人力资源管理",
+      "ratio": "20%",
+      "topics": "招聘、培训、绩效、薪酬、文职人员人事制度"
+    },
+    {
+      "name": "公共事业管理",
+      "ratio": "10%",
+      "topics": "公共服务、应急管理、后勤保障"
+    },
+    {
+      "name": "行政伦理学",
+      "ratio": "10%",
+      "topics": "公职人员职业道德、军队纪律伦理、廉政建设"
+    },
+    {
+      "name": "公文写作",
+      "ratio": "25%+主观30分",
+      "topics": "法定公文写作、公文改错、通知/请示/报告/函/通报等军队常用公文"
+    }
+  ],
+  "key_features": "所有案例题、实务题均以部队机关、军队后勤、文职工作为背景，不考地方企业管理",
+  "overview": {
+    "summary": "适用于军队管理类文职人员岗位。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "客观+主观",
+    "hasSubjective": true,
+    "applicableJobs": "军队管理类文职人员岗位",
+    "majorCategory": "管理类"
+  }
+}

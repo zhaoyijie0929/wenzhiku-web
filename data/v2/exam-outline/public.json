@@ -1,0 +1,110 @@
+{
+  "id": "public",
+  "name": "公共科目",
+  "category": "公共科目",
+  "满分": 100,
+  "考试时长_min": 120,
+  "题型": "全客观题（单选+多选+判断）",
+  "题量": 110,
+  "parts": [
+    {
+      "name": "基本知识",
+      "score": 40,
+      "question_count": 60,
+      "chapters": [
+        {
+          "name": "国防与军队知识",
+          "score": 14,
+          "ratio": "35%",
+          "question_count": "约20题",
+          "key_points": "国防法、文职人员条例、军队纪律、军队安全保密、新时代国防政策、军兵种职能、军队思想政治建设、战备工作、军人权益与义务",
+          "features": "纯军队特色、独家考点，多选题重灾区，失分率最高；新规迭代快，每年必考新法新规"
+        },
+        {
+          "name": "时政与国情国力",
+          "score": 8,
+          "ratio": "20%",
+          "question_count": "约12题",
+          "key_points": "近一年重大会议、强军时政、科技成就、国防动态、国家大政方针、国情地理、经济数据",
+          "features": "极强时效性，强军时政占比超60%，考前3个月为高频命题窗口期"
+        },
+        {
+          "name": "马克思主义理论",
+          "score": 6,
+          "ratio": "15%",
+          "question_count": "约9题",
+          "key_points": "唯物论、辩证法、认识论、历史唯物主义、商品经济、剩余价值、资本理论",
+          "features": "基础理论为主，难度低于考研，侧重理解应用"
+        },
+        {
+          "name": "人文与社会",
+          "score": 5,
+          "ratio": "12.5%",
+          "question_count": "约7题",
+          "key_points": "中国历史、世界史、文学常识、传统文化、科技史、生活常识",
+          "features": "知识面广、分值低，性价比最低"
+        },
+        {
+          "name": "法律常识",
+          "score": 5,
+          "ratio": "12.5%",
+          "question_count": "约7题",
+          "key_points": "宪法、民法典、刑法、行政法、诉讼法基础，重点结合军队执法场景"
+        },
+        {
+          "name": "思想道德与法治",
+          "score": 2,
+          "ratio": "5%",
+          "question_count": "约3题",
+          "features": "送分题，难度极低，正确率90%以上"
+        }
+      ]
+    },
+    {
+      "name": "岗位能力",
+      "score": 60,
+      "question_count": 50,
+      "per_question_score": 1.2,
+      "chapters": [
+        {
+          "name": "言语理解与表达",
+          "ratio": "24%",
+          "score": 14.4,
+          "question_count": 12,
+          "features": "侧重军队公文语言、书面语体、主旨概括、语句排序、实词辨析"
+        },
+        {
+          "name": "数量关系",
+          "ratio": "20%",
+          "score": 12,
+          "question_count": 10,
+          "features": "数字推理、数学运算，难度低于省考，侧重基础题型"
+        },
+        {
+          "name": "判断推理",
+          "ratio": "28%",
+          "score": 16.8,
+          "question_count": 14,
+          "features": "图形、定义、类比、逻辑判断，逻辑推理为拉分重点"
+        },
+        {
+          "name": "资料分析",
+          "ratio": "28%",
+          "score": 16.8,
+          "question_count": 14,
+          "features": "计算简单、公式固定，最简单高分模块，正确率可冲满分"
+        }
+      ]
+    }
+  ],
+  "overview": {
+    "summary": "军队文职考试通用科目，所有报考人员均需重点准备。",
+    "fullScore": 100,
+    "durationMinutes": 120,
+    "durationText": "120分钟",
+    "questionType": "全客观题（单选+多选+判断）",
+    "hasSubjective": false,
+    "applicableJobs": "全部报考人员",
+    "majorCategory": "公共科目"
+  }
+}
