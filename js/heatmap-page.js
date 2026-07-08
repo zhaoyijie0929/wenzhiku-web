@@ -391,7 +391,8 @@
       fetch(POSITIONS_URL, { cache: "no-store" }),
       fetch(MAJORS_URL, { cache: "no-store" }).catch(() => null)
     ]);
-    state.rows = await positionsResponse.json();
+    const manifest = await positionsResponse.json();
+    state.rows = (await Promise.all(manifest.chunks.map(url => fetch(url, { cache: "no-store" }).then(r => r.json())))).flat();
     state.majors = majorsResponse?.ok ? await majorsResponse.json() : [];
     initSelects();
     bindEvents();

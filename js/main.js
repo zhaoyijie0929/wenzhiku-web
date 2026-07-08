@@ -32,6 +32,8 @@ const DATA = {
     DATA.positionsLoading = true;
     DATA.positionsLoadPromise = fetch('data/positions.json')
       .then(r => r.json())
+      .then(manifest => Promise.all(manifest.chunks.map(url => fetch(url).then(r => r.json()))))
+      .then(chunks => chunks.flat())
       .then(data => {
         DATA.positions = data;
         DATA.positionsLoaded = true;
