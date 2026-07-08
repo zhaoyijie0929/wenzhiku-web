@@ -2166,7 +2166,9 @@
     async function loadEstimateBaseStats() {
       try {
         const response = await fetch("data/positions.json");
-        const rows = await response.json();
+        const manifest = await response.json();
+        const chunks = await Promise.all(manifest.chunks.map(url => fetch(url).then(r => r.json())));
+        const rows = chunks.flat();
         const units = new Set(rows.map(item => item.unit).filter(Boolean));
         const regions = new Set(rows.map(item => item.prov).filter(Boolean));
         estimateBaseStats = {

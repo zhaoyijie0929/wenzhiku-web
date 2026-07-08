@@ -1516,7 +1516,9 @@
     async function loadPositions() {
       try {
         const resp = await fetch('data/positions.json');
-        allPositions = await resp.json();
+        const manifest = await resp.json();
+        const chunks = await Promise.all(manifest.chunks.map(url => fetch(url).then(r => r.json())));
+        allPositions = chunks.flat();
       } catch (e) {
         console.error('[岗位推荐报告] 加载 positions.json 失败:', e);
         allPositions = [];
