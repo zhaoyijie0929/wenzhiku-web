@@ -35,7 +35,8 @@
       title: "第四阶段",
       subtitle: "正式报名",
       items: [
-        { number: "10", label: "报名流程", href: "guide-process.html#registration", match: ["guide-process.html#registration"] }
+        { number: "10", label: "报考准备材料", href: "preparation-materials.html", match: ["preparation-materials.html"] },
+        { number: "11", label: "报名流程", href: "guide-process.html#registration", match: ["guide-process.html#registration"] }
       ]
     }
   ];

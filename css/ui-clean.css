@@ -40,7 +40,8 @@ body {
 .policy-reader-page,
 .report-container,
 .recommend-container,
-.policy-layout {
+.policy-layout,
+.prep-page {
   max-width: 1480px;
 }
 
@@ -51,7 +52,8 @@ body {
   body.has-global-sidebar .recommend-container,
   body.has-global-sidebar .report-container,
   body.has-global-sidebar .policy-layout,
-  body.has-global-sidebar .policy-reader-page {
+  body.has-global-sidebar .policy-reader-page,
+  body.has-global-sidebar .prep-page {
     width: auto;
     margin-left: calc(var(--global-sidebar-current-width) + 28px);
     margin-right: 28px;
@@ -592,7 +594,8 @@ button,
   body.has-global-sidebar .recommend-container,
   body.has-global-sidebar .report-container,
   body.has-global-sidebar .policy-layout,
-  body.has-global-sidebar .policy-reader-page {
+  body.has-global-sidebar .policy-reader-page,
+  body.has-global-sidebar .prep-page {
     margin-left: var(--global-sidebar-collapsed-width);
     margin-right: 16px;
   }
@@ -615,7 +618,8 @@ button,
   body.has-global-sidebar .recommend-container,
   body.has-global-sidebar .report-container,
   body.has-global-sidebar .policy-layout,
-  body.has-global-sidebar .policy-reader-page {
+  body.has-global-sidebar .policy-reader-page,
+  body.has-global-sidebar .prep-page {
     margin-left: 0;
     margin-right: 0;
   }

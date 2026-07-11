@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>报考准备材料 - 军队文职智能报考平台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/design-system.css?v=20260703">
+  <link rel="stylesheet" href="css/style.css?v=20260703">
+  <style>
+    body { background: #FAFBFC; }
+    .prep-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+    }
+    .prep-hero,
+    .prep-section,
+    .prep-flow {
+      border: 1px solid #E5E7EB;
+      border-radius: 16px;
+      background: #FFFFFF;
+      box-shadow: 0 8px 30px rgba(15,23,42,.06);
+    }
+    .prep-hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    .prep-hero .breadcrumb {
+      margin-bottom: 14px;
+    }
+    .prep-hero h1 {
+      margin: 0 0 12px;
+      color: #111827;
+      font-size: 32px;
+      font-weight: 900;
+    }
+    .prep-hero p {
+      max-width: 760px;
+      margin: 0;
+      color: #6B7280;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    .prep-section {
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    .prep-section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .prep-section h2 {
+      margin: 0;
+      color: #111827;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .prep-section-note {
+      color: #6B7280;
+      font-size: 13px;
+    }
+    .prep-material-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .prep-material-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      border: 1px solid #E5E7EB;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #FFFFFF;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .prep-material-card:hover {
+      transform: translateY(-2px);
+      border-color: #BFDBFE;
+      box-shadow: 0 12px 30px rgba(15,23,42,.08);
+    }
+    .prep-material-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: contain;
+      background: #F8FAFC;
+      border-bottom: 1px solid #E5E7EB;
+    }
+    .prep-material-card strong {
+      padding: 14px 14px 4px;
+      color: #111827;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .prep-material-card span {
+      padding: 0 14px 14px;
+      color: #2563EB;
+      font-size: 13px;
+      font-weight: 800;
+      margin-top: auto;
+    }
+    .prep-flow {
+      padding: 22px;
+    }
+    .prep-flow-list {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: prepStep;
+    }
+    .prep-flow-list li {
+      counter-increment: prepStep;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid #E5E7EB;
+      border-radius: 14px;
+      background: #F8FAFC;
+      color: #374151;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .prep-flow-list li::before {
+      content: counter(prepStep);
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: #2563EB;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 900;
+    }
+    @media (max-width: 900px) {
+      .prep-material-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .prep-page { padding: 20px 16px 56px; }
+      .prep-material-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+  <script src="js/header-v2.js?v=20260707"></script>
+
+  <main class="prep-page">
+    <section class="prep-hero">
+      <div class="breadcrumb"><a href="index.html">首页</a> / <a href="guide-process.html">报考指南</a> / <span>报考准备材料</span></div>
+      <h1>报考准备材料</h1>
+      <p>这里集中整理军队文职报名过程中可能用到的证明材料模板和报名流程说明。正式报名时仍以当年公告、岗位要求和报名系统提示为准。</p>
+    </section>
+
+    <section class="prep-section">
+      <div class="prep-section-head">
+        <h2>常用证明材料</h2>
+        <span class="prep-section-note">点击图片查看原图</span>
+      </div>
+      <div class="prep-material-grid" id="prep-material-grid"></div>
+    </section>
+
+    <section class="prep-flow">
+      <div class="prep-section-head">
+        <h2>军队人才网报名流程</h2>
+        <span class="prep-section-note">根据现有报名流程文档整理</span>
+      </div>
+      <ol class="prep-flow-list" id="prep-flow-list"></ol>
+    </section>
+  </main>
+
+  <script>
+    function escapeHtml(value) {
+      const div = document.createElement("div");
+      div.textContent = value == null ? "" : String(value);
+      return div.innerHTML;
+    }
+
+    fetch("data/prep-content.json?v=20260711")
+      .then(response => response.json())
+      .then(data => {
+        const grid = document.getElementById("prep-material-grid");
+        grid.innerHTML = data.registrationMaterials.map(item => `
+          <a class="prep-material-card" href="${encodeURI(item.file)}" target="_blank" rel="noopener">
+            <img src="${encodeURI(item.file)}" alt="${escapeHtml(item.title)}">
+            <strong>${escapeHtml(item.title)}</strong>
+            <span>查看原图</span>
+          </a>
+        `).join("");
+
+        const flow = document.getElementById("prep-flow-list");
+        flow.innerHTML = data.registrationFlow.paragraphs.map(text => `<li>${escapeHtml(text)}</li>`).join("");
+      })
+      .catch(() => {
+        document.getElementById("prep-material-grid").innerHTML = "<p>材料加载失败，请确认 data/prep-content.json 存在。</p>";
+      });
+  </script>
+</body>
+</html>

@@ -71,7 +71,8 @@
                filename === 'guide-qualification.html' ||
                filename === 'guide-medical.html' ||
                filename === 'guide-political.html' ||
-               filename === 'guide-faq.html') {
+               filename === 'guide-faq.html' ||
+               filename === 'preparation-materials.html') {
       var link = document.querySelector('.nav a[href="guide.html"]');
       if (link) link.classList.add('active');
     } else if (filename === 'papers.html') {

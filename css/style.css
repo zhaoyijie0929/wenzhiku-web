@@ -402,7 +402,8 @@ body.global-sidebar-collapsed .global-sidebar-link.active::before {
   body.has-global-sidebar .encyclopedia-page,
   body.has-global-sidebar .recommend-container,
   body.has-global-sidebar .report-container,
-  body.has-global-sidebar .policy-layout {
+  body.has-global-sidebar .policy-layout,
+  body.has-global-sidebar .prep-page {
     margin-left: calc(var(--global-sidebar-current-width) + max(24px, calc((100vw - var(--global-sidebar-current-width) - var(--max-width)) / 2)));
     margin-right: max(24px, calc((100vw - var(--global-sidebar-current-width) - var(--max-width)) / 2));
   }

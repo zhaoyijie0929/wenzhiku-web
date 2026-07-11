@@ -333,6 +333,72 @@
       background: #FFFFFF;
       box-shadow: 0 8px 30px rgba(15,23,42,.06);
     }
+    .answer-card-guide {
+      margin-bottom: 20px;
+      padding: 18px;
+      border: 1px solid #E5E7EB;
+      border-radius: 16px;
+      background: #FFFFFF;
+      box-shadow: 0 8px 30px rgba(15,23,42,.06);
+    }
+    .answer-card-guide-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .answer-card-guide h2 {
+      margin: 0;
+      color: #111827;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .answer-card-guide-note {
+      color: #6B7280;
+      font-size: 13px;
+    }
+    .answer-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .answer-card-item {
+      display: flex;
+      flex-direction: column;
+      min-height: 250px;
+      border: 1px solid #E5E7EB;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #FFFFFF;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+    .answer-card-item:hover {
+      transform: translateY(-2px);
+      border-color: #BFDBFE;
+      box-shadow: 0 12px 30px rgba(15,23,42,.08);
+    }
+    .answer-card-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      background: #F8FAFC;
+      border-bottom: 1px solid #E5E7EB;
+    }
+    .answer-card-item strong {
+      padding: 14px 14px 6px;
+      color: #111827;
+      font-size: 15px;
+      line-height: 1.4;
+      font-weight: 900;
+    }
+    .answer-card-item span {
+      padding: 0 14px 14px;
+      color: #6B7280;
+      font-size: 13px;
+      line-height: 1.5;
+    }
     .paper-search-box {
       display: flex;
       align-items: center;
@@ -751,6 +817,9 @@
       .paper-side-panel {
         position: static;
       }
+      .answer-card-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (min-width: 721px) and (max-width: 1024px) {
       .papers-hero {
@@ -771,6 +840,9 @@
       }
       .paper-side-panel {
         position: static;
+      }
+      .answer-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
   </style>
@@ -798,6 +870,30 @@
         <div><span>公共科目</span><strong class="skeleton"></strong></div>
         <div><span>专业课</span><strong class="skeleton"></strong></div>
         <div><span>覆盖年份</span><strong class="skeleton"></strong></div>
+      </div>
+    </section>
+
+    <section class="answer-card-guide">
+      <div class="answer-card-guide-head">
+        <h2>答题卡填写规范</h2>
+        <span class="answer-card-guide-note">考前先看清楚姓名、考场、座序、准考证号和试卷代码怎么填</span>
+      </div>
+      <div class="answer-card-grid">
+        <a class="answer-card-item" href="assets/prep/answer-card-1.png" target="_blank" rel="noopener">
+          <img src="assets/prep/answer-card-1.png" alt="公共科目答题卡填写说明">
+          <strong>公共科目答题卡填写说明</strong>
+          <span>标注姓名、考场、座序、试卷代码和准考证号填写位置。</span>
+        </a>
+        <a class="answer-card-item" href="assets/prep/answer-card-2.png" target="_blank" rel="noopener">
+          <img src="assets/prep/answer-card-2.png" alt="军队文职招录考试答题卡">
+          <strong>军队文职招录考试答题卡</strong>
+          <span>了解客观题涂卡区域、填涂样例和注意事项。</span>
+        </a>
+        <a class="answer-card-item" href="assets/prep/answer-card-3.png" target="_blank" rel="noopener">
+          <img src="assets/prep/answer-card-3.png" alt="专业科目模拟答题卡">
+          <strong>专业科目模拟答题卡</strong>
+          <span>包含客观题和主观题作答区域，提醒不要超出答题范围。</span>
+        </a>
       </div>
     </section>
 
