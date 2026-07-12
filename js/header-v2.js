@@ -21,7 +21,27 @@
           '<path d="M12 12l3.2 3.2" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round"/>' +
         '</svg>' +
       '</div>' +
+      '<button class="mobile-v2-menu-button" type="button" aria-label="打开菜单" aria-expanded="false">' +
+        '<span></span><span></span><span></span>' +
+      '</button>' +
     '</div>' +
+    '<div class="mobile-v2-drawer-overlay" aria-hidden="true"></div>' +
+    '<aside class="mobile-v2-drawer" aria-label="移动端导航">' +
+      '<div class="mobile-v2-drawer-head">' +
+        '<span class="logo-icon">知</span>' +
+        '<strong>文职库</strong>' +
+        '<button class="mobile-v2-drawer-close" type="button" aria-label="关闭菜单">×</button>' +
+      '</div>' +
+      '<nav class="mobile-v2-drawer-nav">' +
+        '<a href="index.html">首页</a>' +
+        '<a href="guide.html">报考指南</a>' +
+        '<a href="heatmap.html">热力地图</a>' +
+        '<a href="recommend.html">岗位推荐</a>' +
+        '<a href="papers.html">真题中心</a>' +
+        '<a href="policy-reader.html">政策解读</a>' +
+        '<a href="index.html#about">关于本站</a>' +
+      '</nav>' +
+    '</aside>' +
   '</header>';
 
   var placeholder = document.getElementById('site-header');
@@ -105,6 +125,14 @@
     document.head.appendChild(cleanStyle);
   }
 
+  if (!document.querySelector('link[data-mobile-v2]')) {
+    var mobileStyle = document.createElement('link');
+    mobileStyle.rel = 'stylesheet';
+    mobileStyle.href = 'css/mobile-v2.css?v=20260712';
+    mobileStyle.dataset.mobileV2 = 'true';
+    document.head.appendChild(mobileStyle);
+  }
+
   if (!document.querySelector('link[data-assistant-widget]')) {
     var assistantStyle = document.createElement('link');
     assistantStyle.rel = 'stylesheet';
@@ -118,5 +146,12 @@
     assistantScript.src = 'js/assistant-widget.js?v=20260707';
     assistantScript.dataset.assistantWidget = 'true';
     document.body.appendChild(assistantScript);
+  }
+
+  if (!document.querySelector('script[data-mobile-v2]')) {
+    var mobileScript = document.createElement('script');
+    mobileScript.src = 'js/mobile-v2.js?v=20260712';
+    mobileScript.dataset.mobileV2 = 'true';
+    document.body.appendChild(mobileScript);
   }
 })();

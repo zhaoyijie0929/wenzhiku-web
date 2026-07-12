@@ -83,16 +83,22 @@ body.welcome-letter-locked {
   }
 
   .welcome-letter-stage {
-    width: 90vw;
+    width: 84vw;
     max-height: calc(100vh - 48px);
     gap: 14px;
   }
 
   .welcome-letter-scroll {
-    max-height: calc(90vh - 66px);
+    max-height: calc(88vh - 66px);
   }
 
   .welcome-letter-start {
     width: min(220px, 78vw);
+  }
+}
+
+@media (max-width: 390px) {
+  .welcome-letter-stage {
+    width: 82vw;
   }
 }
